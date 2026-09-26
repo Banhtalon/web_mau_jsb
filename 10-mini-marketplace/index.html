@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mini Market - Siêu Chợ Mua Sắm Tiện Lợi Mỗi Ngày</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- 1. Thanh điều hướng & Giỏ hàng -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">🛒 Mini<span>Market</span></div>
+      <ul class="nav-links">
+        <li><a href="#home">Trang Chủ</a></li>
+        <li><a href="#products">Khuyến Mãi</a></li>
+        <li><a href="#about">Về Chúng Tôi</a></li>
+        <li><a href="#checkout">Thanh Toán</a></li>
+      </ul>
+      <a href="#checkout" class="cart-box">
+        🛍️ Giỏ Hàng <span class="cart-badge">Ưu đãi</span>
+      </a>
+    </nav>
+  </header>
+
+  <!-- 2. Hero Banner Siêu Chợ Tiện Lợi -->
+  <section id="home" class="banner">
+    <div class="banner-content">
+      <span class="hero-badge">🏷️ FLASH SALE MỖI NGÀY • FREESHIP EXTRA</span>
+      <h1>Mua Sắm Tiện Lợi <br><span class="gradient-text">Tiết Kiệm Mỗi Ngày</span></h1>
+      <p>Hàng ngàn sản phẩm thiết bị gia dụng, phụ kiện công nghệ và đời sống thiết yếu chất lượng cao với mức giá ưu đãi nhất cho mọi gia đình.</p>
+      <div class="banner-actions">
+        <a href="#products" class="btn btn-primary">Săn Sale Ngay</a>
+        <a href="#checkout" class="btn btn-outline">Xem Thanh Toán</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. Cam kết dịch vụ mua sắm -->
+  <section class="features-bar">
+    <div class="container features-grid">
+      <div class="feature-item">
+        <div class="feature-icon">🚀</div>
+        <div>
+          <h4>Giao Hàng Siêu Tốc 2H</h4>
+          <p>Nhận hàng nhanh chóng trong ngày tại nội thành</p>
+        </div>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon">🏷️</div>
+        <div>
+          <h4>Giá Tốt Nhất Thị Trường</h4>
+          <p>Ưu đãi giảm sốc lên đến 40% mỗi cuối tuần</p>
+        </div>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon">🛡️</div>
+        <div>
+          <h4>Đổi Trả Dễ Dàng</h4>
+          <p>Đổi mới miễn phí trong 7 ngày nếu lỗi sản phẩm</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. Danh sách sản phẩm khuyến mãi (Grid tỉ lệ chuẩn 16:10) -->
+  <section id="products" class="container">
+    <div class="section-header">
+      <span class="section-badge">DEAL SỐC HÔM NAY</span>
+      <h2 class="title">Sản Phẩm Bán Chạy Nhất</h2>
+      <p class="section-subtitle">Tuyển tập những mặt hàng tiện ích được khách hàng đặt mua và đánh giá 5 sao nhiều nhất</p>
+    </div>
+
+    <div class="product-grid">
+
+      <div class="product-card">
+        <div class="card-media">
+          <img src="https://images.unsplash.com/photo-1546868871-7041f2a55e12?auto=format&fit=crop&w=800&q=80" alt="Đồng hồ thông minh" loading="lazy">
+          <span class="badge-tag">Giảm 25%</span>
+          <span class="badge-rating">⭐ 4.9</span>
+        </div>
+        <div class="card-content">
+          <span class="cat-tag">Thiết Bị Thông Minh</span>
+          <h3 class="product-title">Đồng Hồ SmartWatch Series 5</h3>
+          <p class="product-desc">Màn hình Retina sắc nét, theo dõi sức khỏe và nhận thông báo điện thoại liên tục 7 ngày.</p>
+          <div class="card-footer">
+            <div class="price-group">
+              <span class="old-price">1.150.000 VNĐ</span>
+              <span class="price">850.000 <small>VNĐ</small></span>
+            </div>
+            <a href="#checkout" class="add-to-cart-btn">Chọn mua</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="card-media">
+          <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=800&q=80" alt="Tai nghe chụp tai" loading="lazy">
+          <span class="badge-tag">Flash Sale</span>
+          <span class="badge-rating">⭐ 4.8</span>
+        </div>
+        <div class="card-content">
+          <span class="cat-tag">Âm Thanh Cá Nhân</span>
+          <h3 class="product-title">Tai Nghe Chụp Tai Hi-Res Bass</h3>
+          <p class="product-desc">Đệm tai bọc da êm ái cách âm thụ động hoàn hảo, chất âm trầm ấm sống động cho việc học và giải trí.</p>
+          <div class="card-footer">
+            <div class="price-group">
+              <span class="old-price">650.000 VNĐ</span>
+              <span class="price">490.000 <small>VNĐ</small></span>
+            </div>
+            <a href="#checkout" class="add-to-cart-btn">Chọn mua</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="card-media">
+          <img src="https://images.unsplash.com/photo-1572635196237-14b3f281503f?auto=format&fit=crop&w=800&q=80" alt="Kính râm thời trang" loading="lazy">
+          <span class="badge-tag">Hot Trend</span>
+          <span class="badge-rating">⭐ 4.9</span>
+        </div>
+        <div class="card-content">
+          <span class="cat-tag">Phụ Kiện Thời Trang</span>
+          <h3 class="product-title">Kính Mát Thời Trang UV400</h3>
+          <p class="product-desc">Mắt kính phân cực chống lóa và chống 99% tia UV độc hại, gọng kim loại nhẹ bền thanh lịch.</p>
+          <div class="card-footer">
+            <div class="price-group">
+              <span class="old-price">280.000 VNĐ</span>
+              <span class="price">199.000 <small>VNĐ</small></span>
+            </div>
+            <a href="#checkout" class="add-to-cart-btn">Chọn mua</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="card-media">
+          <img src="https://images.unsplash.com/photo-1608256246200-53e635b5b65f?auto=format&fit=crop&w=800&q=80" alt="Bình giữ nhiệt" loading="lazy">
+          <span class="badge-tag">Gia Dụng Bền</span>
+          <span class="badge-rating">⭐ 4.9</span>
+        </div>
+        <div class="card-content">
+          <span class="cat-tag">Đồ Dùng Học Đường</span>
+          <h3 class="product-title">Bình Giữ Nhiệt Inox 304 500ml</h3>
+          <p class="product-desc">Giữ nóng 8 giờ và giữ lạnh đến 12 giờ, nắp đậy ron silicone chống tràn nước tuyệt đối.</p>
+          <div class="card-footer">
+            <div class="price-group">
+              <span class="old-price">180.000 VNĐ</span>
+              <span class="price">120.000 <small>VNĐ</small></span>
+            </div>
+            <a href="#checkout" class="add-to-cart-btn">Chọn mua</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="card-media">
+          <img src="https://images.unsplash.com/photo-1583394838336-acd977736f90?auto=format&fit=crop&w=800&q=80" alt="Loa Bluetooth" loading="lazy">
+          <span class="badge-tag">Âm Thanh Nổi</span>
+          <span class="badge-rating">⭐ 4.8</span>
+        </div>
+        <div class="card-content">
+          <span class="cat-tag">Loa Di Động</span>
+          <h3 class="product-title">Loa Bluetooth Mini Siêu Trầm</h3>
+          <p class="product-desc">Kích thước nhỏ gọn bỏ túi, pin trâu phát nhạc 10 giờ liên tục cùng chuẩn kháng nước IPX5.</p>
+          <div class="card-footer">
+            <div class="price-group">
+              <span class="old-price">490.000 VNĐ</span>
+              <span class="price">350.000 <small>VNĐ</small></span>
+            </div>
+            <a href="#checkout" class="add-to-cart-btn">Chọn mua</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="card-media">
+          <img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=800&q=80" alt="Balo đi học" loading="lazy">
+          <span class="badge-tag">Bền Bỉ 3 Năm</span>
+          <span class="badge-rating">⭐ 4.9</span>
+        </div>
+        <div class="card-content">
+          <span class="cat-tag">Balo Đa Năng</span>
+          <h3 class="product-title">Balo Học Sinh Chống Nước Oxford</h3>
+          <p class="product-desc">Nhiều ngăn chứa thông minh có ngăn chống sốc laptop 15.6 inch, quai đeo đệm thoáng khí chống gù lưng.</p>
+          <div class="card-footer">
+            <div class="price-group">
+              <span class="old-price">390.000 VNĐ</span>
+              <span class="price">280.000 <small>VNĐ</small></span>
+            </div>
+            <a href="#checkout" class="add-to-cart-btn">Chọn mua</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 5. Giới thiệu Mini Market -->
+  <section id="about" class="container">
+    <div class="about-card">
+      <div class="about-text">
+        <span class="section-badge">VỀ MINI MARKET</span>
+        <h2>Siêu Chợ Trực Tuyến Đáng Tin Cậy Của Mọi Nhà</h2>
+        <p>Mini Market ra đời nhằm mang lại trải nghiệm mua sắm tiện lợi, nhanh chóng và tiết kiệm nhất cho bạn trẻ và các gia đình Việt.</p>
+        <p>Tất cả sản phẩm đều được kiểm định chất lượng nghiêm ngặt trước khi đóng gói gửi đến tận tay khách hàng.</p>
+      </div>
+      <div class="about-stats">
+        <div class="stat-box">
+          <span class="stat-number">10.000+</span>
+          <span class="stat-label">Sản phẩm tiện ích</span>
+        </div>
+        <div class="stat-box">
+          <span class="stat-number">50K+</span>
+          <span class="stat-label">Đơn hàng giao thành công</span>
+        </div>
+        <div class="stat-box">
+          <span class="stat-number">99.5%</span>
+          <span class="stat-label">Khách hàng đánh giá tốt</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. Form thanh toán đặt hàng -->
+  <section id="checkout" class="container form-section">
+    <div class="section-header">
+      <span class="section-badge">THANH TOÁN AN TOÀN</span>
+      <h2 class="title">Thông Tin Giao Hàng &amp; Thanh Toán</h2>
+      <p class="section-subtitle">Kiểm tra thông tin nhận hàng, thanh toán khi nhận hàng (COD) hoàn toàn an tâm</p>
+    </div>
+
+    <form id="checkout-form" class="checkout-form" action="#" method="get">
+      <div class="form-group">
+        <label for="buyer-name">Họ và tên người nhận:</label>
+        <input type="text" id="buyer-name" placeholder="Ví dụ: Hoàng Anh Quân" required>
+      </div>
+
+      <div class="form-group">
+        <label for="buyer-phone">Số điện thoại liên hệ:</label>
+        <input type="tel" id="buyer-phone" placeholder="Ví dụ: 0912 345 678" required>
+      </div>
+
+      <div class="form-group">
+        <label for="buyer-email">Email nhận mã đơn hàng:</label>
+        <input type="email" id="buyer-email" placeholder="Ví dụ: anhquan@gmail.com" required>
+      </div>
+
+      <div class="form-group">
+        <label for="buyer-address">Địa chỉ nhận hàng chi tiết:</label>
+        <input type="text" id="buyer-address" placeholder="Ví dụ: Số 123 Đường Cầu Giấy, Hà Nội" required>
+      </div>
+
+      <button type="submit" class="submit-btn">Xác Nhận Đặt Hàng Ngay</button>
+    </form>
+  </section>
+
+  <!-- 7. Footer -->
+  <footer>
+    <div class="container footer-content">
+      <div class="footer-col">
+        <div class="logo">🛒 Mini<span>Market</span></div>
+        <p>Hệ thống mua sắm trực tuyến mẫu cho học sinh - Đa dạng sản phẩm, giao hàng tận nơi, uy tín hàng đầu.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Trung Tâm Chăm Sóc Khách Hàng</h4>
+        <p>📍 Trụ sở chính: Tầng 5, Tòa Nhà Thương Mại, Cầu Giấy, Hà Nội</p>
+        <p>📞 Hotline: 1900 6868 (Miễn phí cước gọi)</p>
+        <p>✉️ Email hỗ trợ: cskh@minimarket.vn</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Mini Marketplace. Dự án SPCK Mẫu Web Basic (100% Pure HTML5 &amp; CSS3)</p>
+    </div>
+  </footer>
+
+</body>
+</html>

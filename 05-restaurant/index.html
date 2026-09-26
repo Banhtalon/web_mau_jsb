@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bếp Quê - Nhà Hàng Ẩm Thực Việt Nam</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- 1. Thanh điều hướng -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">🍲 Bếp<span>Quê</span></div>
+      <ul class="nav-links">
+        <li><a href="#home">Trang Chủ</a></li>
+        <li><a href="#menu">Thực Đơn</a></li>
+        <li><a href="#about">Về Chúng Tôi</a></li>
+        <li><a href="#booking">Đặt Bàn</a></li>
+      </ul>
+      <a href="#booking" class="nav-cta">Đặt Bàn Ngay</a>
+    </nav>
+  </header>
+
+  <!-- 2. Hero Banner Ẩm Thực Ấm Cúng -->
+  <section id="home" class="banner">
+    <div class="banner-content">
+      <span class="hero-badge">🌿 TINH HOA ẨM THỰC BA MIỀN</span>
+      <h1>Hương Vị Cơm Nhà <br><span class="gradient-text">Đậm Tình Đất Việt</span></h1>
+      <p>Thưởng thức những món ăn truyền thống thơm ngon tròn vị, đong đầy ký ức tuổi thơ trong không gian mộc mạc và ấm cúng.</p>
+      <div class="banner-actions">
+        <a href="#booking" class="btn btn-primary">Đặt Bàn Trước</a>
+        <a href="#menu" class="btn btn-outline">Xem Thực Đơn</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. Đặc Trưng Dịch Vụ -->
+  <section class="features-bar">
+    <div class="container features-grid">
+      <div class="feature-item">
+        <div class="feature-icon">🥬</div>
+        <div>
+          <h4>Nguyên Liệu Tươi Sạch</h4>
+          <p>Nhập mới từ nông trại hữu cơ mỗi sáng sớm</p>
+        </div>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon">👨‍🍳</div>
+        <div>
+          <h4>Công Thức Gia Truyền</h4>
+          <p>Giữ trọn hương vị truyền thống chuẩn vị ba miền</p>
+        </div>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon">🏮</div>
+        <div>
+          <h4>Không Gian Ấm Cúng</h4>
+          <p>Địa điểm lý tưởng cho sum họp gia đình, bạn bè</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. Thực đơn 6 món ăn đặc sắc (Grid chuẩn tỉ lệ) -->
+  <section id="menu" class="container">
+    <div class="section-header">
+      <span class="section-badge">MÓN NGON MỖI NGÀY</span>
+      <h2 class="title">Thực Đơn Đặc Sắc Nhất</h2>
+      <p class="section-subtitle">Mỗi món ăn là một tác phẩm chứa chan tình yêu và sự tỉ mỉ của người đầu bếp</p>
+    </div>
+
+    <div class="menu-list">
+
+      <div class="menu-card">
+        <div class="card-media">
+          <img src="https://images.unsplash.com/photo-1582878826629-29b7ad1cdc43?auto=format&fit=crop&w=800&q=80" alt="Phở Bò Gia Truyền" loading="lazy">
+          <span class="badge-tag">Món Chữ Ký</span>
+          <span class="badge-rating">⭐ 4.9</span>
+        </div>
+        <div class="card-content">
+          <span class="food-category">Món Nước Truyền Thống</span>
+          <h3 class="food-title">Phở Bò Hà Nội Gia Truyền</h3>
+          <p class="food-desc">Nước dùng hầm xương tủy bò 24 giờ thơm lừng hoa hồi quế chi, bánh phở tươi dẻo cùng thịt bò tái mềm.</p>
+          <div class="card-footer">
+            <div class="price-group">
+              <span class="price-label">Giá chỉ từ</span>
+              <span class="price">65.000 <small>VNĐ</small></span>
+            </div>
+            <a href="#booking" class="order-btn">Đặt món</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-card">
+        <div class="card-media">
+          <img src="https://images.unsplash.com/photo-1594041680534-e8c8cdebd659?auto=format&fit=crop&w=800&q=80" alt="Bún Chả Hà Nội" loading="lazy">
+          <span class="badge-tag">Bán Chạy Nhất</span>
+          <span class="badge-rating">⭐ 4.9</span>
+        </div>
+        <div class="card-content">
+          <span class="food-category">Đặc Sản Phố Cổ</span>
+          <h3 class="food-title">Bún Chả Nướng Than Hoa</h3>
+          <p class="food-desc">Chả viên và chả miếng tẩm ướp đậm đà nướng xém cạnh trên than hồng, nước chấm chua ngọt tỏi ớt đưa cơm.</p>
+          <div class="card-footer">
+            <div class="price-group">
+              <span class="price-label">Giá chỉ từ</span>
+              <span class="price">60.000 <small>VNĐ</small></span>
+            </div>
+            <a href="#booking" class="order-btn">Đặt món</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-card">
+        <div class="card-media">
+          <img src="https://images.unsplash.com/photo-1555126634-323283e090fa?auto=format&fit=crop&w=800&q=80" alt="Nem Rán Giòn Rụm" loading="lazy">
+          <span class="badge-tag">Khai Vị Giòn Tan</span>
+          <span class="badge-rating">⭐ 4.8</span>
+        </div>
+        <div class="card-content">
+          <span class="food-category">Món Khai Vị</span>
+          <h3 class="food-title">Nem Rán Hà Thành Giòn Rụm</h3>
+          <p class="food-desc">Nhân tôm thịt, mộc nhĩ, miến dong giòn rụm bọc vỏ bánh đa nem giòn tan vàng óng, ăn kèm rau sống thanh mát.</p>
+          <div class="card-footer">
+            <div class="price-group">
+              <span class="price-label">Giá chỉ từ</span>
+              <span class="price">50.000 <small>VNĐ</small></span>
+            </div>
+            <a href="#booking" class="order-btn">Đặt món</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-card">
+        <div class="card-media">
+          <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=800&q=80" alt="Gỏi Cuốn Tôm Thịt" loading="lazy">
+          <span class="badge-tag">Thanh Mát Tự Nhiên</span>
+          <span class="badge-rating">⭐ 4.8</span>
+        </div>
+        <div class="card-content">
+          <span class="food-category">Món Cuốn Nam Bộ</span>
+          <h3 class="food-title">Gỏi Cuốn Tôm Thịt Thanh Mát</h3>
+          <p class="food-desc">Tôm sú tươi luộc đỏ au cùng thịt ba chỉ thái lát mỏng, cuộn rau thơm hẹ xanh chấm tương bơ đậu phộng béo ngậy.</p>
+          <div class="card-footer">
+            <div class="price-group">
+              <span class="price-label">Giá chỉ từ</span>
+              <span class="price">45.000 <small>VNĐ</small></span>
+            </div>
+            <a href="#booking" class="order-btn">Đặt món</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-card">
+        <div class="card-media">
+          <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=800&q=80" alt="Cơm Tấm Sườn Bì Chả" loading="lazy">
+          <span class="badge-tag">Đặc Sản Sài Gòn</span>
+          <span class="badge-rating">⭐ 4.9</span>
+        </div>
+        <div class="card-content">
+          <span class="food-category">Cơm Đĩa Nóng Hổi</span>
+          <h3 class="food-title">Cơm Tấm Sườn Cốt Lết Bì Chả</h3>
+          <p class="food-desc">Sườn cây ướp mật ong nướng thơm nức mũi, chả trứng béo ngậy, hạt tấm dẻo thơm rưới mỡ hành tóp mỡ giòn cay.</p>
+          <div class="card-footer">
+            <div class="price-group">
+              <span class="price-label">Giá chỉ từ</span>
+              <span class="price">55.000 <small>VNĐ</small></span>
+            </div>
+            <a href="#booking" class="order-btn">Đặt món</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-card">
+        <div class="card-media">
+          <img src="https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&fit=crop&w=800&q=80" alt="Cơm Chiên Hải Sản" loading="lazy">
+          <span class="badge-tag">Hương Vị Biển</span>
+          <span class="badge-rating">⭐ 4.8</span>
+        </div>
+        <div class="card-content">
+          <span class="food-category">Cơm Đảo Chảo Gang</span>
+          <h3 class="food-title">Cơm Chiên Hải Sản Hoàng Kim</h3>
+          <p class="food-desc">Hạt cơm săn bóng áo lớp trứng gà ta óng ánh, xào ngập tràn mực giòn, tôm nõn và rau củ quả ngọt lành.</p>
+          <div class="card-footer">
+            <div class="price-group">
+              <span class="price-label">Giá chỉ từ</span>
+              <span class="price">75.000 <small>VNĐ</small></span>
+            </div>
+            <a href="#booking" class="order-btn">Đặt món</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 5. Giới thiệu Bếp Quê -->
+  <section id="about" class="container">
+    <div class="about-card">
+      <div class="about-text">
+        <span class="section-badge">CÂU CHUYỆN BẾP QUÊ</span>
+        <h2>Nơi Gìn Giữ Hồn Quê Qua Từng Bữa Cơm Sum Họp</h2>
+        <p>Bếp Quê được xây dựng từ tình yêu bất tận với ẩm thực dân dã Việt Nam. Chúng tôi tin rằng bữa cơm ngon không chỉ nằm ở gia vị nêm nếm, mà ở cảm giác ấm áp sum vầy khi ngồi quây quần cùng những người thân thương.</p>
+        <p>Mỗi món ăn mang lên bàn đều được chăm chút từ việc chọn mớ rau non, hạt gạo dẻo cho đến ấm trà mạn thơm ngát chào đón quý thực khách.</p>
+      </div>
+      <div class="about-stats">
+        <div class="stat-box">
+          <span class="stat-number">10+</span>
+          <span class="stat-label">Năm gìn giữ hương vị</span>
+        </div>
+        <div class="stat-box">
+          <span class="stat-number">50+</span>
+          <span class="stat-label">Món ăn truyền thống</span>
+        </div>
+        <div class="stat-box">
+          <span class="stat-number">98%</span>
+          <span class="stat-label">Khách hàng hài lòng</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. Form đặt bàn trước -->
+  <section id="booking" class="container booking-section">
+    <div class="section-header">
+      <span class="section-badge">ĐẶT CHỖ NHANH</span>
+      <h2 class="title">Đặt Bàn Trước Cùng Bếp Quê</h2>
+      <p class="section-subtitle">Để chúng tôi chuẩn bị chu đáo nhất cho bữa ăn ấm cúng của bạn và gia đình</p>
+    </div>
+
+    <form id="reservation-form" class="reservation-form" action="#" method="get">
+      <div class="form-group">
+        <label for="guest-name">Họ và tên của bạn:</label>
+        <input type="text" id="guest-name" placeholder="Ví dụ: Trần Văn Bình" required>
+      </div>
+
+      <div class="form-group">
+        <label for="guest-count">Số lượng người lớn &amp; trẻ em:</label>
+        <input type="number" id="guest-count" placeholder="Nhập số người (ví dụ: 4)" min="1" required>
+      </div>
+
+      <div class="form-group">
+        <label for="reservation-time">Thời gian và ngày dùng bữa:</label>
+        <input type="datetime-local" id="reservation-time" required>
+      </div>
+
+      <button type="submit" class="submit-btn">Xác Nhận Đặt Bàn Ngay</button>
+    </form>
+  </section>
+
+  <!-- 7. Footer -->
+  <footer>
+    <div class="container footer-content">
+      <div class="footer-col">
+        <div class="logo">🍲 Bếp<span>Quê</span></div>
+        <p>Mang hương vị quê hương đến gần hơn với mỗi bữa cơm gia đình bạn. Hân hạnh được phục vụ quý khách!</p>
+      </div>
+      <div class="footer-col">
+        <h4>Liên Hệ &amp; Giờ Mở Cửa</h4>
+        <p>📍 Địa chỉ: 123 Đường Ẩm Thực, Quận 1, TP. Hồ Chí Minh</p>
+        <p>⏰ Giờ mở cửa: 10h00 - 22h00 (Tất cả các ngày trong tuần)</p>
+        <p>📞 Hotline đặt bàn: 0987 654 321</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Nhà Hàng Bếp Quê - Dự án SPCK Mẫu Web Basic (100% Pure HTML5 &amp; CSS3)</p>
+    </div>
+  </footer>
+
+</body>
+</html>

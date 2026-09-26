@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thực Đơn Đồ Uống & Bánh | Cà Phê Mộc</title>
+  <meta name="description" content="Khám phá thực đơn đồ uống phong phú tại Cà Phê Mộc: Cà phê phin truyền thống, Espresso, Trà trái cây tươi và Bánh ngọt nướng mới mỗi ngày.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- 1. THANH ĐIỀU HƯỚNG (HEADER & NAVBAR) -->
+  <header>
+    <div class="container navbar">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">☕</div>
+        <div>
+          Cà Phê Mộc
+          <span class="logo-sub">Artisan Roastery</span>
+        </div>
+      </a>
+
+      <!-- Pure CSS Mobile Menu Toggle -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle-input">
+      <label for="nav-toggle" class="nav-toggle-label" aria-label="Mở menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <ul class="nav-links">
+        <li><a href="index.html">Trang Chủ</a></li>
+        <li><a href="menu.html" class="active">Thực Đơn</a></li>
+        <li><a href="order.html">Đặt Hàng Online</a></li>
+        <li><a href="index.html#about">Câu Chuyện</a></li>
+        <li><a href="index.html#reviews">Đánh Giá</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <div class="nav-phone">
+          <div class="nav-phone-icon">📞</div>
+          <span>1900 6868</span>
+        </div>
+        <a href="order.html" class="btn btn-primary btn-sm">Đặt Món Ngay</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- 2. BANNER ĐẦU TRANG THỰC ĐƠN -->
+  <div class="page-header">
+    <div class="container page-header-content">
+      <div class="breadcrumb">
+        <a href="index.html">Trang Chủ</a>
+        <span>/</span>
+        <span>Thực Đơn</span>
+      </div>
+      <h1>Thực Đơn Tinh Hoa</h1>
+      <p>Tuyển chọn từ những hạt cà phê hảo hạng, thảo mộc tươi mát và bánh nướng thơm lừng trong ngày.</p>
+    </div>
+  </div>
+
+  <!-- 3. BỘ LỌC DANH MỤC NHANH (CSS ANCHORS) -->
+  <div class="container menu-nav-wrap">
+    <nav class="menu-nav">
+      <a href="#all" class="active">Tất Cả Món</a>
+      <a href="#traditional">Cà Phê Phin</a>
+      <a href="#espresso">Espresso & Ý</a>
+      <a href="#tea">Trà Trái Cây</a>
+      <a href="#ice-blended">Đá Xay & Bánh</a>
+    </nav>
+  </div>
+
+  <!-- 4. DANH SÁCH SẢN PHẨM THỰC ĐƠN -->
+  <main class="container" id="all" style="padding-bottom: 90px;">
+
+    <!-- Nhóm 1: Cà Phê Truyền Thống -->
+    <div class="category-heading" id="traditional">
+      <h2 class="category-title">
+        <span>☕</span> Cà Phê Truyền Thống Việt Nam
+      </h2>
+      <span class="category-count">4 món đặc trưng</span>
+    </div>
+
+    <div class="products-grid">
+
+      <!-- Item 1: Cà Phê Đen Đá -->
+      <article class="product-card">
+        <a href="order.html" class="product-img-wrap" title="Đặt ngay Cà Phê Đen Đá">
+          <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=600&auto=format&fit=crop&q=80" alt="Cà Phê Đen Đá">
+          <span class="product-tag">Đậm Đà</span>
+          <div class="product-rating"><span>★</span> 4.9</div>
+        </a>
+        <div class="product-content">
+          <span class="product-category">Pha Phin Chậm</span>
+          <h3 class="product-name"><a href="order.html">Cà Phê Đen Đá Phin</a></h3>
+          <p class="product-desc">100% Robusta Đắk Lắk rang mộc, vị đắng thanh thoát cùng hậu vị ngọt sâu lắng của hạt cà phê Tây Nguyên.</p>
+          <div class="product-footer">
+            <div class="product-price">
+              <span class="price-label">Giá niêm yết</span>
+              <span class="price-val">25.000 <span>VNĐ</span></span>
+            </div>
+            <a href="order.html" class="btn-order-now">Đặt Món ➔</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Item 2: Cà Phê Sữa Đá Sài Gòn -->
+      <article class="product-card">
+        <a href="order.html" class="product-img-wrap" title="Đặt ngay Cà Phê Sữa Đá Sài Gòn">
+          <img src="https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?w=600&auto=format&fit=crop&q=80" alt="Cà Phê Sữa Đá Sài Gòn">
+          <span class="product-tag tag-bestseller">Best Seller</span>
+          <div class="product-rating"><span>★</span> 5.0</div>
+        </a>
+        <div class="product-content">
+          <span class="product-category">Pha Phin Sữa Đặc</span>
+          <h3 class="product-name"><a href="order.html">Cà Phê Sữa Đá Sài Gòn</a></h3>
+          <p class="product-desc">Hương thơm nồng nàn hòa cùng sữa đặc béo ngậy, thức uống kinh điển gắn liền với nhịp sống Sài Gòn.</p>
+          <div class="product-footer">
+            <div class="product-price">
+              <span class="price-label">Giá niêm yết</span>
+              <span class="price-val">29.000 <span>VNĐ</span></span>
+            </div>
+            <a href="order.html" class="btn-order-now">Đặt Món ➔</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Item 3: Bạc Xỉu Sài Gòn -->
+      <article class="product-card">
+        <a href="order.html" class="product-img-wrap" title="Đặt ngay Bạc Xỉu Sài Gòn">
+          <img src="https://images.unsplash.com/photo-1534778101976-62847782c213?w=600&auto=format&fit=crop&q=80" alt="Bạc Xỉu Sài Gòn">
+          <span class="product-tag tag-hot">Phổ Biến</span>
+          <div class="product-rating"><span>★</span> 4.9</div>
+        </a>
+        <div class="product-content">
+          <span class="product-category">Nhiều Sữa Ít Cà Phê</span>
+          <h3 class="product-name"><a href="order.html">Bạc Xỉu 3 Tầng Sữa Tươi</a></h3>
+          <p class="product-desc">Sự pha trộn mềm mại giữa sữa tươi thanh trùng, sữa đặc ngậy béo và lớp cà phê bồng bềnh bên trên.</p>
+          <div class="product-footer">
+            <div class="product-price">
+              <span class="price-label">Giá niêm yết</span>
+              <span class="price-val">32.000 <span>VNĐ</span></span>
+            </div>
+            <a href="order.html" class="btn-order-now">Đặt Món ➔</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Item 4: Cà Phê Muối Xứ Huế -->
+      <article class="product-card">
+        <a href="order.html" class="product-img-wrap" title="Đặt ngay Cà Phê Muối Xứ Huế">
+          <img src="https://images.unsplash.com/photo-1541167760496-1628856ab772?w=600&auto=format&fit=crop&q=80" alt="Cà Phê Muối Xứ Huế">
+          <span class="product-tag tag-new">Món Mới</span>
+          <div class="product-rating"><span>★</span> 4.9</div>
+        </a>
+        <div class="product-content">
+          <span class="product-category">Kem Mặn Béo</span>
+          <h3 class="product-name"><a href="order.html">Cà Phê Muối Biển Xứ Huế</a></h3>
+          <p class="product-desc">Cà phê phin truyền thống phối hợp với lớp kem sữa mặn nhẹ bồng bềnh, tạo nên hương vị cuốn hút khó cưỡng.</p>
+          <div class="product-footer">
+            <div class="product-price">
+              <span class="price-label">Giá niêm yết</span>
+              <span class="price-val">35.000 <span>VNĐ</span></span>
+            </div>
+            <a href="order.html" class="btn-order-now">Đặt Món ➔</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+
+    <!-- Nhóm 2: Espresso & Cà Phê Ý -->
+    <div class="category-heading" id="espresso">
+      <h2 class="category-title">
+        <span>🏺</span> Cà Phê Pha Máy Chuẩn Ý & Cold Brew
+      </h2>
+      <span class="category-count">3 món cao cấp</span>
+    </div>
+
+    <div class="products-grid">
+
+      <!-- Item 5: Cappuccino Ý -->
+      <article class="product-card">
+        <a href="order.html" class="product-img-wrap" title="Đặt ngay Cappuccino Nghệ Thuật">
+          <img src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?w=600&auto=format&fit=crop&q=80" alt="Cappuccino Ý">
+          <span class="product-tag">Chuẩn Vị</span>
+          <div class="product-rating"><span>★</span> 4.9</div>
+        </a>
+        <div class="product-content">
+          <span class="product-category">Espresso Ý</span>
+          <h3 class="product-name"><a href="order.html">Cappuccino Nghệ Thuật</a></h3>
+          <p class="product-desc">Chiết xuất từ hạt Arabica Cầu Đất, đánh bọt sữa sánh mịn mượt mà và vẽ hình Latte Art tinh tế.</p>
+          <div class="product-footer">
+            <div class="product-price">
+              <span class="price-label">Giá niêm yết</span>
+              <span class="price-val">45.000 <span>VNĐ</span></span>
+            </div>
+            <a href="order.html" class="btn-order-now">Đặt Món ➔</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Item 6: Cold Brew Cam Vàng -->
+      <article class="product-card">
+        <a href="order.html" class="product-img-wrap" title="Đặt ngay Cold Brew Cam Vàng">
+          <img src="https://images.unsplash.com/photo-1517256064527-09c73fc73e38?w=600&auto=format&fit=crop&q=80" alt="Cold Brew Cam Vàng">
+          <span class="product-tag tag-bestseller">Best Seller</span>
+          <div class="product-rating"><span>★</span> 4.8</div>
+        </a>
+        <div class="product-content">
+          <span class="product-category">Ủ Lạnh 16 Giờ</span>
+          <h3 class="product-name"><a href="order.html">Cold Brew Cam Vàng Mật Ong</a></h3>
+          <p class="product-desc">Cà phê ủ lạnh 16 tiếng loại bỏ vị chua gắt, kết hợp cam vàng sành tươi và mật ong hoa cà phê thanh ngọt.</p>
+          <div class="product-footer">
+            <div class="product-price">
+              <span class="price-label">Giá niêm yết</span>
+              <span class="price-val">45.000 <span>VNĐ</span></span>
+            </div>
+            <a href="order.html" class="btn-order-now">Đặt Món ➔</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Item 7: Cà Phê Latte Hạnh Nhân -->
+      <article class="product-card">
+        <a href="order.html" class="product-img-wrap" title="Đặt ngay Cà Phê Latte Hạnh Nhân">
+          <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?w=600&auto=format&fit=crop&q=80" alt="Latte Hạnh Nhân">
+          <span class="product-tag">Món Lành Mạnh</span>
+          <div class="product-rating"><span>★</span> 4.9</div>
+        </a>
+        <div class="product-content">
+          <span class="product-category">Sữa Hạt Cao Cấp</span>
+          <h3 class="product-name"><a href="order.html">Cà Phê Latte Sữa Hạnh Nhân</a></h3>
+          <p class="product-desc">Espresso Arabica kết hợp cùng sữa hạnh nhân hữu cơ bùi béo, ít calo, phù hợp cho người ăn kiêng.</p>
+          <div class="product-footer">
+            <div class="product-price">
+              <span class="price-label">Giá niêm yết</span>
+              <span class="price-val">48.000 <span>VNĐ</span></span>
+            </div>
+            <a href="order.html" class="btn-order-now">Đặt Món ➔</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+
+    <!-- Nhóm 3: Trà Trái Cây & Thảo Mộc -->
+    <div class="category-heading" id="tea">
+      <h2 class="category-title">
+        <span>🍃</span> Trà Trái Cây Tươi & Macchiato
+      </h2>
+      <span class="category-count">2 món thanh mát</span>
+    </div>
+
+    <div class="products-grid">
+
+      <!-- Item 8: Trà Đào Cam Sả -->
+      <article class="product-card">
+        <a href="order.html" class="product-img-wrap" title="Đặt ngay Trà Đào Cam Sả">
+          <img src="https://images.unsplash.com/photo-1568649929103-28ffbefaca1e?w=600&auto=format&fit=crop&q=80" alt="Trà Đào Cam Sả">
+          <span class="product-tag tag-hot">Thanh Nhiệt</span>
+          <div class="product-rating"><span>★</span> 4.9</div>
+        </a>
+        <div class="product-content">
+          <span class="product-category">Trà Hoa Quả Tươi</span>
+          <h3 class="product-name"><a href="order.html">Trà Đào Cam Sả Tươi</a></h3>
+          <p class="product-desc">Trà đen ủ lạnh với sả cây tươi, nước cam tươi vắt và những lát đào vàng giòn ngọt ngào sảng khoái.</p>
+          <div class="product-footer">
+            <div class="product-price">
+              <span class="price-label">Giá niêm yết</span>
+              <span class="price-val">39.000 <span>VNĐ</span></span>
+            </div>
+            <a href="order.html" class="btn-order-now">Đặt Món ➔</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Item 9: Trà Sen Vàng Kem Cheese -->
+      <article class="product-card">
+        <a href="order.html" class="product-img-wrap" title="Đặt ngay Trà Sen Vàng Kem Cheese">
+          <img src="https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=600&auto=format&fit=crop&q=80" alt="Trà Sen Vàng Kem Cheese">
+          <span class="product-tag tag-bestseller">Signature</span>
+          <div class="product-rating"><span>★</span> 5.0</div>
+        </a>
+        <div class="product-content">
+          <span class="product-category">Trà Sen & Kem Phô Mai</span>
+          <h3 class="product-name"><a href="order.html">Trà Sen Vàng Macchiato</a></h3>
+          <p class="product-desc">Nước trà ô long sen vàng thanh khiết, hạt sen ninh bùi dẻo cùng lớp kem phô mai béo ngậy phủ mặt.</p>
+          <div class="product-footer">
+            <div class="product-price">
+              <span class="price-label">Giá niêm yết</span>
+              <span class="price-val">45.000 <span>VNĐ</span></span>
+            </div>
+            <a href="order.html" class="btn-order-now">Đặt Món ➔</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+
+    <!-- Nhóm 4: Đá Xay & Bánh Ngọt -->
+    <div class="category-heading" id="ice-blended">
+      <h2 class="category-title">
+        <span>🥐</span> Đá Xay Mát Lạnh & Bánh Nướng
+      </h2>
+      <span class="category-count">2 món tuyệt hảo</span>
+    </div>
+
+    <div class="products-grid">
+
+      <!-- Item 10: Matcha Đá Xay -->
+      <article class="product-card">
+        <a href="order.html" class="product-img-wrap" title="Đặt ngay Matcha Đá Xay">
+          <img src="https://images.unsplash.com/photo-1576092768241-dec231879fc3?w=600&auto=format&fit=crop&q=80" alt="Matcha Đá Xay">
+          <span class="product-tag">Đá Xay</span>
+          <div class="product-rating"><span>★</span> 4.8</div>
+        </a>
+        <div class="product-content">
+          <span class="product-category">Matcha Nhật Bản</span>
+          <h3 class="product-name"><a href="order.html">Matcha Đá Xay Kem Tươi</a></h3>
+          <p class="product-desc">Bột matcha Uji thượng hạng hòa quyện sữa tươi đá tuyết, phủ kem béo ngậy ngọt nhẹ.</p>
+          <div class="product-footer">
+            <div class="product-price">
+              <span class="price-label">Giá niêm yết</span>
+              <span class="price-val">49.000 <span>VNĐ</span></span>
+            </div>
+            <a href="order.html" class="btn-order-now">Đặt Món ➔</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Item 11: Croissant Bơ Tỏi Nóng -->
+      <article class="product-card">
+        <a href="order.html" class="product-img-wrap" title="Đặt ngay Bánh Croissant Bơ Tỏi">
+          <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=600&auto=format&fit=crop&q=80" alt="Bánh Croissant Bơ Tỏi">
+          <span class="product-tag tag-hot">Nướng Mới</span>
+          <div class="product-rating"><span>★</span> 4.9</div>
+        </a>
+        <div class="product-content">
+          <span class="product-category">Bánh Nướng Hàng Ngày</span>
+          <h3 class="product-name"><a href="order.html">Croissant Bơ Tỏi Phô Mai</a></h3>
+          <p class="product-desc">Vỏ bánh nghìn lớp giòn rụm bên ngoài, mềm xốp bên trong đượm sốt bơ tỏi thơm ngào ngạt.</p>
+          <div class="product-footer">
+            <div class="product-price">
+              <span class="price-label">Giá niêm yết</span>
+              <span class="price-val">35.000 <span>VNĐ</span></span>
+            </div>
+            <a href="order.html" class="btn-order-now">Đặt Món ➔</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+
+  </main>
+
+  <!-- 5. BANNER CHÂN TRANG THỰC ĐƠN -->
+  <section class="section" style="padding-top: 0;">
+    <div class="container">
+      <div class="promo-strip">
+        <div class="promo-content">
+          <span class="section-badge" style="background: rgba(255,255,255,0.15); color: #fff;">Ưu Đãi Hôm Nay</span>
+          <h3>Bạn Đã Chọn Được Món Yêu Thích?</h3>
+          <p>Nhấp vào bất kỳ món nào ở trên để chuyển sang màn hình đặt hàng và tùy biến lượng đường đá theo gu thưởng thức của bạn.</p>
+          <a href="order.html" class="btn btn-primary">Đi Tới Trang Đặt Hàng & Thanh Toán ➔</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. FOOTER -->
+  <footer>
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <div class="logo">
+          <div class="logo-icon">☕</div>
+          <div>Cà Phê Mộc</div>
+        </div>
+        <p>Hương vị nguyên bản, trung thực và tận tâm trong từng giọt cà phê rang mộc Tây Nguyên.</p>
+        <div class="social-links">
+          <a href="#" class="social-link" title="Facebook">FB</a>
+          <a href="#" class="social-link" title="Instagram">IG</a>
+          <a href="#" class="social-link" title="Tiktok">TT</a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Liên Kết Nhanh</h4>
+        <div class="footer-links">
+          <a href="index.html">Trang Chủ</a>
+          <a href="menu.html">Thực Đơn Đồ Uống</a>
+          <a href="order.html">Đặt Hàng Trực Tuyến</a>
+          <a href="index.html#about">Về Chúng Tôi</a>
+          <a href="index.html#reviews">Đánh Giá Khách Hàng</a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Giờ Mở Cửa</h4>
+        <div class="footer-info">
+          <div class="info-row">
+            <div class="info-icon">🕒</div>
+            <div>
+              <strong>Thứ Hai - Thứ Sáu:</strong><br>
+              06:30 - 22:30
+            </div>
+          </div>
+          <div class="info-row">
+            <div class="info-icon">☀️</div>
+            <div>
+              <strong>Thứ Bảy - Chủ Nhật:</strong><br>
+              07:00 - 23:00
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Hệ Thống Quán</h4>
+        <div class="footer-info">
+          <div class="info-row">
+            <div class="info-icon">📍</div>
+            <div><strong>Chi nhánh 1:</strong> 128 Nguyễn Trãi, Phường Bến Thành, Quận 1, TP.HCM</div>
+          </div>
+          <div class="info-row">
+            <div class="info-icon">📍</div>
+            <div><strong>Chi nhánh 2:</strong> 45 Phố Thái Hà, Phường Trung Liệt, Đống Đa, Hà Nội</div>
+          </div>
+          <div class="info-row">
+            <div class="info-icon">📞</div>
+            <div><strong>Hotline đặt món:</strong> 1900 6868</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom container">
+      <p>&copy; 2026 Cà Phê Mộc - Dự án SPCK Mẫu Web Basic (100% Pure HTML5 & CSS3 - No JavaScript)</p>
+    </div>
+  </footer>
+
+</body>
+</html>

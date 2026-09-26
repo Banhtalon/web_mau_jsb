@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Đặt Hàng & Thanh Toán | Cà Phê Mộc</title>
+  <meta name="description" content="Form thanh toán và đặt đồ uống trực tuyến tại Cà Phê Mộc. Tùy chỉnh size, mức đường đá và thanh toán tiện lợi trong 20 phút.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- 1. THANH ĐIỀU HƯỚNG (HEADER & NAVBAR) -->
+  <header>
+    <div class="container navbar">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">☕</div>
+        <div>
+          Cà Phê Mộc
+          <span class="logo-sub">Artisan Roastery</span>
+        </div>
+      </a>
+
+      <!-- Pure CSS Mobile Menu Toggle -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle-input">
+      <label for="nav-toggle" class="nav-toggle-label" aria-label="Mở menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <ul class="nav-links">
+        <li><a href="index.html">Trang Chủ</a></li>
+        <li><a href="menu.html">Thực Đơn</a></li>
+        <li><a href="order.html" class="active">Đặt Hàng Online</a></li>
+        <li><a href="index.html#about">Câu Chuyện</a></li>
+        <li><a href="index.html#reviews">Đánh Giá</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <div class="nav-phone">
+          <div class="nav-phone-icon">📞</div>
+          <span>1900 6868</span>
+        </div>
+        <a href="menu.html" class="btn btn-secondary btn-sm">Xem Lại Menu</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- 2. BANNER TIÊU ĐỀ TRANG THANH TOÁN -->
+  <div class="page-header" style="padding: 45px 0 50px;">
+    <div class="container page-header-content">
+      <div class="breadcrumb">
+        <a href="index.html">Trang Chủ</a>
+        <span>/</span>
+        <a href="menu.html">Thực Đơn</a>
+        <span>/</span>
+        <span>Thanh Toán & Đặt Hàng</span>
+      </div>
+      <h1 style="font-size: 2.3rem;">Xác Nhận Đơn Hàng</h1>
+      <p>Điền thông tin giao nhận và thanh toán để quán pha chế ngay cho bạn.</p>
+    </div>
+  </div>
+
+  <!-- 3. KHU VỰC CHÍNH: FORM THANH TOÁN & TÓM TẮT ĐƠN HÀNG (2 CỘT) -->
+  <main class="container">
+    <!-- Form bao quanh toàn bộ thông tin thanh toán, submit nhảy tới #order-success bằng pure CSS -->
+    <form action="#order-success" method="get" class="checkout-layout">
+      
+      <!-- CỘT TRÁI: THÔNG TIN GIAO HÀNG & PHƯƠNG THỨC THANH TOÁN -->
+      <div class="checkout-left-col" style="display: flex; flex-direction: column; gap: 28px;">
+        
+        <!-- Khối 1: Thông tin người nhận -->
+        <div class="checkout-card">
+          <div class="checkout-card-header">
+            <div class="step-num">1</div>
+            <div>
+              <h3>Thông Tin Nhận Hàng</h3>
+              <p style="font-size: 0.85rem; color: var(--c-text-muted);">Vui lòng cung cấp chính xác để Barista giao tận tay</p>
+            </div>
+          </div>
+
+          <div class="checkout-form-grid">
+            
+            <div class="form-group">
+              <label for="customer-name">Họ và tên người nhận <span>*</span></label>
+              <input type="text" id="customer-name" name="name" class="form-input" placeholder="Ví dụ: Nguyễn Văn An" required>
+            </div>
+
+            <div class="form-group">
+              <label for="customer-phone">Số điện thoại <span>*</span></label>
+              <input type="tel" id="customer-phone" name="phone" class="form-input" placeholder="Ví dụ: 0987 654 321" required pattern="[0-9]{10,11}">
+            </div>
+
+            <div class="form-group-full form-group">
+              <label for="customer-address">Địa chỉ giao hàng chi tiết <span>*</span></label>
+              <input type="text" id="customer-address" name="address" class="form-input" placeholder="Số nhà, tên đường, phường/xã, quận/huyện..." required>
+            </div>
+
+            <div class="form-group-full form-group">
+              <label>Thời gian nhận hàng</label>
+              <div class="pill-group" style="margin-top: 4px;">
+                <input type="radio" name="delivery-time" id="time-now" class="pill-radio-input" checked>
+                <label for="time-now" class="pill-label">⚡ Giao ngay (20 - 30 phút)</label>
+
+                <input type="radio" name="delivery-time" id="time-later" class="pill-radio-input">
+                <label for="time-later" class="pill-label">🕒 Hẹn giờ trong ngày</label>
+              </div>
+            </div>
+
+            <div class="form-group-full form-group">
+              <label for="customer-notes">Ghi chú cho tài xế hoặc quán (tùy chọn)</label>
+              <textarea id="customer-notes" name="notes" class="form-textarea" placeholder="Ví dụ: Cho đá riêng vào bịch, gọi trước khi giao, gửi bàn lễ tân..."></textarea>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Khối 2: Phương thức thanh toán (Visual Radio Selector) -->
+        <div class="checkout-card">
+          <div class="checkout-card-header">
+            <div class="step-num">2</div>
+            <div>
+              <h3>Phương Thức Thanh Toán</h3>
+              <p style="font-size: 0.85rem; color: var(--c-text-muted);">Lựa chọn hình thức thanh toán thuận tiện nhất cho bạn</p>
+            </div>
+          </div>
+
+          <div class="payment-methods">
+
+            <!-- Lựa chọn 1: Tiền mặt COD -->
+            <label class="payment-option-label">
+              <input type="radio" name="payment_method" value="cod" class="payment-option-input" checked>
+              <div class="payment-card-visual">
+                <div class="payment-left">
+                  <div class="payment-icon">💵</div>
+                  <div class="payment-text">
+                    <h5>Tiền Mặt Khi Nhận Hàng (COD)</h5>
+                    <p>Thanh toán trực tiếp cho nhân viên giao hàng khi nhận thức uống</p>
+                  </div>
+                </div>
+                <div class="payment-check-circle"></div>
+              </div>
+            </label>
+
+            <!-- Lựa chọn 2: VietQR / MoMo -->
+            <label class="payment-option-label">
+              <input type="radio" name="payment_method" value="qr" class="payment-option-input">
+              <div class="payment-card-visual">
+                <div class="payment-left">
+                  <div class="payment-icon">📱</div>
+                  <div class="payment-text">
+                    <h5>Chuyển Khoản Nhanh VietQR / MoMo</h5>
+                    <p>Quét mã QR ngân hàng 24/7 không cần nhập số tài khoản</p>
+                  </div>
+                </div>
+                <div class="payment-check-circle"></div>
+              </div>
+            </label>
+
+            <!-- Lựa chọn 3: Thẻ ATM / Visa / Mastercard -->
+            <label class="payment-option-label">
+              <input type="radio" name="payment_method" value="card" class="payment-option-input">
+              <div class="payment-card-visual">
+                <div class="payment-left">
+                  <div class="payment-icon">💳</div>
+                  <div class="payment-text">
+                    <h5>Thẻ Tín Dụng / Ghi Nợ / ATM Quốc Nội</h5>
+                    <p>Hỗ trợ thẻ Visa, MasterCard, JCB và thẻ ATM nội địa Napas</p>
+                  </div>
+                </div>
+                <div class="payment-check-circle"></div>
+              </div>
+            </label>
+
+          </div>
+        </div>
+
+      </div>
+
+      <!-- CỘT PHẢI: CHI TIẾT ĐƠN HÀNG & TÙY CHỌN PHA CHẾ (ORDER SUMMARY) -->
+      <aside class="checkout-right-col">
+        <div class="order-summary-box">
+          <h3 class="summary-heading">Chi Tiết Đơn Hàng</h3>
+
+          <!-- Chọn / Thay đổi món nhanh -->
+          <div class="form-group" style="margin-bottom: 14px;">
+            <label for="select-drink" style="font-size: 0.85rem;">Món Bạn Đang Chọn:</label>
+            <select id="select-drink" class="form-select" style="font-weight: 700; color: var(--c-roast);">
+              <option value="suada" selected>Cà Phê Sữa Đá Sài Gòn (29.000 VNĐ)</option>
+              <option value="denda">Cà Phê Đen Đá Phin (25.000 VNĐ)</option>
+              <option value="bacxiu">Bạc Xỉu Sài Gòn 3 Tầng (32.000 VNĐ)</option>
+              <option value="muoi">Cà Phê Muối Biển Xứ Huế (35.000 VNĐ)</option>
+              <option value="cappuccino">Cappuccino Ý Nghệ Thuật (45.000 VNĐ)</option>
+              <option value="coldbrew">Cold Brew Cam Vàng Mật Ong (45.000 VNĐ)</option>
+              <option value="tradao">Trà Đào Cam Sả Tươi (39.000 VNĐ)</option>
+              <option value="trasen">Trà Sen Vàng Macchiato (45.000 VNĐ)</option>
+              <option value="matcha">Matcha Đá Xay Kem Tươi (49.000 VNĐ)</option>
+              <option value="croissant">Bánh Croissant Bơ Tỏi (35.000 VNĐ)</option>
+            </select>
+          </div>
+
+          <!-- Xem trước món -->
+          <div class="summary-item-card">
+            <div class="summary-item-img">
+              <img src="https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?w=200&auto=format&fit=crop&q=80" alt="Cà Phê Sữa Đá Sài Gòn">
+            </div>
+            <div class="summary-item-info">
+              <h4>Cà Phê Sữa Đá</h4>
+              <p>Robusta Đắk Lắk rang mộc, sữa đặc ngậy</p>
+              <div class="summary-item-price">29.000 VNĐ</div>
+            </div>
+          </div>
+
+          <!-- Tùy chỉnh: Chọn Size (Radio Chips) -->
+          <div class="custom-section-title">
+            <span>Chọn Kích Cỡ (Size):</span>
+          </div>
+          <div class="pill-group">
+            <input type="radio" name="drink_size" id="size-s" class="pill-radio-input">
+            <label for="size-s" class="pill-label">Size S (Vừa)</label>
+
+            <input type="radio" name="drink_size" id="size-m" class="pill-radio-input" checked>
+            <label for="size-m" class="pill-label">Size M (+6k)</label>
+
+            <input type="radio" name="drink_size" id="size-l" class="pill-radio-input">
+            <label for="size-l" class="pill-label">Size L (+12k)</label>
+          </div>
+
+          <!-- Tùy chỉnh: Mức Đường -->
+          <div class="custom-section-title">
+            <span>Lượng Ngọt (Đường / Sữa):</span>
+          </div>
+          <div class="pill-group">
+            <input type="radio" name="sugar_level" id="sugar-100" class="pill-radio-input" checked>
+            <label for="sugar-100" class="pill-label">100% Chuẩn</label>
+
+            <input type="radio" name="sugar_level" id="sugar-70" class="pill-radio-input">
+            <label for="sugar-70" class="pill-label">70% Ít ngọt</label>
+
+            <input type="radio" name="sugar_level" id="sugar-30" class="pill-radio-input">
+            <label for="sugar-30" class="pill-label">30%</label>
+          </div>
+
+          <!-- Tùy chỉnh: Mức Đá -->
+          <div class="custom-section-title">
+            <span>Đóng Gói Đá:</span>
+          </div>
+          <div class="pill-group">
+            <input type="radio" name="ice_level" id="ice-separate" class="pill-radio-input" checked>
+            <label for="ice-separate" class="pill-label">🧊 Để đá riêng</label>
+
+            <input type="radio" name="ice_level" id="ice-together" class="pill-radio-input">
+            <label for="ice-together" class="pill-label">Đá chung ly</label>
+
+            <input type="radio" name="ice_level" id="ice-none" class="pill-radio-input">
+            <label for="ice-none" class="pill-label">Không đá</label>
+          </div>
+
+          <!-- Thêm Topping (Checkboxes) -->
+          <div class="custom-section-title">
+            <span>Topping Thêm (Tùy Chọn):</span>
+          </div>
+          <div class="topping-list">
+            <label class="topping-checkbox-label">
+              <div class="topping-left">
+                <input type="checkbox" name="topping_jelly" class="topping-check-input">
+                <span>Thạch Cà Phê Dẻo</span>
+              </div>
+              <span class="topping-price">+5.000đ</span>
+            </label>
+
+            <label class="topping-checkbox-label">
+              <div class="topping-left">
+                <input type="checkbox" name="topping_cheese" class="topping-check-input">
+                <span>Kem Cheese Mặn Macchiato</span>
+              </div>
+              <span class="topping-price">+10.000đ</span>
+            </label>
+
+            <label class="topping-checkbox-label">
+              <div class="topping-left">
+                <input type="checkbox" name="topping_shot" class="topping-check-input">
+                <span>Thêm 1 Shot Espresso Đậm</span>
+              </div>
+              <span class="topping-price">+10.000đ</span>
+            </label>
+          </div>
+
+          <!-- Nhập mã giảm giá Voucher -->
+          <div class="voucher-wrap">
+            <input type="text" class="voucher-input" value="MOCOFFEE20" placeholder="MÃ GIẢM GIÁ" title="Mã ưu đãi">
+            <button type="button" class="btn-apply-voucher">Áp Dụng</button>
+          </div>
+
+          <!-- Bảng tính tiền chi tiết -->
+          <div class="price-breakdown">
+            <div class="price-row">
+              <span>Đơn giá món</span>
+              <span>29.000 VNĐ</span>
+            </div>
+            <div class="price-row">
+              <span>Nâng cỡ Size M</span>
+              <span>+6.000 VNĐ</span>
+            </div>
+            <div class="price-row">
+              <span>Phí vận chuyển (nội thành)</span>
+              <span>+15.000 VNĐ</span>
+            </div>
+            <div class="price-row discount">
+              <span>Mã giảm giá (MOCOFFEE20)</span>
+              <span>-20.000 VNĐ</span>
+            </div>
+            <div class="price-row-total">
+              <span>TỔNG THANH TOÁN:</span>
+              <span class="total-amount">30.000 VNĐ</span>
+            </div>
+          </div>
+
+          <!-- Nút Đặt Hàng Chính (Submit Form thuần HTML5/CSS3) -->
+          <button type="submit" class="btn btn-primary btn-block" style="padding: 16px; font-size: 1.05rem;">
+            Xác Nhận Đặt Hàng Ngay ➔
+          </button>
+
+          <p style="text-align: center; font-size: 0.78rem; color: var(--c-text-subtle); margin-top: 12px;">
+            🔒 Cam kết bảo mật thông tin & giao đúng giờ hẹn
+          </p>
+
+        </div>
+      </aside>
+
+    </form>
+  </main>
+
+  <!-- 4. PURE CSS ORDER SUCCESS MODAL (KÍCH HOẠT QUA :TARGET KHI SUBMIT HOẶC CLICK #order-success) -->
+  <div id="order-success" class="css-modal">
+    <div class="modal-content">
+      <!-- Nút Đóng Modal thuần CSS (link tới order.html không có hash) -->
+      <a href="order.html" class="modal-close-btn" title="Đóng">&times;</a>
+
+      <!-- Icon Hoàn Thành Thành Công -->
+      <div class="success-badge-icon">✓</div>
+
+      <h2 class="modal-title">Đặt Hàng Thành Công!</h2>
+      <p class="modal-desc">
+        Cảm ơn bạn đã lựa chọn <strong>Cà Phê Mộc</strong>! Đơn hàng đã được chuyển ngay tới quầy Barista để chuẩn bị và đóng gói.
+      </p>
+
+      <!-- Tóm Tắt Biên Nhận Đơn Hàng -->
+      <div class="order-receipt-snippet">
+        <div class="receipt-row">
+          <span>Mã đơn hàng:</span>
+          <span class="receipt-code">#MOC-202688</span>
+        </div>
+        <div class="receipt-row">
+          <span>Món đã chọn:</span>
+          <strong>Cà Phê Sữa Đá Sài Gòn (Size M)</strong>
+        </div>
+        <div class="receipt-row">
+          <span>Thời gian giao dự kiến:</span>
+          <span style="color: var(--c-success); font-weight: 700;">20 - 25 phút</span>
+        </div>
+        <div class="receipt-row">
+          <span>Phương thức:</span>
+          <span>Tiền mặt khi nhận hàng (COD)</span>
+        </div>
+        <div class="receipt-row">
+          <span>Tổng tiền thanh toán:</span>
+          <span style="color: var(--c-caramel); font-size: 1.1rem; font-weight: 800;">30.000 VNĐ</span>
+        </div>
+      </div>
+
+      <div class="modal-actions">
+        <a href="menu.html" class="btn btn-secondary">Xem Thêm Menu</a>
+        <a href="index.html" class="btn btn-primary">Về Trang Chủ</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- 5. FOOTER -->
+  <footer>
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <div class="logo">
+          <div class="logo-icon">☕</div>
+          <div>Cà Phê Mộc</div>
+        </div>
+        <p>Hương vị nguyên bản, trung thực và tận tâm trong từng giọt cà phê rang mộc Tây Nguyên.</p>
+        <div class="social-links">
+          <a href="#" class="social-link" title="Facebook">FB</a>
+          <a href="#" class="social-link" title="Instagram">IG</a>
+          <a href="#" class="social-link" title="Tiktok">TT</a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Liên Kết Nhanh</h4>
+        <div class="footer-links">
+          <a href="index.html">Trang Chủ</a>
+          <a href="menu.html">Thực Đơn Đồ Uống</a>
+          <a href="order.html">Đặt Hàng Trực Tuyến</a>
+          <a href="index.html#about">Về Chúng Tôi</a>
+          <a href="index.html#reviews">Đánh Giá Khách Hàng</a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Hỗ Trợ Đơn Hàng</h4>
+        <div class="footer-info">
+          <div class="info-row">
+            <div class="info-icon">📞</div>
+            <div>
+              <strong>Tổng đài hỗ trợ 24/7:</strong><br>
+              1900 6868 (Miễn phí cước)
+            </div>
+          </div>
+          <div class="info-row">
+            <div class="info-icon">⚡</div>
+            <div>
+              <strong>Cam kết thời gian:</strong><br>
+              Giao trễ quá 30 phút tặng voucher 50.000 VNĐ
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Hệ Thống Quán</h4>
+        <div class="footer-info">
+          <div class="info-row">
+            <div class="info-icon">📍</div>
+            <div><strong>Chi nhánh 1:</strong> 128 Nguyễn Trãi, Phường Bến Thành, Quận 1, TP.HCM</div>
+          </div>
+          <div class="info-row">
+            <div class="info-icon">📍</div>
+            <div><strong>Chi nhánh 2:</strong> 45 Phố Thái Hà, Phường Trung Liệt, Đống Đa, Hà Nội</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom container">
+      <p>&copy; 2026 Cà Phê Mộc - Dự án SPCK Mẫu Web Basic (100% Pure HTML5 & CSS3 - No JavaScript)</p>
+    </div>
+  </footer>
+
+</body>
+</html>

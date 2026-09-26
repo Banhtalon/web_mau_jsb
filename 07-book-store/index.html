@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tri Thức Bookstore - Không Gian Sách &amp; Văn Hóa Đọc</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- 1. Thanh điều hướng -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">📚 Tri Thức<span>Book</span></div>
+      <ul class="nav-links">
+        <li><a href="#home">Trang Chủ</a></li>
+        <li><a href="#books">Tủ Sách Hay</a></li>
+        <li><a href="#about">Về Chúng Tôi</a></li>
+        <li><a href="#subscribe">Bản Tin</a></li>
+      </ul>
+      <a href="#books" class="nav-cta">Khám Phá Sách</a>
+    </nav>
+  </header>
+
+  <!-- 2. Hero Banner Hiệu Sách Ấm Áp -->
+  <section id="home" class="banner">
+    <div class="banner-content">
+      <span class="hero-badge">📖 LAN TỎA VĂN HÓA ĐỌC VIỆT NAM</span>
+      <h1>Mở Trang Sách Hay <br><span class="gradient-text">Mở Rộng Chân Trời</span></h1>
+      <p>Tuyển tập những tác phẩm kinh điển, kỹ năng sống và tư duy phát triển bản thân được bạn đọc yêu thích nhất qua nhiều thế hệ.</p>
+      <div class="banner-actions">
+        <a href="#books" class="btn btn-primary">Khám Phá Tủ Sách</a>
+        <a href="#subscribe" class="btn btn-outline">Đăng Ký Nhận Tin</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. Cam kết chất lượng -->
+  <section class="features-bar">
+    <div class="container features-grid">
+      <div class="feature-item">
+        <div class="feature-icon">🔖</div>
+        <div>
+          <h4>100% Sách Bản Quyền</h4>
+          <p>Bảo trợ bởi các nhà xuất bản hàng đầu</p>
+        </div>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon">🎁</div>
+        <div>
+          <h4>Tặng Kèm Bookmark</h4>
+          <p>Bookmark nghệ thuật độc quyền cho mỗi đơn</p>
+        </div>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon">📦</div>
+        <div>
+          <h4>Bọc Sách Cẩn Thận</h4>
+          <p>Đóng gói hộp carton chống va đập 3 lớp</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. Danh sách 6 cuốn sách nổi bật (Tỉ lệ chuẩn bìa sách 3:4) -->
+  <section id="books" class="container">
+    <div class="section-header">
+      <span class="section-badge">TỦ SÁCH CHỌN LỌC</span>
+      <h2 class="title">Tác Phẩm Được Đọc Nhiều Nhất</h2>
+      <p class="section-subtitle">Mỗi cuốn sách là một người bạn thông thái đồng hành cùng bạn trên con đường phát triển</p>
+    </div>
+
+    <div class="book-grid">
+
+      <div class="book-card">
+        <div class="card-media">
+          <img src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?auto=format&fit=crop&w=800&q=80" alt="Đắc Nhân Tâm" loading="lazy">
+          <span class="badge-tag">Kinh Điển Mọi Thời Đại</span>
+          <span class="badge-rating">⭐ 4.9</span>
+        </div>
+        <div class="card-content">
+          <span class="genre-tag">Kỹ Năng Giao Tiếp</span>
+          <h3 class="book-title">Đắc Nhân Tâm</h3>
+          <p class="book-author">Tác giả: Dale Carnegie</p>
+          <p class="book-desc">Nghệ thuật thu phục lòng người và xây dựng các mối quan hệ bền vững, thành công trong cuộc sống.</p>
+          <div class="card-footer">
+            <div class="price-group">
+              <span class="price-label">Giá bìa</span>
+              <span class="price">86.000 <small>VNĐ</small></span>
+            </div>
+            <a href="#subscribe" class="view-btn">Xem chi tiết</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="book-card">
+        <div class="card-media">
+          <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=800&q=80" alt="Nhà Giả Kim" loading="lazy">
+          <span class="badge-tag">Bán Chạy Nhất</span>
+          <span class="badge-rating">⭐ 4.9</span>
+        </div>
+        <div class="card-content">
+          <span class="genre-tag">Văn Học Thế Giới</span>
+          <h3 class="book-title">Nhà Giả Kim</h3>
+          <p class="book-author">Tác giả: Paulo Coelho</p>
+          <p class="book-desc">Hành trình theo đuổi ước mơ và lắng nghe tiếng gọi từ trái tim của chàng chăn cừu Santiago.</p>
+          <div class="card-footer">
+            <div class="price-group">
+              <span class="price-label">Giá bìa</span>
+              <span class="price">79.000 <small>VNĐ</small></span>
+            </div>
+            <a href="#subscribe" class="view-btn">Xem chi tiết</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="book-card">
+        <div class="card-media">
+          <img src="https://images.unsplash.com/photo-1532012164546-f432f2e3777f?auto=format&fit=crop&w=800&q=80" alt="Tuổi Trẻ Đáng Giá Bao Nhiêu" loading="lazy">
+          <span class="badge-tag">Cảm Hứng Sống</span>
+          <span class="badge-rating">⭐ 4.8</span>
+        </div>
+        <div class="card-content">
+          <span class="genre-tag">Phát Triển Bản Thân</span>
+          <h3 class="book-title">Tuổi Trẻ Đáng Giá Bao Nhiêu</h3>
+          <p class="book-author">Tác giả: Rosie Nguyễn</p>
+          <p class="book-desc">Lời khuyên chân thành và truyền cảm hứng mạnh mẽ để người trẻ tìm thấy đam mê và sống trọn vẹn.</p>
+          <div class="card-footer">
+            <div class="price-group">
+              <span class="price-label">Giá bìa</span>
+              <span class="price">90.000 <small>VNĐ</small></span>
+            </div>
+            <a href="#subscribe" class="view-btn">Xem chi tiết</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="book-card">
+        <div class="card-media">
+          <img src="https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&w=800&q=80" alt="Cà Phê Cùng Tony" loading="lazy">
+          <span class="badge-tag">Khởi Nghiệp Trẻ</span>
+          <span class="badge-rating">⭐ 4.8</span>
+        </div>
+        <div class="card-content">
+          <span class="genre-tag">Kỹ Năng &amp; Tư Duy</span>
+          <h3 class="book-title">Cà Phê Cùng Tony</h3>
+          <p class="book-author">Tác giả: Tony Buổi Sáng</p>
+          <p class="book-desc">Những mẩu chuyện thực tế hóm hỉnh rèn luyện tính tự lập, kỷ luật và tinh thần vươn ra biển lớn.</p>
+          <div class="card-footer">
+            <div class="price-group">
+              <span class="price-label">Giá bìa</span>
+              <span class="price">85.000 <small>VNĐ</small></span>
+            </div>
+            <a href="#subscribe" class="view-btn">Xem chi tiết</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="book-card">
+        <div class="card-media">
+          <img src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80" alt="Hạt Giống Tâm Hồn" loading="lazy">
+          <span class="badge-tag">Chữa Lành</span>
+          <span class="badge-rating">⭐ 4.9</span>
+        </div>
+        <div class="card-content">
+          <span class="genre-tag">Tâm Lý &amp; Cảm Xúc</span>
+          <h3 class="book-title">Hạt Giống Tâm Hồn</h3>
+          <p class="book-author">Tác giả: First News tuyển chọn</p>
+          <p class="book-desc">Những câu chuyện nhỏ giàu ý nghĩa nhân văn, thắp sáng niềm tin và nghị lực vượt qua thử thách.</p>
+          <div class="card-footer">
+            <div class="price-group">
+              <span class="price-label">Giá bìa</span>
+              <span class="price">68.000 <small>VNĐ</small></span>
+            </div>
+            <a href="#subscribe" class="view-btn">Xem chi tiết</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="book-card">
+        <div class="card-media">
+          <img src="https://images.unsplash.com/photo-1457369804613-52c61a468e7d?auto=format&fit=crop&w=800&q=80" alt="Lược Sử Loài Người" loading="lazy">
+          <span class="badge-tag">Tri Thức Toàn Cầu</span>
+          <span class="badge-rating">⭐ 5.0</span>
+        </div>
+        <div class="card-content">
+          <span class="genre-tag">Lịch Sử &amp; Triết Học</span>
+          <h3 class="book-title">Sapiens - Lược Sử Loài Người</h3>
+          <p class="book-author">Tác giả: Yuval Noah Harari</p>
+          <p class="book-desc">Khám phá toàn cảnh lịch sử tiến hóa ngoạn mục của loài người từ thuở hồng hoang tới kỷ nguyên số.</p>
+          <div class="card-footer">
+            <div class="price-group">
+              <span class="price-label">Giá bìa</span>
+              <span class="price">175.000 <small>VNĐ</small></span>
+            </div>
+            <a href="#subscribe" class="view-btn">Xem chi tiết</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 5. Giới thiệu hiệu sách -->
+  <section id="about" class="container">
+    <div class="about-card">
+      <div class="about-text">
+        <span class="section-badge">CÂU CHUYỆN HIỆU SÁCH</span>
+        <h2>Nuôi Dưỡng Tình Yêu Tri Thức Cùng Tri Thức Book</h2>
+        <p>Tri Thức Book tin rằng một cuốn sách hay có thể thay đổi số phận của một con người. Chúng tôi không chỉ bán sách, mà mong muốn kiến tạo một không gian văn hóa nơi bạn có thể tìm thấy sự tĩnh lặng và nguồn cảm hứng bất tận.</p>
+        <p>Mỗi tác phẩm trên kệ sách đều được đội ngũ yêu sách tuyển chọn với sự trân trọng và tận tâm sâu sắc.</p>
+      </div>
+      <div class="about-stats">
+        <div class="stat-box">
+          <span class="stat-number">5.000+</span>
+          <span class="stat-label">Đầu sách tinh hoa</span>
+        </div>
+        <div class="stat-box">
+          <span class="stat-number">20K+</span>
+          <span class="stat-label">Độc giả thân thiết</span>
+        </div>
+        <div class="stat-box">
+          <span class="stat-number">100%</span>
+          <span class="stat-label">Sách thật chính hãng</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. Form đăng ký nhận tin -->
+  <section id="subscribe" class="container newsletter-section">
+    <div class="section-header">
+      <span class="section-badge">BẢN TIN ĐỘC QUYỀN</span>
+      <h2 class="title">Đăng Ký Nhận Gợi Ý Sách Hay</h2>
+      <p class="section-subtitle">Nhận bài viết tóm tắt sách chọn lọc hàng tuần cùng mã giảm giá 15% cho đơn sách tiếp theo</p>
+    </div>
+
+    <form id="newsletter-form" class="newsletter-form" action="#" method="get">
+      <div class="form-group">
+        <label for="subscriber-email">Địa chỉ Email của bạn:</label>
+        <input type="email" id="subscriber-email" placeholder="Ví dụ: banhthit@gmail.com" required>
+      </div>
+      <button type="submit" class="submit-btn">Đăng Ký Nhận Bản Tin Miễn Phí</button>
+    </form>
+  </section>
+
+  <!-- 7. Footer -->
+  <footer>
+    <div class="container footer-content">
+      <div class="footer-col">
+        <div class="logo">📚 Tri Thức<span>Book</span></div>
+        <p>Lan tỏa văn hóa đọc - Đồng hành cùng độc giả trên hành trình chinh phục tri thức và hoàn thiện bản thân.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Hiệu Sách &amp; Hỗ Trợ</h4>
+        <p>📍 Địa chỉ: 789 Đường Sách Nguyễn Huệ, Quận 1, TP.HCM</p>
+        <p>⏰ Giờ mở cửa: 8h30 - 21h30 (Mỗi ngày)</p>
+        <p>📞 Hotline: 028 3822 5555</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Tri Thức Book. Dự án SPCK Mẫu Web Basic (100% Pure HTML5 &amp; CSS3)</p>
+    </div>
+  </footer>
+
+</body>
+</html>

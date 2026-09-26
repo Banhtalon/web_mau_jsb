@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explore Vietnam - Du Lịch Việt Nam Kỳ Thú</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Thanh điều hướng -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">✈️ Explore Vietnam</div>
+      <ul class="nav-links">
+        <li><a href="#home">Trang chủ</a></li>
+        <li><a href="#destinations">Điểm đến</a></li>
+        <li><a href="#about">Giới thiệu</a></li>
+        <li><a href="#booking">Đăng ký tour</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Banner chính -->
+  <section id="home" class="banner">
+    <div class="banner-text">
+      <h1>Explore Vietnam</h1>
+      <p>Khám phá vẻ đẹp bất tận của non sông gấm vóc Việt Nam cùng chúng tôi.</p>
+      <a href="#destinations" class="btn">Khám Phá Ngay</a>
+    </div>
+  </section>
+
+  <!-- Danh sách 6 địa điểm du lịch -->
+  <section id="destinations" class="container">
+    <div class="section-header">
+      <span class="section-badge">GỢI Ý HÀNH TRÌNH</span>
+      <h2 class="title">Điểm Đến Hấp Dẫn</h2>
+      <p class="section-subtitle">Tuyển tập những thắng cảnh trứ danh từ Bắc vào Nam được du khách yêu thích nhất</p>
+    </div>
+
+    <div class="destination-list">
+
+      <div class="card">
+        <div class="card-media">
+          <img src="https://images.unsplash.com/photo-1528127269322-539801943592?auto=format&fit=crop&w=800&q=80" alt="Vịnh Hạ Long" loading="lazy">
+          <span class="badge-tag">Di sản thế giới</span>
+          <span class="badge-rating">★ 4.9</span>
+        </div>
+        <div class="card-content">
+          <div class="card-location">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            <span>Quảng Ninh</span>
+          </div>
+          <h3 class="card-title">Vịnh Hạ Long</h3>
+          <p class="card-desc">Kỳ quan thiên nhiên thế giới với hàng nghìn đảo đá vôi kỳ vĩ giữa làn nước xanh ngọc biếc.</p>
+          <div class="card-footer">
+            <div class="card-price-group">
+              <span class="price-label">Giá trọn gói từ</span>
+              <span class="price">2.500.000 <small>VNĐ</small></span>
+            </div>
+            <a href="#booking" class="card-btn" data-destination="Vịnh Hạ Long" title="Đặt tour Vịnh Hạ Long">
+              <span>Đặt tour</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-media">
+          <img src="https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&w=800&q=80" alt="Sapa" loading="lazy">
+          <span class="badge-tag">Vùng cao Tây Bắc</span>
+          <span class="badge-rating">★ 4.8</span>
+        </div>
+        <div class="card-content">
+          <div class="card-location">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            <span>Lào Cai</span>
+          </div>
+          <h3 class="card-title">Sapa Mờ Sương</h3>
+          <p class="card-desc">Chinh phục đỉnh Fansipan hùng vĩ và ngắm nhìn những thửa ruộng bậc thang mùa lúa chín tuyệt đẹp.</p>
+          <div class="card-footer">
+            <div class="card-price-group">
+              <span class="price-label">Giá trọn gói từ</span>
+              <span class="price">1.800.000 <small>VNĐ</small></span>
+            </div>
+            <a href="#booking" class="card-btn" data-destination="Sapa" title="Đặt tour Sapa">
+              <span>Đặt tour</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-media">
+          <img src="https://images.unsplash.com/photo-1559592413-7cec4d0cae2b?auto=format&fit=crop&w=800&q=80" alt="Phố cổ Hội An" loading="lazy">
+          <span class="badge-tag">Phố cổ hoài niệm</span>
+          <span class="badge-rating">★ 4.9</span>
+        </div>
+        <div class="card-content">
+          <div class="card-location">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            <span>Quảng Nam</span>
+          </div>
+          <h3 class="card-title">Phố Cổ Hội An</h3>
+          <p class="card-desc">Không gian cổ kính lãng mạn với hoa đăng lung linh và dãy nhà tường vàng trăm năm tuổi.</p>
+          <div class="card-footer">
+            <div class="card-price-group">
+              <span class="price-label">Giá trọn gói từ</span>
+              <span class="price">2.200.000 <small>VNĐ</small></span>
+            </div>
+            <a href="#booking" class="card-btn" data-destination="Phố cổ Hội An" title="Đặt tour Phố cổ Hội An">
+              <span>Đặt tour</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-media">
+          <img src="https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?auto=format&fit=crop&w=800&q=80" alt="Đà Nẵng" loading="lazy">
+          <span class="badge-tag">Thành phố đáng sống</span>
+          <span class="badge-rating">★ 4.9</span>
+        </div>
+        <div class="card-content">
+          <div class="card-location">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            <span>Đà Nẵng</span>
+          </div>
+          <h3 class="card-title">Thành Phố Đà Nẵng</h3>
+          <p class="card-desc">Cầu Vàng Bà Nà Hills sừng sững giữa mây ngàn cùng bãi biển Mỹ Khê trong xanh đầy quyến rũ.</p>
+          <div class="card-footer">
+            <div class="card-price-group">
+              <span class="price-label">Giá trọn gói từ</span>
+              <span class="price">3.000.000 <small>VNĐ</small></span>
+            </div>
+            <a href="#booking" class="card-btn" data-destination="Đà Nẵng" title="Đặt tour Đà Nẵng">
+              <span>Đặt tour</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-media">
+          <img src="https://images.unsplash.com/photo-1540206351-d6465b3ac5c1?auto=format&fit=crop&w=800&q=80" alt="Phú Quốc" loading="lazy">
+          <span class="badge-tag">Thiên đường biển đảo</span>
+          <span class="badge-rating">★ 4.8</span>
+        </div>
+        <div class="card-content">
+          <div class="card-location">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            <span>Kiên Giang</span>
+          </div>
+          <h3 class="card-title">Đảo Ngọc Phú Quốc</h3>
+          <p class="card-desc">Thiên đường nghỉ dưỡng với bờ cát trắng mịn màng, hoàng hôn buông lãng mạn và hải sản biển tươi ngon.</p>
+          <div class="card-footer">
+            <div class="card-price-group">
+              <span class="price-label">Giá trọn gói từ</span>
+              <span class="price">3.800.000 <small>VNĐ</small></span>
+            </div>
+            <a href="#booking" class="card-btn" data-destination="Phú Quốc" title="Đặt tour Phú Quốc">
+              <span>Đặt tour</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-media">
+          <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80" alt="Ninh Bình" loading="lazy">
+          <span class="badge-tag">Non nước hữu tình</span>
+          <span class="badge-rating">★ 4.9</span>
+        </div>
+        <div class="card-content">
+          <div class="card-location">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            <span>Ninh Bình</span>
+          </div>
+          <h3 class="card-title">Tràng An - Ninh Bình</h3>
+          <p class="card-desc">Thảnh thơi ngồi thuyền nan len lỏi qua các hang động kỳ thú giữa quần thể di sản thế giới Tràng An.</p>
+          <div class="card-footer">
+            <div class="card-price-group">
+              <span class="price-label">Giá trọn gói từ</span>
+              <span class="price">1.500.000 <small>VNĐ</small></span>
+            </div>
+            <a href="#booking" class="card-btn" data-destination="Ninh Bình" title="Đặt tour Ninh Bình">
+              <span>Đặt tour</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Phần giới thiệu -->
+  <section id="about" class="container about-section">
+    <h2 class="title">Về Chúng Tôi</h2>
+    <p>
+      Explore Vietnam cam kết mang đến những chuyến đi ý nghĩa, an toàn và tiết kiệm nhất cho bạn và gia đình. Hãy để chúng tôi đồng hành cùng bạn trên từng nẻo đường đất nước!
+    </p>
+  </section>
+
+  <!-- Form đăng ký tour -->
+  <section id="booking" class="container form-section">
+    <h2 class="title">Đăng Ký Tư Vấn Tour</h2>
+    <form id="tour-form" class="tour-form">
+      
+      <div class="form-item">
+        <label for="fullname">Họ và tên:</label>
+        <input type="text" id="fullname" placeholder="Ví dụ: Nguyễn Văn A" required>
+      </div>
+
+      <div class="form-item">
+        <label for="user-email">Email:</label>
+        <input type="email" id="user-email" placeholder="Ví dụ: email@gmail.com" required>
+      </div>
+
+      <div class="form-item">
+        <label for="destination-select">Địa điểm muốn đi:</label>
+        <select id="destination-select" required>
+          <option value="">-- Chọn điểm đến --</option>
+          <option value="Vịnh Hạ Long">Vịnh Hạ Long</option>
+          <option value="Sapa">Sapa</option>
+          <option value="Phố cổ Hội An">Phố cổ Hội An</option>
+          <option value="Đà Nẵng">Đà Nẵng</option>
+          <option value="Phú Quốc">Phú Quốc</option>
+          <option value="Ninh Bình">Ninh Bình</option>
+        </select>
+      </div>
+
+      <button type="submit" class="btn submit-btn">Đăng Ký Tour Ngay</button>
+    </form>
+  </section>
+
+  <!-- Chân trang -->
+  <footer>
+    <p>&copy; 2026 Explore Vietnam - Website mẫu Web Developer Basic (100% Pure HTML5 &amp; CSS3)</p>
+  </footer>
+</body>
+</html>
