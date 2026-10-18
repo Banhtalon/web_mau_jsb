@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gian Hàng Nông Sản Tươi Chuẩn VietGAP | Mini Market</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- 1. Thanh điều hướng đa trang -->
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="logo" style="text-decoration: none;">🛒 Mini<span>Market</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Trang Chủ</a></li>
+        <li><a href="products.html" class="active">Nông Sản</a></li>
+        <li><a href="checkout.html">Giao Hàng</a></li>
+      </ul>
+      <a href="checkout.html" class="cart-box">
+        🛍️ Giỏ Hàng <span class="cart-badge">3</span>
+      </a>
+    </nav>
+  </header>
+
+  <!-- 2. Banner Trang Nông Sản -->
+  <section class="banner" style="padding: 70px 24px 60px;">
+    <div class="banner-content">
+      <span class="hero-badge">VIETGAP ORGANIC • TƯƠI SẠCH MỖI SÁNG</span>
+      <h1>Rau Củ Quả Hữu Cơ Tươi Sạch</h1>
+      <p>Thu hoạch từ trang trại và giao trực tiếp đến bàn ăn gia đình bạn trong vòng 30 phút.</p>
+    </div>
+  </section>
+
+  <!-- 3. Lưới Sản Phẩm Nông Sản -->
+  <main class="container" style="padding-top: 50px; padding-bottom: 70px;">
+    <div class="section-header">
+      <span class="section-badge">100% TỰ NHIÊN</span>
+      <h2 class="title">Gian Hàng Nông Sản Hôm Nay</h2>
+      <p class="section-subtitle">Cam kết không chất bảo quản, đạt chuẩn an toàn vệ sinh thực phẩm</p>
+    </div>
+
+    <div class="product-grid">
+
+      <!-- Cà chua bi -->
+      <div class="product-card">
+        <div class="card-media">
+          <img src="https://images.unsplash.com/photo-1592924357228-91a4daadcfea?auto=format&fit=crop&w=800&q=80" alt="Cà chua bi Đà Lạt" loading="lazy">
+          <span class="badge-tag">VietGAP</span>
+          <span class="badge-rating">⭐ 4.9</span>
+        </div>
+        <div class="card-content">
+          <span class="cat-tag">Rau Củ Tươi</span>
+          <h3 class="product-title">Cà Chua Bi Socola Đà Lạt</h3>
+          <p class="product-desc">Vị ngọt thanh tự nhiên giòn mọng, giàu vitamin A và chất chống oxy hóa Lycopene.</p>
+          <div class="card-footer">
+            <div class="price-group">
+              <span class="old-price">45.000 VNĐ</span>
+              <span class="price">32.000 <small>VNĐ / Hộp 500g</small></span>
+            </div>
+            <a href="checkout.html?item=cachua" class="add-to-cart-btn">Thêm giỏ</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Xà lách thủy canh -->
+      <div class="product-card">
+        <div class="card-media">
+          <img src="https://images.unsplash.com/photo-1622206151226-18ca2c9ab4a1?auto=format&fit=crop&w=800&q=80" alt="Xà lách mỡ thủy canh" loading="lazy">
+          <span class="badge-tag">Thủy Canh Sạch</span>
+          <span class="badge-rating">⭐ 4.9</span>
+        </div>
+        <div class="card-content">
+          <span class="cat-tag">Rau Ăn Lá</span>
+          <h3 class="product-title">Xà Lách Mỡ Thủy Canh</h3>
+          <p class="product-desc">Lá mềm giòn ngọt, trồng trong nhà kính chuẩn GlobalGAP, không dư lượng thuốc trừ sâu.</p>
+          <div class="card-footer">
+            <div class="price-group">
+              <span class="old-price">35.000 VNĐ</span>
+              <span class="price">25.000 <small>VNĐ / Cây 300g</small></span>
+            </div>
+            <a href="checkout.html?item=xalach" class="add-to-cart-btn">Thêm giỏ</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cam sành Vĩnh Long -->
+      <div class="product-card">
+        <div class="card-media">
+          <img src="https://images.unsplash.com/photo-1611080626919-7cf5a9dbab5b?auto=format&fit=crop&w=800&q=80" alt="Cam Sành Vĩnh Long" loading="lazy">
+          <span class="badge-tag">Đặc Sản Miền Tây</span>
+          <span class="badge-rating">⭐ 4.8</span>
+        </div>
+        <div class="card-content">
+          <span class="cat-tag">Trái Cây Vùng Miền</span>
+          <h3 class="product-title">Cam Sành Vĩnh Long Mọng Nước</h3>
+          <p class="product-desc">Vỏ mỏng tép vàng óng mọng nước, vị ngọt đậm thơm mát, bổ sung đề kháng vitamin C dồi dào.</p>
+          <div class="card-footer">
+            <div class="price-group">
+              <span class="old-price">50.000 VNĐ</span>
+              <span class="price">38.000 <small>VNĐ / kg</small></span>
+            </div>
+            <a href="checkout.html?item=cam" class="add-to-cart-btn">Thêm giỏ</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Táo Envy -->
+      <div class="product-card">
+        <div class="card-media">
+          <img src="https://images.unsplash.com/photo-1560806887-1e4cd0b6cbd6?auto=format&fit=crop&w=800&q=80" alt="Táo Envy Hữu Cơ" loading="lazy">
+          <span class="badge-tag">Nhập Khẩu</span>
+          <span class="badge-rating">⭐ 5.0</span>
+        </div>
+        <div class="card-content">
+          <span class="cat-tag">Trái Cây Nhập Khẩu</span>
+          <h3 class="product-title">Táo Envy New Zealand Size L</h3>
+          <p class="product-desc">Thịt táo giòn đanh, ngọt ngào đậm đà, cuống tươi mới bảo quản mát tự nhiên.</p>
+          <div class="card-footer">
+            <div class="price-group">
+              <span class="old-price">120.000 VNĐ</span>
+              <span class="price">89.000 <small>VNĐ / kg</small></span>
+            </div>
+            <a href="checkout.html?item=tao" class="add-to-cart-btn">Thêm giỏ</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bơ sáp 034 -->
+      <div class="product-card">
+        <div class="card-media">
+          <img src="https://images.unsplash.com/photo-1523049673857-eb18f1d7b578?auto=format&fit=crop&w=800&q=80" alt="Bơ Sáp 034" loading="lazy">
+          <span class="badge-tag">Bơ Sáp Dẻo</span>
+          <span class="badge-rating">⭐ 4.9</span>
+        </div>
+        <div class="card-content">
+          <span class="cat-tag">Nông Sản Tây Nguyên</span>
+          <h3 class="product-title">Bơ Sáp 034 Lâm Đồng</h3>
+          <p class="product-desc">Cơm vàng ươm dẻo quánh béo ngậy, hạt lép dài mỏng, thu hái già cây đảm bảo chín tự nhiên.</p>
+          <div class="card-footer">
+            <div class="price-group">
+              <span class="old-price">65.000 VNĐ</span>
+              <span class="price">48.000 <small>VNĐ / kg</small></span>
+            </div>
+            <a href="checkout.html?item=bo" class="add-to-cart-btn">Thêm giỏ</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Nấm đùi gà hữu cơ -->
+      <div class="product-card">
+        <div class="card-media">
+          <img src="https://images.unsplash.com/photo-1509358271058-acd22cc93898?auto=format&fit=crop&w=800&q=80" alt="Nấm Hữu Cơ" loading="lazy">
+          <span class="badge-tag">Organic Farm</span>
+          <span class="badge-rating">⭐ 4.8</span>
+        </div>
+        <div class="card-content">
+          <span class="cat-tag">Nấm Tươi Sạch</span>
+          <h3 class="product-title">Nấm Đùi Gà Hữu Cơ Mini</h3>
+          <p class="product-desc">Thân nấm dày giòn sần sật, giàu đạm thực vật và axit amin, thích hợp xào nấu hoặc nhúng lẩu.</p>
+          <div class="card-footer">
+            <div class="price-group">
+              <span class="old-price">40.000 VNĐ</span>
+              <span class="price">29.000 <small>VNĐ / Khay 250g</small></span>
+            </div>
+            <a href="checkout.html?item=nam" class="add-to-cart-btn">Thêm giỏ</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- 4. Chân trang -->
+  <footer>
+    <div class="container footer-content">
+      <p>&copy; 2026 Mini Market. Bản quyền thuộc về MindX Web Basic Sample Project.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

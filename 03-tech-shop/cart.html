@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Giỏ Hàng &amp; Tra Cứu Bảo Hành | TechZone</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- 1. Thanh điều hướng đa trang -->
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="logo" style="text-decoration: none;">💻 Tech<span>Zone</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Trang Chủ</a></li>
+        <li><a href="catalog.html">Sản Phẩm</a></li>
+        <li><a href="cart.html" class="active">Giỏ Hàng</a></li>
+      </ul>
+      <a href="catalog.html" class="nav-cta">Tiếp Tục Mua</a>
+    </nav>
+  </header>
+
+  <!-- 2. Banner Trang Giỏ Hàng -->
+  <section class="banner" style="padding: 70px 24px 60px;">
+    <div class="banner-content">
+      <span class="hero-badge">ĐƠN HÀNG CỦA BẠN</span>
+      <h1>Giỏ Hàng &amp; Thanh Toán</h1>
+      <p>Kiểm tra danh sách thiết bị công nghệ đã chọn và hoàn tất đơn hàng nhanh chóng trong 30 giây.</p>
+    </div>
+  </section>
+
+  <!-- 3. Khu Vực Giỏ Hàng & Tra Cứu -->
+  <main class="container" style="padding-top: 50px; padding-bottom: 70px;">
+    <div style="display: grid; grid-template-columns: 1.3fr 0.7fr; gap: 36px; align-items: start;">
+      
+      <!-- Cột Danh Sách Giỏ Hàng -->
+      <div style="background: #ffffff; padding: 30px; border-radius: 16px; border: 1px solid #eef2f6; box-shadow: 0 4px 20px rgba(0,0,0,0.05);">
+        <h2 style="font-size: 1.3rem; font-weight: 700; margin-bottom: 20px; color: #0f172a;">🛒 Danh Sách Sản Phẩm Đã Chọn</h2>
+        
+        <!-- Bảng Sản Phẩm -->
+        <div style="display: flex; flex-direction: column; gap: 16px;">
+          
+          <!-- Item 1 -->
+          <div style="display: flex; align-items: center; justify-content: space-between; padding-bottom: 16px; border-bottom: 1px solid #eef2f6; gap: 16px;">
+            <img src="https://images.unsplash.com/photo-1603302576837-37561b2e2302?auto=format&fit=crop&w=150&q=80" alt="Laptop Gaming" style="width: 70px; height: 50px; object-fit: cover; border-radius: 8px;">
+            <div style="flex-grow: 1;">
+              <h4 style="font-size: 0.95rem; font-weight: 700; margin-bottom: 4px;">Laptop Asus ROG Strix G16</h4>
+              <span style="font-size: 0.8rem; color: #64748b;">Màu: Eclipse Gray • RAM 16GB</span>
+            </div>
+            <div style="text-align: right;">
+              <div style="font-weight: 700; color: #2563eb;">18.990.000 đ</div>
+              <span style="font-size: 0.8rem; color: #94a3b8;">SL: 1</span>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div style="display: flex; align-items: center; justify-content: space-between; padding-bottom: 16px; border-bottom: 1px solid #eef2f6; gap: 16px;">
+            <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=150&q=80" alt="Tai nghe Bluetooth" style="width: 70px; height: 50px; object-fit: cover; border-radius: 8px;">
+            <div style="flex-grow: 1;">
+              <h4 style="font-size: 0.95rem; font-weight: 700; margin-bottom: 4px;">Tai Nghe Bluetooth Pro Max ANC</h4>
+              <span style="font-size: 0.8rem; color: #64748b;">Màu: Bạc Titanium</span>
+            </div>
+            <div style="text-align: right;">
+              <div style="font-weight: 700; color: #2563eb;">1.200.000 đ</div>
+              <span style="font-size: 0.8rem; color: #94a3b8;">SL: 1</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Form Đặt Hàng -->
+        <h3 style="font-size: 1.1rem; font-weight: 700; margin-top: 30px; margin-bottom: 16px;">Thông Tin Giao Hàng</h3>
+        <form style="display: flex; flex-direction: column; gap: 14px;" onsubmit="event.preventDefault(); alert('Đặt hàng thành công! Nhân viên TechZone sẽ liên hệ giao hàng trong 2 giờ.');">
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px;">
+            <input type="text" placeholder="Họ và tên người nhận" required style="padding: 12px; border: 1px solid #cbd5e1; border-radius: 8px;">
+            <input type="tel" placeholder="Số điện thoại nhận hàng" required style="padding: 12px; border: 1px solid #cbd5e1; border-radius: 8px;">
+          </div>
+          <input type="text" placeholder="Địa chỉ nhận hàng chi tiết (Số nhà, đường, quận/huyện)" required style="padding: 12px; border: 1px solid #cbd5e1; border-radius: 8px;">
+          
+          <div style="display: flex; gap: 20px; align-items: center; margin-top: 4px;">
+            <label style="font-size: 0.88rem; display: flex; align-items: center; gap: 6px;">
+              <input type="radio" name="payment" checked> Thanh toán khi nhận hàng (COD)
+            </label>
+            <label style="font-size: 0.88rem; display: flex; align-items: center; gap: 6px;">
+              <input type="radio" name="payment"> Chuyển khoản QR / Thẻ ngân hàng
+            </label>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="margin-top: 10px; padding: 14px; font-size: 1rem; width: 100%;">
+            Xác Nhận Đặt Hàng Ngay (20.190.000 đ)
+          </button>
+        </form>
+      </div>
+
+      <!-- Cột Tóm Tắt & Tra Cứu Bảo Hành -->
+      <div style="display: flex; flex-direction: column; gap: 24px;">
+        
+        <!-- Hóa Đơn Tóm Tắt -->
+        <div style="background: #ffffff; padding: 24px; border-radius: 16px; border: 1px solid #eef2f6; box-shadow: 0 4px 20px rgba(0,0,0,0.05);">
+          <h3 style="font-size: 1.1rem; font-weight: 700; margin-bottom: 16px;">Tóm Tắt Đơn Hàng</h3>
+          <div style="display: flex; justify-content: space-between; font-size: 0.9rem; margin-bottom: 10px; color: #64748b;">
+            <span>Tạm tính (2 sản phẩm):</span>
+            <span style="font-weight: 600; color: #0f172a;">20.190.000 đ</span>
+          </div>
+          <div style="display: flex; justify-content: space-between; font-size: 0.9rem; margin-bottom: 10px; color: #64748b;">
+            <span>Phí vận chuyển siêu tốc:</span>
+            <span style="font-weight: 600; color: #16a34a;">MIỄN PHÍ</span>
+          </div>
+          <div style="display: flex; justify-content: space-between; font-size: 0.9rem; margin-bottom: 16px; color: #64748b;">
+            <span>Mã giảm giá TECHZONE2026:</span>
+            <span style="font-weight: 600; color: #ef4444;">- 500.000 đ</span>
+          </div>
+          <div style="border-top: 1px solid #eef2f6; padding-top: 14px; display: flex; justify-content: space-between; font-size: 1.15rem; font-weight: 800; color: #0f172a;">
+            <span>Tổng thanh toán:</span>
+            <span style="color: #2563eb;">19.690.000 đ</span>
+          </div>
+        </div>
+
+        <!-- Tra Cứu Bảo Hành Số -->
+        <div style="background: #eff6ff; padding: 24px; border-radius: 16px; border: 1px solid #bfdbfe;">
+          <h3 style="font-size: 1.05rem; font-weight: 700; color: #1e3a8a; margin-bottom: 10px;">🔍 Tra Cứu Bảo Hành Điện Tử</h3>
+          <p style="font-size: 0.85rem; color: #3b82f6; line-height: 1.5; margin-bottom: 14px;">
+            Nhập số Serial / IMEI thiết bị để kiểm tra thời hạn bảo hành chính hãng và lịch sử sửa chữa.
+          </p>
+          <div style="display: flex; gap: 8px;">
+            <input type="text" placeholder="Nhập Serial (VD: TZ-892301)" style="flex-grow: 1; padding: 10px; border: 1px solid #93c5fd; border-radius: 8px; font-family: monospace; font-size: 0.85rem;">
+            <button onclick="alert('Thiết bị chính hãng TechZone: Còn bảo hành 10 tháng tại tất cả trung tâm toàn quốc.')" style="background: #2563eb; color: #fff; border: none; padding: 10px 14px; border-radius: 8px; font-weight: 600; font-size: 0.85rem; cursor: pointer;">
+              Tra cứu
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </main>
+
+  <!-- 4. Chân trang -->
+  <footer>
+    <div class="container footer-content">
+      <p>&copy; 2026 TechZone. Bản quyền thuộc về MindX Web Basic Sample Project.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -3,194 +3,254 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sneaker Store - Giày Thể Thao &amp; Streetwear Chính Hãng</title>
+  <title>SneakerZone | Giày Sneaker &amp; Streetwear Chính Hãng</title>
+  
+  <!-- Google Fonts: Archivo (Headings Hypebeast) & Inter (Clean Daylight Body) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <!-- 1. Thanh điều hướng -->
+  <!-- 1. Hypebeast Marquee Ribbon -->
+  <div class="marquee-ribbon">
+    <div class="marquee-track">
+      <div class="marquee-item"><span class="marquee-dot"></span> 100% CHÍNH HÃNG KIỂM ĐỊNH</div>
+      <div class="marquee-item"><span class="marquee-dot"></span> BỘ SƯU TẬP MỚI 2026</div>
+      <div class="marquee-item"><span class="marquee-dot"></span> MIỄN PHÍ VẬN CHUYỂN TỪ 2.000.000Đ</div>
+      <div class="marquee-item"><span class="marquee-dot"></span> ĐỔI TRẢ SIZE TRONG 7 NGÀY</div>
+      <div class="marquee-item"><span class="marquee-dot"></span> VĂN HÓA SNEAKER VIỆT NAM</div>
+      
+      <!-- Lặp lại hiệu ứng vô tận -->
+      <div class="marquee-item"><span class="marquee-dot"></span> 100% CHÍNH HÃNG KIỂM ĐỊNH</div>
+      <div class="marquee-item"><span class="marquee-dot"></span> BỘ SƯU TẬP MỚI 2026</div>
+      <div class="marquee-item"><span class="marquee-dot"></span> MIỄN PHÍ VẬN CHUYỂN TỪ 2.000.000Đ</div>
+      <div class="marquee-item"><span class="marquee-dot"></span> ĐỔI TRẢ SIZE TRONG 7 NGÀY</div>
+      <div class="marquee-item"><span class="marquee-dot"></span> VĂN HÓA SNEAKER VIỆT NAM</div>
+    </div>
+  </div>
+
+  <!-- 2. Sticky Daylight Header -->
   <header>
     <nav class="navbar">
-      <div class="logo">👟 SNEAKER<span>ZONE</span></div>
+      <a href="index.html" class="logo">👟 SNEAKER<span>ZONE</span></a>
       <ul class="nav-links">
-        <li><a href="#home">Trang Chủ</a></li>
-        <li><a href="#products">Bộ Sưu Tập</a></li>
-        <li><a href="#about">Về Cửa Hàng</a></li>
-        <li><a href="#order">Đặt Hàng</a></li>
+        <li><a href="index.html" class="active">Trang Chủ</a></li>
+        <li><a href="shop.html">Cửa Hàng</a></li>
+        <li><a href="checkout.html">Thanh Toán</a></li>
       </ul>
-      <a href="#products" class="nav-cta">Khám Phá Ngay</a>
+      <a href="shop.html" class="nav-cta">Khám Phá Giày Mới ⚡</a>
     </nav>
   </header>
 
-  <!-- 2. Hero Banner Phong Cách Streetwear -->
-  <section id="home" class="banner">
-    <div class="banner-content">
-      <span class="hero-badge">🔥 NEW DROP 2026 • STREETWEAR CULTURE</span>
-      <h1>Khẳng Định Phong Cách <br><span class="gradient-text">Sneaker Đường Phố</span></h1>
-      <p>Tuyển tập những mẫu giày biểu tượng từ Nike, Adidas, Jordan đến Converse. Thiết kế bứt phá, phong cách năng động dành cho thế hệ trẻ.</p>
-      <div class="banner-actions">
-        <a href="#products" class="btn btn-primary">Mua Ngay Hôm Nay</a>
-        <a href="#order" class="btn btn-outline">Tư Vấn Chọn Size</a>
+  <!-- 3. Bento Grid Hero Section (Daylight First) -->
+  <section class="hero-section">
+    <div class="container">
+      <div class="bento-grid">
+        
+        <!-- Bento Flagship Card -->
+        <div class="bento-card bento-flagship">
+          <div>
+            <span class="bento-badge-tag">🔥 BẢN COLLAB CỦA NĂM</span>
+            <h1 class="bento-title">ĐẬM CHẤT <br><span>STREETWEAR</span></h1>
+            <p class="bento-desc">
+              Tuyển tập những mẫu giày biểu tượng đường phố từ Nike, Air Jordan, Adidas &amp; New Balance. 
+              Thiết kế sắc nét, phong cách thời trang trẻ trung năng động.
+            </p>
+            <div class="bento-actions">
+              <a href="shop.html" class="btn-hype">Khám Phá Cửa Hàng →</a>
+              <a href="#trending" class="btn-hype-outline">Xem Giày Bán Chạy</a>
+            </div>
+          </div>
+          <img src="https://images.unsplash.com/photo-1552346154-21d32810aba3?auto=format&fit=crop&w=1000&q=80" alt="Nike Air Jordan Collab" class="bento-hero-img">
+        </div>
+
+        <!-- Bento Secondary Column -->
+        <div class="bento-col-secondary">
+          
+          <div class="bento-card-sub">
+            <div>
+              <span class="sticker-tag">BẢN GIỚI HẠN</span>
+              <h3 style="margin-top: 14px;">Air Jordan 1 Retro</h3>
+              <p>Phối màu Chicago kinh điển được săn lùng nhất mọi thời đại.</p>
+            </div>
+            <a href="checkout.html?item=jordan1" style="font-family: 'Archivo'; font-size: 13px; font-weight: 800; color: #09090b; text-decoration: none; margin-top: 14px;">
+              ĐẶT TRƯỚC SIZE →
+            </a>
+            <img src="https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?auto=format&fit=crop&w=400&q=80" alt="Air Jordan" class="bento-sub-img">
+          </div>
+
+          <div class="bento-card-sub" style="background: #ffffff;">
+            <div>
+              <span class="sticker-tag" style="background: #09090b; color: #ccff00; border-color: #09090b;">CHÍNH HÃNG 100%</span>
+              <h3 style="margin-top: 14px;">Quy Trình Kiểm Định</h3>
+              <p>Cam kết chính hãng 2 bước với hộp, phụ kiện và tem bảo hành.</p>
+            </div>
+            <a href="shop.html" style="font-family: 'Archivo'; font-size: 13px; font-weight: 800; color: #ff3b30; text-decoration: none; margin-top: 14px;">
+              XEM BỘ SƯU TẬP →
+            </a>
+            <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=400&q=80" alt="Nike Air Max" class="bento-sub-img">
+          </div>
+
+        </div>
+
       </div>
     </div>
   </section>
 
-  <!-- 3. Cam kết dịch vụ -->
-  <section class="features-bar">
-    <div class="container features-grid">
-      <div class="feature-item">
-        <div class="feature-icon">👟</div>
-        <div>
-          <h4>100% Authentic</h4>
-          <p>Cam kết chính hãng, kiểm định 2 lớp nghiêm ngặt</p>
-        </div>
+  <!-- 4. Trending Drops Grid -->
+  <section id="trending" class="container">
+    <div class="section-head">
+      <div>
+        <h2 class="section-head-title">Mẫu Giày Nổi Bật // 2026</h2>
       </div>
-      <div class="feature-item">
-        <div class="feature-icon">🔄</div>
-        <div>
-          <h4>Đổi Size Trong 7 Ngày</h4>
-          <p>Hỗ trợ đổi trả tận nơi nếu không vừa vặn</p>
-        </div>
-      </div>
-      <div class="feature-item">
-        <div class="feature-icon">⚡</div>
-        <div>
-          <h4>Giao Hàng Toàn Quốc</h4>
-          <p>Nhận hàng kiểm tra trước khi thanh toán</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- 4. Danh sách 6 mẫu giày Hot (Grid tỉ lệ chuẩn 16:10) -->
-  <section id="products" class="container">
-    <div class="section-header">
-      <span class="section-badge">BỘ SƯU TẬP ĐỈNH CAO</span>
-      <h2 class="title">Mẫu Sneaker Bán Chạy Nhất</h2>
-      <p class="section-subtitle">Những mẫu giày tạo nên xu hướng thời trang đường phố được săn đón nhất</p>
+      <span class="section-head-meta">6 PHỐI MÀU HOT NHẤT TUẦN</span>
     </div>
 
     <div class="sneaker-grid">
 
+      <!-- Product 1: Nike Air Max 90 -->
       <div class="sneaker-card">
         <div class="card-media">
-          <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80" alt="Nike Air Max Red" loading="lazy">
-          <span class="badge-tag">Bán Chạy Nhất</span>
-          <span class="badge-rating">⭐ 4.9</span>
+          <span class="sticker-tag tag-hot">BÁN CHẠY</span>
+          <span class="rating-badge">⭐ 4.9</span>
+          <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80" alt="Nike Air Max 90 Red" loading="lazy">
+          <div class="quick-size-bar">
+            <span>EU 39</span><span>40</span><span>41</span><span>42</span><span>43</span>
+          </div>
         </div>
         <div class="card-content">
-          <span class="brand-tag">Nike Lifestyle</span>
+          <span class="brand-label">Nike Sportswear</span>
           <h3 class="shoe-name">Nike Air Max 90 Red Flame</h3>
-          <p class="shoe-desc">Đệm khí Air Visible êm ái trên từng bước chạy, phối màu đỏ rực lửa nổi bật cá tính.</p>
+          <p class="shoe-desc">Đệm khí Air Visible êm ái trên từng bước chân, sắc đỏ rực lửa đậm chất đường phố.</p>
           <div class="card-footer">
-            <div class="price-group">
-              <span class="price-label">Giá niêm yết</span>
-              <span class="price">2.450.000 <small>VNĐ</small></span>
+            <div class="price-box">
+              <span class="price-sub">Giá niêm yết</span>
+              <span class="price-val">2.450.000 đ</span>
             </div>
-            <a href="#order" class="buy-btn">Đặt mua</a>
+            <a href="checkout.html?item=airmax" class="buy-btn">Mua Ngay →</a>
           </div>
         </div>
       </div>
 
+      <!-- Product 2: Adidas Ultraboost -->
       <div class="sneaker-card">
         <div class="card-media">
-          <img src="https://images.unsplash.com/photo-1551107696-a4b085a6d91a?auto=format&fit=crop&w=800&q=80" alt="Adidas Ultraboost" loading="lazy">
-          <span class="badge-tag">Siêu Êm Ái</span>
-          <span class="badge-rating">⭐ 4.9</span>
+          <span class="sticker-tag">CHẠY BỘ</span>
+          <span class="rating-badge">⭐ 4.9</span>
+          <img src="https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?auto=format&fit=crop&w=800&q=80" alt="Adidas Ultraboost Light" loading="lazy">
+          <div class="quick-size-bar">
+            <span>EU 40</span><span>41</span><span>42</span><span>43</span><span>44</span>
+          </div>
         </div>
         <div class="card-content">
-          <span class="brand-tag">Adidas Running</span>
+          <span class="brand-label">Adidas Running</span>
           <h3 class="shoe-name">Adidas Ultraboost Light</h3>
-          <p class="shoe-desc">Đế hạt Boost hoàn trả năng lượng tối đa, thân giày dệt Primeknit ôm khít thoáng khí.</p>
+          <p class="shoe-desc">Đế hạt Boost phản hồi lực tối đa, thân dệt Primeknit ôm khít thoáng khí tuyệt đối.</p>
           <div class="card-footer">
-            <div class="price-group">
-              <span class="price-label">Giá niêm yết</span>
-              <span class="price">2.800.000 <small>VNĐ</small></span>
+            <div class="price-box">
+              <span class="price-sub">Giá niêm yết</span>
+              <span class="price-val">2.800.000 đ</span>
             </div>
-            <a href="#order" class="buy-btn">Đặt mua</a>
+            <a href="checkout.html?item=ultraboost" class="buy-btn">Mua Ngay →</a>
           </div>
         </div>
       </div>
 
+      <!-- Product 3: Puma Suede Classic -->
       <div class="sneaker-card">
         <div class="card-media">
+          <span class="sticker-tag">CỔ ĐIỂN</span>
+          <span class="rating-badge">⭐ 4.8</span>
           <img src="https://images.unsplash.com/photo-1608231387042-66d1773070a5?auto=format&fit=crop&w=800&q=80" alt="Puma Suede Classic" loading="lazy">
-          <span class="badge-tag">Retro Vibe</span>
-          <span class="badge-rating">⭐ 4.8</span>
+          <div class="quick-size-bar">
+            <span>EU 38</span><span>39</span><span>40</span><span>41</span><span>42</span>
+          </div>
         </div>
         <div class="card-content">
-          <span class="brand-tag">Puma Heritage</span>
+          <span class="brand-label">Puma Heritage</span>
           <h3 class="shoe-name">Puma Suede Classic XXI</h3>
-          <p class="shoe-desc">Chất liệu da lộn cao cấp cổ điển trường tồn với thời gian, dễ dàng phối mọi trang phục.</p>
+          <p class="shoe-desc">Da lộn mềm mại cao cấp, biểu tượng thời trang hip-hop và b-boy cổ điển trường tồn.</p>
           <div class="card-footer">
-            <div class="price-group">
-              <span class="price-label">Giá niêm yết</span>
-              <span class="price">1.650.000 <small>VNĐ</small></span>
+            <div class="price-box">
+              <span class="price-sub">Giá niêm yết</span>
+              <span class="price-val">1.650.000 đ</span>
             </div>
-            <a href="#order" class="buy-btn">Đặt mua</a>
+            <a href="checkout.html?item=pumasuede" class="buy-btn">Mua Ngay →</a>
           </div>
         </div>
       </div>
 
+      <!-- Product 4: Converse Chuck 70 -->
       <div class="sneaker-card">
         <div class="card-media">
-          <img src="https://images.unsplash.com/photo-1607522370275-f14206abe5d3?auto=format&fit=crop&w=800&q=80" alt="Converse Chuck Taylor" loading="lazy">
-          <span class="badge-tag">Biểu Tượng Trẻ</span>
-          <span class="badge-rating">⭐ 4.9</span>
+          <span class="sticker-tag">KINH ĐIỂN</span>
+          <span class="rating-badge">⭐ 4.9</span>
+          <img src="https://images.unsplash.com/photo-1607522370275-f14206abe5d3?auto=format&fit=crop&w=800&q=80" alt="Converse Chuck 70" loading="lazy">
+          <div class="quick-size-bar">
+            <span>EU 39</span><span>40</span><span>41</span><span>42</span><span>43</span>
+          </div>
         </div>
         <div class="card-content">
-          <span class="brand-tag">Converse Classics</span>
+          <span class="brand-label">Converse</span>
           <h3 class="shoe-name">Converse Chuck 70 High-Top</h3>
-          <p class="shoe-desc">Đường may vintage tinh tế cùng vải canvas dày dặn 12oz, đồng hành cùng bạn trên mọi nẻo đường.</p>
+          <p class="shoe-desc">Canvas 12oz dày dặn cùng đường chỉ may cổ điển, dễ dàng phối hợp cùng mọi outfit.</p>
           <div class="card-footer">
-            <div class="price-group">
-              <span class="price-label">Giá niêm yết</span>
-              <span class="price">1.250.000 <small>VNĐ</small></span>
+            <div class="price-box">
+              <span class="price-sub">Giá niêm yết</span>
+              <span class="price-val">1.250.000 đ</span>
             </div>
-            <a href="#order" class="buy-btn">Đặt mua</a>
+            <a href="checkout.html?item=chuck70" class="buy-btn">Mua Ngay →</a>
           </div>
         </div>
       </div>
 
+      <!-- Product 5: Vans Old Skool -->
       <div class="sneaker-card">
         <div class="card-media">
+          <span class="sticker-tag">TRƯỢT VÁN</span>
+          <span class="rating-badge">⭐ 4.8</span>
           <img src="https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?auto=format&fit=crop&w=800&q=80" alt="Vans Old Skool" loading="lazy">
-          <span class="badge-tag">Skateboarding</span>
-          <span class="badge-rating">⭐ 4.8</span>
+          <div class="quick-size-bar">
+            <span>EU 39</span><span>40</span><span>41</span><span>42</span><span>43</span>
+          </div>
         </div>
         <div class="card-content">
-          <span class="brand-tag">Vans Off The Wall</span>
+          <span class="brand-label">Vans Off The Wall</span>
           <h3 class="shoe-name">Vans Old Skool Black &amp; White</h3>
-          <p class="shoe-desc">Sọc jazz huyền thoại, đế waffle cao su bám đường cực tốt, sự lựa chọn số một cho học sinh.</p>
+          <p class="shoe-desc">Sọc jazz huyền thoại, đế cao su waffle chống trượt bền bỉ cho các hoạt động đường phố.</p>
           <div class="card-footer">
-            <div class="price-group">
-              <span class="price-label">Giá niêm yết</span>
-              <span class="price">1.400.000 <small>VNĐ</small></span>
+            <div class="price-box">
+              <span class="price-sub">Giá niêm yết</span>
+              <span class="price-val">1.400.000 đ</span>
             </div>
-            <a href="#order" class="buy-btn">Đặt mua</a>
+            <a href="checkout.html?item=vansoldskool" class="buy-btn">Mua Ngay →</a>
           </div>
         </div>
       </div>
 
+      <!-- Product 6: Nike Air Jordan 1 -->
       <div class="sneaker-card">
         <div class="card-media">
-          <img src="https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?auto=format&fit=crop&w=800&q=80" alt="Air Jordan 1" loading="lazy">
-          <span class="badge-tag">Huyền Thoại Bóng Rổ</span>
-          <span class="badge-rating">⭐ 5.0</span>
+          <span class="sticker-tag tag-hot">SIÊU PHẨM</span>
+          <span class="rating-badge">⭐ 5.0</span>
+          <img src="https://images.unsplash.com/photo-1552346154-21d32810aba3?auto=format&fit=crop&w=800&q=80" alt="Nike Air Jordan 1 High" loading="lazy">
+          <div class="quick-size-bar">
+            <span>EU 40</span><span>41</span><span>42</span><span>43</span><span>44</span>
+          </div>
         </div>
         <div class="card-content">
-          <span class="brand-tag">Jordan Brand</span>
-          <h3 class="shoe-name">Nike Air Jordan 1 Retro High</h3>
+          <span class="brand-label">Jordan Brand</span>
+          <h3 class="shoe-name">Air Jordan 1 Retro High OG</h3>
           <p class="shoe-desc">Di sản bóng rổ bất tử của Michael Jordan, phối màu kinh điển được mọi sneakerhead săn lùng.</p>
           <div class="card-footer">
-            <div class="price-group">
-              <span class="price-label">Giá niêm yết</span>
-              <span class="price">3.200.000 <small>VNĐ</small></span>
+            <div class="price-box">
+              <span class="price-sub">Giá niêm yết</span>
+              <span class="price-val">3.200.000 đ</span>
             </div>
-            <a href="#order" class="buy-btn">Đặt mua</a>
+            <a href="checkout.html?item=jordan1" class="buy-btn">Mua Ngay →</a>
           </div>
         </div>
       </div>
@@ -198,55 +258,55 @@
     </div>
   </section>
 
-  <!-- 5. Form đặt hàng -->
-  <section id="order" class="container form-section">
-    <div class="section-header">
-      <span class="section-badge">ĐẶT HÀNG NHANH CHÓNG</span>
-      <h2 class="title">Đơn Đặt Mua Sneaker</h2>
-      <p class="section-subtitle">Điền thông tin bên dưới, nhân viên SneakerZone sẽ liên hệ xác nhận size và thời gian giao hàng</p>
+  <!-- 5. Streetwear Trust Features (Low Text, High Impact) -->
+  <section class="container">
+    <div class="trust-strip">
+      <div class="trust-item">
+        <div class="trust-icon">👟</div>
+        <div>
+          <h4>100% Authentic Verified</h4>
+          <p>Tem kiểm định 2 lớp nghiêm ngặt, đền 200% nếu phát hiện hàng giả.</p>
+        </div>
+      </div>
+      <div class="trust-item">
+        <div class="trust-icon">🔄</div>
+        <div>
+          <h4>Đổi Size Trong 7 Ngày</h4>
+          <p>Hỗ trợ đổi trả tận nơi miễn phí nếu không vừa vặn.</p>
+        </div>
+      </div>
+      <div class="trust-item">
+        <div class="trust-icon">⚡</div>
+        <div>
+          <h4>Ship Hỏa Tốc Toàn Quốc</h4>
+          <p>Kiểm tra hàng trước khi thanh toán, đóng gói hộp double-box chống va đập.</p>
+        </div>
+      </div>
     </div>
-
-    <form id="order-form" class="order-form" action="#" method="get">
-      <div class="form-group">
-        <label for="customer-name">Họ và tên của bạn:</label>
-        <input type="text" id="customer-name" placeholder="Ví dụ: Nguyễn Văn An" required>
-      </div>
-
-      <div class="form-group">
-        <label for="customer-phone">Số điện thoại liên hệ:</label>
-        <input type="tel" id="customer-phone" placeholder="Ví dụ: 0901 234 567" required>
-      </div>
-
-      <div class="form-group">
-        <label for="customer-email">Email nhận hóa đơn:</label>
-        <input type="email" id="customer-email" placeholder="Ví dụ: annguyen@gmail.com" required>
-      </div>
-
-      <div class="form-group">
-        <label for="selected-product">Mẫu giày &amp; Size bạn chọn:</label>
-        <input type="text" id="selected-product" placeholder="Ví dụ: Nike Air Jordan 1 - Size 42" required>
-      </div>
-
-      <button type="submit" class="submit-btn">Xác Nhận Đặt Hàng Ngay</button>
-    </form>
   </section>
 
-  <!-- 6. Footer -->
+  <!-- 6. Footer (Clean Daylight Footprint) -->
   <footer>
-    <div class="container footer-content">
-      <div class="footer-col">
+    <div class="container footer-grid">
+      <div class="footer-brand">
         <div class="logo">👟 SNEAKER<span>ZONE</span></div>
-        <p>Thiên đường giày thể thao &amp; văn hóa streetwear chính hãng dành cho giới trẻ Việt Nam.</p>
+        <p>Không gian văn hóa giày thể thao &amp; streetwear dành riêng cho giới trẻ Việt Nam. Cam kết 100% chính hãng.</p>
       </div>
       <div class="footer-col">
-        <h4>Hỗ Trợ &amp; Mua Hàng</h4>
-        <p>📍 Showroom: 456 Đường Lê Văn Sỹ, Quận 3, TP.HCM</p>
-        <p>📞 Hotline: 0909 999 888 (8h30 - 22h00)</p>
-        <p>✉️ Email: contact@sneakerzone.vn</p>
+        <h4>Cửa Hàng</h4>
+        <p>📍 456 Lê Văn Sỹ, Phường 14, Quận 3, TP.HCM</p>
+        <p>⏰ Mở cửa: 9h00 - 22h00 (Hàng ngày)</p>
+        <p>📞 Hotline: 0909 999 888</p>
+      </div>
+      <div class="footer-col">
+        <h4>Chính Sách</h4>
+        <p>• Hướng dẫn đo kích cỡ giày</p>
+        <p>• Chính sách bảo hành keo chỉ trọn đời</p>
+        <p>• Đổi trả hàng trong 7 ngày</p>
       </div>
     </div>
     <div class="footer-bottom">
-      <p>&copy; 2026 SneakerZone - Dự án SPCK Mẫu Web Basic (100% Pure HTML5 &amp; CSS3)</p>
+      <p>&copy; 2026 SneakerZone - MindX Web Basic Sample Project (100% Pure HTML5 &amp; CSS3)</p>
     </div>
   </footer>
 

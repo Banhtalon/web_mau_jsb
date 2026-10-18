@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Đọc Thử Sách &amp; Chi Tiết Tác Phẩm | Tri Thức Bookstore</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- 1. Thanh điều hướng đa trang -->
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="logo" style="text-decoration: none;">📚 Tri Thức<span>Book</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Trang Chủ</a></li>
+        <li><a href="catalog.html">Tủ Sách</a></li>
+        <li><a href="detail.html" class="active">Đọc Thử</a></li>
+      </ul>
+      <a href="catalog.html" class="nav-cta">Xem Tủ Sách</a>
+    </nav>
+  </header>
+
+  <!-- 2. Banner Trang Chi Tiết -->
+  <section class="banner" style="padding: 70px 24px 60px;">
+    <div class="banner-content">
+      <span class="hero-badge">TRẢI NGHIỆM ĐỌC THỬ TRỰC TUYẾN</span>
+      <h1>Đắc Nhân Tâm (How to Win Friends)</h1>
+      <p>Tác phẩm kinh điển nhất mọi thời đại về nghệ thuật giao tiếp và ứng xử của Dale Carnegie.</p>
+    </div>
+  </section>
+
+  <!-- 3. Khu vực Đọc Thử & Đặt Mua -->
+  <main class="container" style="padding-top: 50px; padding-bottom: 70px;">
+    <div class="detail-layout">
+      
+      <!-- Cột Trái: Bìa sách & Đặt Mua -->
+      <div style="background: #ffffff; padding: 28px; border-radius: 16px; border: 1px solid #eef2f6; box-shadow: 0 4px 20px rgba(0,0,0,0.05); text-align: center;">
+        <img src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?auto=format&fit=crop&w=600&q=80" alt="Bìa sách Đắc Nhân Tâm" style="width: 200px; height: 280px; object-fit: cover; border-radius: 10px; box-shadow: 0 10px 25px rgba(0,0,0,0.15); margin: 0 auto 20px;">
+        
+        <h2 style="font-size: 1.25rem; font-weight: 700; color: #0f172a; margin-bottom: 4px;">Đắc Nhân Tâm</h2>
+        <p style="color: #64748b; font-size: 0.9rem; margin-bottom: 14px;">Tác giả: Dale Carnegie • NXB Tổng Hợp</p>
+        
+        <div style="background: #f8fafc; padding: 12px; border-radius: 8px; margin-bottom: 20px; font-size: 0.85rem; color: #475569; text-align: left; line-height: 1.6;">
+          <div>📖 <strong>Số trang:</strong> 320 trang (Bìa mềm cao cấp)</div>
+          <div>⭐ <strong>Đánh giá:</strong> 4.9/5 (1,240 độc giả bình chọn)</div>
+          <div>💰 <strong>Giá ưu đãi:</strong> <span style="font-size: 1.1rem; color: #d97706; font-weight: 800;">86.000 đ</span> <small style="text-decoration: line-through; color: #94a3b8;">108.000 đ</small></div>
+        </div>
+
+        <form style="display: flex; flex-direction: column; gap: 12px; text-align: left;" onsubmit="event.preventDefault(); alert('Đặt sách thành công! Tri Thức Bookstore sẽ gửi sách kèm bookmark độc quyền đến bạn.');">
+          <input type="text" placeholder="Họ và tên của bạn" required style="padding: 10px; border: 1px solid #cbd5e1; border-radius: 8px; font-size: 0.9rem;">
+          <input type="tel" placeholder="Số điện thoại nhận sách" required style="padding: 10px; border: 1px solid #cbd5e1; border-radius: 8px; font-size: 0.9rem;">
+          <input type="text" placeholder="Địa chỉ giao sách tận nơi" required style="padding: 10px; border: 1px solid #cbd5e1; border-radius: 8px; font-size: 0.9rem;">
+          <button type="submit" class="btn btn-primary" style="margin-top: 6px; padding: 12px; font-size: 0.95rem; width: 100%;">
+            Đặt Mua Sách Giấy (86.000 đ)
+          </button>
+        </form>
+      </div>
+
+      <!-- Cột Phải: Nội Dung Đọc Thử Trích Đoạn -->
+      <div style="background: #ffffff; padding: 36px; border-radius: 16px; border: 1px solid #eef2f6; box-shadow: 0 4px 20px rgba(0,0,0,0.05);">
+        <span style="font-family: monospace; font-size: 0.75rem; color: #d97706; background: #fef3c7; padding: 4px 10px; border-radius: 999px; font-weight: 600;">TRÍCH ĐOẠN ĐỌC THỬ • CHƯƠNG 1</span>
+        
+        <h3 style="font-size: 1.4rem; font-weight: 800; color: #0f172a; margin-top: 14px; margin-bottom: 18px;">
+          Nếu Muốn Thu Hoạch Mật Ong, Đừng Phá Tổ Ong
+        </h3>
+
+        <div style="color: #334155; line-height: 1.8; font-size: 0.98rem; display: flex; flex-direction: column; gap: 16px;">
+          <p>
+            Vào ngày 7 tháng 5 năm 1931, một vụ nổ súng kinh hoàng đã diễn ra trên đường phố New York. Hơn 150 cảnh sát bao vây căn hộ của "Two-Gun" Crowley - kẻ sát nhân máu lạnh bị truy nã gắt gao nhất nước Mỹ.
+          </p>
+          <p>
+            Khi cảnh sát xông vào và bắt sống hắn, họ tìm thấy một bức thư đẫm máu mà Crowley vừa viết: <em>"Dưới lớp áo này là một trái tim mệt mỏi nhưng dịu dàng - một trái tim không hề muốn làm tổn thương bất cứ ai."</em>
+          </p>
+          <p>
+            Đáng kinh ngạc là trước đó chỉ vài ngày, hắn đã xả súng bắn chết một viên cảnh sát giao thông chỉ vì viên cảnh sát này yêu cầu hắn xuất trình bằng lái. Ngay cả một tên sát nhân tàn bạo như Crowley cũng không bao giờ tự trách mình!
+          </p>
+          
+          <div style="background: #fffbeb; border-left: 4px solid #f59e0b; padding: 16px 20px; border-radius: 0 8px 8px 0; font-style: italic; color: #92400e;">
+            "99% trường hợp, con người không bao giờ tự nhận lỗi về mình, cho dù sai lầm của họ có nghiêm trọng đến mức nào đi chăng nữa. Chỉ trích là vô ích vì nó đặt người ta vào thế phòng thủ và tìm cách biện minh."
+          </div>
+
+          <p>
+            Chỉ trích giống như chim bồ câu đưa thư: chúng luôn quay trở về nơi xuất phát. Hãy nhớ rằng người mà chúng ta sắp sửa chỉ trích và kết án cũng sẽ tìm cách thanh minh, và sẽ kết án ngược lại chúng ta.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- 4. Chân trang -->
+  <footer>
+    <div class="container footer-content">
+      <p>&copy; 2026 Tri Thức Bookstore. Bản quyền thuộc về MindX Web Basic Sample Project.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

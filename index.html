@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MindX Web Basic | Bộ Sưu Tập 10 Website Mẫu SPCK</title>
-  <meta name="description" content="Cổng tổng hợp 10 Website mẫu Sản Phẩm Cuối Khóa (SPCK) chuẩn kiến thức HTML5 & CSS3 thuần dành cho học viên MindX Web Basic. Tích hợp bộ giả lập thiết bị đa kích thước.">
+  <meta name="description" content="Cổng tổng hợp 10 website mẫu Sản Phẩm Cuối Khóa chuẩn mực, sáng sủa, kiến trúc đa trang 100% HTML5 & CSS3 thuần.">
 
   <!-- Favicon -->
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚀</text></svg>">
@@ -12,414 +12,116 @@
   <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-  <!-- Hub Stylesheet -->
   <link rel="stylesheet" href="hub-style.css">
 </head>
 <body>
 
-  <!-- 1. THANH ĐIỀU HƯỚNG TRÊN CÙNG (HEADER & NAVBAR) -->
-  <header class="hub-nav">
-    <div class="container hub-nav-inner">
-      <!-- Logo MindX SPCK Hub -->
-      <a href="index.html" class="hub-logo">
-        <div class="hub-logo-badge">🚀</div>
-        <div class="hub-logo-text">
-          <span class="hub-logo-title">SPCK Showcase</span>
-          <span class="hub-logo-sub">MindX Web Basic Hub</span>
+  <!-- 1. HEADER EDITORIAL -->
+  <header class="hub-header">
+    <div class="container header-inner">
+      <a href="index.html" class="hub-brand">
+        <span class="brand-badge-icon">🚀</span>
+        <div class="brand-text">
+          <span class="brand-title">SPCK Showcase</span>
+          <span class="brand-sub">MindX Web Basic Hub</span>
         </div>
       </a>
 
-      <!-- Menu Điều Hướng Nhanh -->
-      <ul class="hub-nav-menu">
-        <li><a href="#projects" class="hub-nav-link active">10 Đề Tài Mẫu</a></li>
-        <li><a href="#matrix" class="hub-nav-link">Ma Trận Kỹ Năng</a></li>
-        <li><a href="#guidelines" class="hub-nav-link">Cẩm Nang Làm Bài</a></li>
-      </ul>
-
-      <!-- Các Nút Thao Tác: Random & Theme Toggle -->
-      <div class="hub-nav-actions">
-        <button id="btn-random" class="btn-random" title="Mở ngẫu nhiên một website mẫu để tham khảo">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M16 3h5v5M4 20L21 3M21 16v5h-5M15 15l6 6M4 4l5 5"/></svg>
-          <span>Khám Phá Ngẫu Nhiên</span>
-        </button>
-
-        <button id="theme-toggle" class="btn-icon" aria-label="Đổi giao diện Tối/Sáng" title="Chuyển đổi chế độ Tối / Sáng">
-          <span id="theme-toggle-icon">🌙</span>
+      <div class="header-actions">
+        <button id="btnRandom" class="btn-random-pick" title="Mở ngẫu nhiên một đề tài">
+          <span>🎲 Ngẫu Nhiên</span>
         </button>
       </div>
     </div>
   </header>
 
-  <!-- 2. PHẦN HERO & TÌM KIẾM TRỰC TIẾP (HERO SECTION) -->
+  <!-- 2. HERO SECTION TINH GỌN (Sáng sủa, không chữ thừa) -->
   <section class="hub-hero">
-    <div class="container hub-hero-inner">
-      <div class="hub-tag">
-        <span>✨ Kho Học Liệu & Dự Án Mẫu Chuẩn Mực</span>
-      </div>
+    <div class="container hero-inner">
+      <span class="hero-eyebrow">BỘ SƯU TẬP ĐỒ ÁN MẪU CHUẨN MỰC</span>
+      <h1 class="hero-title">Thiết Kế Có Chủ Đích.<br>Kiến Trúc Đa Trang Hoàn Chỉnh.</h1>
 
-      <h1 class="hub-title">
-        Thư Viện <span class="gradient-text">10 Website Mẫu</span><br>
-        Sản Phẩm Cuối Khóa Web Basic
-      </h1>
-
-      <p class="hub-subtitle">
-        Tuyển tập 10 website hoàn chỉnh thuộc 10 lĩnh vực thực tế, được xây dựng <strong>100% bằng HTML5 & CSS3 thuần</strong>. 
-        Chuẩn mực bố cục Flexbox & Grid, tối ưu hiển thị đa thiết bị (Responsive) và áp dụng các kỹ thuật giao diện hiện đại không phụ thuộc framework.
-      </p>
-
-      <!-- Thanh Thống Kê Nhanh (Stats Ribbon) -->
-      <div class="hub-stats-grid">
-        <div class="hub-stat-item">
-          <div class="hub-stat-number">10</div>
-          <div class="hub-stat-label">Website Hoàn Chỉnh</div>
-        </div>
-        <div class="hub-stat-item">
-          <div class="hub-stat-number">100%</div>
-          <div class="hub-stat-label">Thuần HTML5 & CSS3</div>
-        </div>
-        <div class="hub-stat-item">
-          <div class="hub-stat-number">12+</div>
-          <div class="hub-stat-label">Trang Giao Diện Độc Lập</div>
-        </div>
-        <div class="hub-stat-item">
-          <div class="hub-stat-number">100%</div>
-          <div class="hub-stat-label">Chuẩn Responsive Đa Màn Hình</div>
-        </div>
-      </div>
-
-      <!-- Thanh Tìm Kiếm Trực Tiếp (Live Search Bar) -->
-      <div class="hub-search-wrapper">
-        <span class="hub-search-icon">🔍</span>
+      <!-- Thanh Tìm Kiếm Trực Tiếp -->
+      <div class="search-bar-wrap">
+        <span class="search-icon">🔍</span>
         <input 
           type="text" 
-          id="search-input" 
-          class="hub-search-input" 
-          placeholder="Tìm theo tên đề tài, tính năng, hoặc công nghệ (VD: coffee, grid, modal, burger...)"
+          id="searchInput" 
+          class="search-input" 
+          placeholder="Tìm theo tên đề tài, lĩnh vực hoặc trang con (VD: coffee, tour, laptop, sneaker...)"
           autocomplete="off"
         >
-        <button id="search-clear" class="hub-search-clear" title="Xóa tìm kiếm">✕</button>
-        <span id="search-shortcut" class="hub-search-shortcut">/</span>
+        <button id="searchClear" class="search-clear" title="Xóa tìm kiếm">✕</button>
+      </div>
+
+      <!-- Bộ Lọc Danh Mục Tối Giản -->
+      <div class="filter-tabs" id="filterContainer">
+        <button class="filter-tab active" data-filter="all">Tất Cả (10)</button>
+        <button class="filter-tab" data-filter="fnb">Ẩm Thực & F&B</button>
+        <button class="filter-tab" data-filter="ecommerce">Thương Mại Điện Tử</button>
+        <button class="filter-tab" data-filter="service">Du Lịch & Dịch Vụ</button>
+        <button class="filter-tab" data-filter="community">Giải Trí & Cộng Đồng</button>
       </div>
     </div>
   </section>
 
-  <!-- 3. BỘ LỌC DANH MỤC & KHU VỰC DỰ ÁN (PROJECTS SHOWCASE) -->
-  <main class="container" id="projects">
-    <!-- Thanh Công Cụ Lọc & Hiển Thị -->
-    <div class="hub-controls-bar">
-      <!-- Bộ Lọc Danh Mục -->
-      <div class="hub-filter-tabs">
-        <button class="filter-tab active" data-filter="all">
-          <span>🌟 Tất Cả</span>
-          <span class="filter-count">10</span>
-        </button>
-        <button class="filter-tab" data-filter="fnb">
-          <span>☕ Ẩm Thực & Cafe</span>
-          <span class="filter-count">2</span>
-        </button>
-        <button class="filter-tab" data-filter="ecommerce">
-          <span>🛒 Thương Mại Điện Tử</span>
-          <span class="filter-count">4</span>
-        </button>
-        <button class="filter-tab" data-filter="travel">
-          <span>✈️ Du Lịch & Khám Phá</span>
-          <span class="filter-count">1</span>
-        </button>
-        <button class="filter-tab" data-filter="gaming">
-          <span>🎮 Gaming & Âm Nhạc</span>
-          <span class="filter-count">2</span>
-        </button>
-        <button class="filter-tab" data-filter="club">
-          <span>🏫 CLB & Học Đường</span>
-          <span class="filter-count">1</span>
-        </button>
-      </div>
-
-      <!-- Công Cụ Chuyển Đổi Dạng Xem (Grid / List) -->
-      <div class="hub-view-tools">
-        <span id="result-count" class="result-count-label">Hiển thị 10 / 10 dự án</span>
-        <div class="view-mode-toggle">
-          <button id="view-grid" class="btn-view-mode active" title="Dạng Lưới (Grid View)">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
-          </button>
-          <button id="view-list" class="btn-view-mode" title="Dạng Danh Sách (List View)">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="8" y1="6" x2="21" y2="6"></line><line x1="8" y1="12" x2="21" y2="12"></line><line x1="8" y1="18" x2="21" y2="18"></line><line x1="3" y1="6" x2="3.01" y2="6"></line><line x1="3" y1="12" x2="3.01" y2="12"></line><line x1="3" y1="18" x2="3.01" y2="18"></line></svg>
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <!-- Danh Sách 10 Thẻ Dự Án (Được Render Bằng hub-script.js) -->
-    <div class="projects-grid" id="projects-container">
-      <!-- Nội dung được tự động nạp từ mảng SPCK_PROJECTS -->
+  <!-- 3. LƯỚI THẺ DỰ ÁN TINH GỌN -->
+  <main class="container">
+    <div class="showcase-grid" id="projectsContainer">
+      <!-- Tự động nạp từ hub-script.js -->
     </div>
   </main>
 
-  <!-- 4. BẢNG MA TRẬN KỸ NĂNG & NỘI DUNG HỌC TẬP (SKILLS MATRIX) -->
-  <section class="section-wrapper" id="matrix">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-badge">BẢNG TRA CỨU KIẾN THỨC</span>
-        <h2 class="section-title">Ma Trận Kỹ Năng Của 10 Dự Án</h2>
-        <p class="section-desc">Đối chiếu các kỹ thuật HTML5 & CSS3 được áp dụng trong từng website để học viên dễ dàng lựa chọn bài mẫu phù hợp với ý tưởng cá nhân.</p>
-      </div>
-
-      <div class="matrix-table-card">
-        <table class="matrix-table">
-          <thead>
-            <tr>
-              <th># Đề Tài Mẫu</th>
-              <th>Thư Mục</th>
-              <th>Số Trang</th>
-              <th>Bố Cục (Layout)</th>
-              <th>Kỹ Thuật Responsive</th>
-              <th>Tương Tác Nổi Bật</th>
-              <th>Biểu Mẫu (Form)</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td class="col-accent">☕ 01. Cà Phê Mộc</td>
-              <td><code>01-coffee-shop</code></td>
-              <td><strong>3 trang</strong></td>
-              <td>Flexbox + Multi-card</td>
-              <td>Burger Menu Pure CSS</td>
-              <td>Modal xác nhận đơn, chọn Size</td>
-              <td>Form đặt hàng chi tiết</td>
-            </tr>
-            <tr>
-              <td class="col-accent">✈️ 02. Explore Vietnam</td>
-              <td><code>02-travel-landing-page</code></td>
-              <td>1 trang</td>
-              <td>CSS Grid 3 cột</td>
-              <td>Flex-wrap & Media queries</td>
-              <td>Card hover zoom, badge rating</td>
-              <td>Form đăng ký tour du lịch</td>
-            </tr>
-            <tr>
-              <td class="col-accent">💻 03. TechZone</td>
-              <td><code>03-tech-shop</code></td>
-              <td>1 trang</td>
-              <td>Product Grid 4 cột</td>
-              <td>Breakpoints 1200 / 768 / 480</td>
-              <td>Thông số cấu hình, badge giảm giá</td>
-              <td>Form liên hệ & tư vấn</td>
-            </tr>
-            <tr>
-              <td class="col-accent">👟 04. Sneaker Store</td>
-              <td><code>04-sneaker-store</code></td>
-              <td>1 trang</td>
-              <td>Dark Fashion Grid</td>
-              <td>Auto-fill minmax grid</td>
-              <td>Bộ chọn size giày bằng radio button</td>
-              <td>Form nhận mã voucher</td>
-            </tr>
-            <tr>
-              <td class="col-accent">🍲 05. Bếp Quê Restaurant</td>
-              <td><code>05-restaurant</code></td>
-              <td>1 trang</td>
-              <td>Menu Flexbox 2 cột</td>
-              <td>Stack column trên di động</td>
-              <td>Tabs thực đơn 3 miền, thẻ giá</td>
-              <td>Form đặt bàn giữ chỗ online</td>
-            </tr>
-            <tr>
-              <td class="col-accent">🎮 06. Cyber Quest 2099</td>
-              <td><code>06-gaming-website</code></td>
-              <td>1 trang</td>
-              <td>Sci-Fi Glassmorphism</td>
-              <td>Responsive System Table</td>
-              <td>Hiệu ứng Neon phát sáng, Glow FX</td>
-              <td>Bảng cấu hình PC & Pre-order</td>
-            </tr>
-            <tr>
-              <td class="col-accent">📚 07. Tri Thức Bookstore</td>
-              <td><code>07-book-store</code></td>
-              <td>1 trang</td>
-              <td>Book Shelf Grid</td>
-              <td>Fluid typography & margins</td>
-              <td>Bìa sách đổ bóng 3D, danh ngôn</td>
-              <td>Form tham gia CLB đọc sách</td>
-            </tr>
-            <tr>
-              <td class="col-accent">🎵 08. Acoustic Soul</td>
-              <td><code>08-music-fanpage</code></td>
-              <td>1 trang</td>
-              <td>Audio Timeline Layout</td>
-              <td>Responsive Tracklist</td>
-              <td>Giao diện giả lập Music Player</td>
-              <td>Form đặt vé concert trực tiếp</td>
-            </tr>
-            <tr>
-              <td class="col-accent">🚀 09. MindX Coding Club</td>
-              <td><code>09-school-club</code></td>
-              <td>1 trang</td>
-              <td>Roadmap Timeline</td>
-              <td>Dynamic card wrap</td>
-              <td>Lộ trình phát triển, ban chủ nhiệm</td>
-              <td>Form ứng tuyển thành viên CLB</td>
-            </tr>
-            <tr>
-              <td class="col-accent">🥦 10. Mini Market</td>
-              <td><code>10-mini-marketplace</code></td>
-              <td>1 trang</td>
-              <td>Fresh Market Grid</td>
-              <td>Compact mobile product cards</td>
-              <td>Badge theo kg/hộp, cam kết sạch</td>
-              <td>Form giao hàng nhanh tận nơi</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-  </section>
-
-  <!-- 5. HƯỚNG DẪN LÀM SPCK & LỘ TRÌNH (STUDENT GUIDELINES) -->
-  <section class="section-wrapper" id="guidelines">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-badge">CẨM NANG THỰC HIỆN ĐỒ ÁN</span>
-        <h2 class="section-title">Quy Trình 4 Bước Hoàn Thiện SPCK</h2>
-        <p class="section-desc">Phương pháp luận giúp học viên tự tin xây dựng một sản phẩm cuối khóa chuẩn chỉ, đẹp mắt và đạt điểm tối đa.</p>
-      </div>
-
-      <div class="guidelines-grid">
-        <div class="guideline-card">
-          <span class="guideline-step">01</span>
-          <div class="guideline-icon">🎨</div>
-          <h3 class="guideline-title">Lên Ý Tưởng & Wireframe</h3>
-          <p class="guideline-text">
-            Chọn 1 trong 10 chủ đề mẫu hoặc tự sáng tạo đề tài yêu thích. Phác thảo bố cục trang: Header, Hero, Các phần nội dung chính, và Chân trang trước khi bắt đầu viết code.
-          </p>
-        </div>
-
-        <div class="guideline-card">
-          <span class="guideline-step">02</span>
-          <div class="guideline-icon">🧱</div>
-          <h3 class="guideline-title">Xây Dựng Khung HTML5</h3>
-          <p class="guideline-text">
-            Sử dụng các thẻ ngữ nghĩa chuẩn SEO (<code>header</code>, <code>nav</code>, <code>section</code>, <code>article</code>, <code>footer</code>). Đặt tên class rõ ràng, dễ hiểu theo phương pháp BEM hoặc hướng module.
-          </p>
-        </div>
-
-        <div class="guideline-card">
-          <span class="guideline-step">03</span>
-          <div class="guideline-icon">✨</div>
-          <h3 class="guideline-title">Trang Trí Giao Diện CSS3</h3>
-          <p class="guideline-text">
-            Sử dụng <strong>CSS Variables</strong> để đồng bộ màu sắc. Khai thác sức mạnh của <strong>Flexbox</strong> (căn chỉnh menu, button) và <strong>CSS Grid</strong> (bố cục danh sách sản phẩm, thẻ bài).
-          </p>
-        </div>
-
-        <div class="guideline-card">
-          <span class="guideline-step">04</span>
-          <div class="guideline-icon">📱</div>
-          <h3 class="guideline-title">Tối Ưu Hóa Responsive</h3>
-          <p class="guideline-text">
-            Thiết lập Media Queries tại các điểm ngắt phổ biến (768px, 480px). Kiểm tra giao diện trên cả màn hình máy tính bảng và điện thoại trước khi đóng gói nộp bài.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- 6. BỘ GIẢ LẬP DEVICE SIMULATOR (MODAL POPUP TRÌNH DUYỆT) -->
-  <div class="preview-modal" id="preview-modal" role="dialog" aria-modal="true" aria-labelledby="modal-project-title">
-    <div class="modal-container">
-      <!-- Toolbar điều khiển bộ giả lập -->
-      <div class="modal-toolbar">
-        <div class="modal-toolbar-left">
-          <!-- Dropdown chọn nhanh dự án -->
-          <select id="modal-project-select" class="modal-project-select" title="Chọn website muốn xem">
-            <!-- Tự động nạp option bằng JS -->
-          </select>
-
-          <!-- Nút chuyển kích thước thiết bị -->
-          <div class="device-switcher">
-            <button class="btn-device active" data-device="desktop" title="Chế độ Màn hình Máy tính (Desktop 100%)">
-              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
-              <span>Desktop</span>
-            </button>
-            <button class="btn-device" data-device="tablet" title="Chế độ Máy tính bảng (Tablet 768px)">
-              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="2" width="16" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg>
-              <span>Tablet (768px)</span>
-            </button>
-            <button class="btn-device" data-device="mobile" title="Chế độ Điện thoại (Mobile 390px)">
-              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg>
-              <span>Mobile (390px)</span>
-            </button>
+  <!-- 4. MODAL LIVE PREVIEW ĐA TRANG (Interactive Device Frame) -->
+  <div class="preview-modal" id="previewModal" aria-hidden="true">
+    <div class="modal-overlay" id="modalOverlay"></div>
+    <div class="modal-box">
+      <!-- Toolbar Modal -->
+      <div class="modal-bar">
+        <div class="modal-bar-left">
+          <div class="browser-dots">
+            <span class="dot dot-red"></span>
+            <span class="dot dot-yellow"></span>
+            <span class="dot dot-green"></span>
           </div>
+          <span class="modal-title" id="modalProjectTitle">Tên Đề Tài</span>
         </div>
 
-        <div class="modal-toolbar-right">
-          <span id="modal-url-badge" class="modal-status-pill">01-coffee-shop/index.html</span>
-          
-          <button id="modal-reload-btn" class="btn-icon" title="Tải lại trang web này">
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 4 23 10 17 10"></polyline><polyline points="1 20 1 14 7 14"></polyline><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"></path></svg>
-          </button>
-          
-          <button id="modal-external-btn" class="btn-icon" title="Mở trang web trong tab mới riêng biệt">
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
-          </button>
+        <!-- Trình chuyển đổi 3 trang con ngay trong Modal -->
+        <div class="modal-tabs" id="modalSubPagesTabs"></div>
 
-          <button id="modal-close-btn" class="btn-icon" title="Đóng cửa sổ xem thử (ESC)">
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
-          </button>
+        <div class="modal-bar-right">
+          <!-- Device Switcher -->
+          <div class="device-switch">
+            <button class="btn-device active" data-device="desktop" title="Màn hình Desktop">🖥️</button>
+            <button class="btn-device" data-device="tablet" title="Màn hình Tablet">📱</button>
+            <button class="btn-device" data-device="mobile" title="Màn hình Mobile">📲</button>
+          </div>
+
+          <a href="#" target="_blank" rel="noopener" class="btn-external" id="modalExternalBtn" title="Mở trang trong tab trình duyệt mới">
+            Mở Tab Mới ↗
+          </a>
+          <button class="btn-close-modal" id="modalCloseBtn" aria-label="Đóng modal">✕</button>
         </div>
       </div>
 
-      <!-- Khung hiển thị giả lập iframe -->
-      <div class="modal-viewport-wrapper">
-        <div id="iframe-container" class="iframe-container device-desktop">
-          <div id="iframe-loader" class="iframe-loading">
-            <div class="spinner"></div>
-            <span style="font-size: 0.85rem; color: var(--text-muted); font-weight: 600;">Đang tải giao diện website...</span>
-          </div>
-          <iframe id="preview-iframe" class="preview-iframe" title="Khung xem trước website mẫu"></iframe>
-        </div>
+      <!-- Viewport Iframe xem trực tiếp -->
+      <div class="modal-viewport" id="modalViewport">
+        <iframe id="previewIframe" src="about:blank" title="Live Preview"></iframe>
       </div>
     </div>
   </div>
 
-  <!-- 7. CHÂN TRANG (FOOTER) -->
+  <!-- 5. CHÂN TRANG TỐI GIẢN -->
   <footer class="hub-footer">
-    <div class="container">
-      <div class="footer-top">
-        <div class="footer-brand">
-          <div class="hub-logo">
-            <div class="hub-logo-badge">🚀</div>
-            <div class="hub-logo-text">
-              <span class="hub-logo-title">SPCK Showcase Hub</span>
-              <span class="hub-logo-sub">MindX Technology School</span>
-            </div>
-          </div>
-          <p>
-            Trang web tổng hợp và giới thiệu 10 đề tài Sản phẩm cuối khóa (SPCK) môn Lập trình Web Cơ bản. 
-            Mọi mã nguồn đều được xây dựng nguyên bản bằng HTML5 & CSS3 thuần nhằm mục đích tham khảo và định hướng học tập.
-          </p>
-        </div>
-
-        <ul class="footer-links">
-          <li><a href="#projects">10 Đề Tài Mẫu</a></li>
-          <li><a href="#matrix">Ma Trận Kỹ Năng</a></li>
-          <li><a href="#guidelines">Cẩm Nang Làm Bài</a></li>
-          <li><a href="javascript:void(0)" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">Lên Đầu Trang ↑</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-bottom">
-        <div>© 2026 MindX Web Basic. Tài liệu giảng dạy & Dự án mẫu thực hành.</div>
-        <div>Xây dựng hoàn toàn bằng HTML5, CSS3 & JavaScript</div>
-      </div>
+    <div class="container footer-inner">
+      <p>© 2026 MindX Web Basic. Thiết kế theo tiêu chuẩn Anti-Slop, Daylight First & Intentional Design.</p>
+      <p>100% Thuần HTML5 & CSS3 — Không phụ thuộc framework.</p>
     </div>
   </footer>
 
-  <!-- Nút Cuộn Lên Đầu Trang -->
-  <button id="back-to-top" class="back-to-top" title="Cuộn lên đầu trang">↑</button>
-
-  <!-- Hub Script -->
   <script src="hub-script.js"></script>
 </body>
 </html>

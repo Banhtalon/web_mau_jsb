@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Giỏ Hàng &amp; Giao Hàng Siêu Tốc 30 Phút | Mini Market</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- 1. Thanh điều hướng đa trang -->
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="logo" style="text-decoration: none;">🛒 Mini<span>Market</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Trang Chủ</a></li>
+        <li><a href="products.html">Nông Sản</a></li>
+        <li><a href="checkout.html" class="active">Giao Hàng</a></li>
+      </ul>
+      <a href="products.html" class="cart-box">
+        🥦 Mua Thêm
+      </a>
+    </nav>
+  </header>
+
+  <!-- 2. Banner Giao Hàng -->
+  <section class="banner" style="padding: 70px 24px 60px;">
+    <div class="banner-content">
+      <span class="hero-badge">GIAO HÀNG TẬN CỬA TRONG 30 PHÚT</span>
+      <h1>Giỏ Hàng Thực Phẩm Sạch</h1>
+      <p>Cam kết đóng gói thùng xốp giữ lạnh cẩn thận, đổi trả miễn phí ngay nếu rau củ quả không tươi ngon.</p>
+    </div>
+  </section>
+
+  <!-- 3. Khu Vực Giỏ Hàng & Thông Tin Nhận Hàng -->
+  <main class="container" style="padding-top: 50px; padding-bottom: 70px;">
+    <div style="display: grid; grid-template-columns: 1.3fr 0.7fr; gap: 36px; align-items: start;">
+      
+      <!-- Cột Giỏ Hàng & Form -->
+      <div style="background: #ffffff; padding: 32px; border-radius: 16px; border: 1px solid #eef2f6; box-shadow: 0 4px 20px rgba(0,0,0,0.05);">
+        <h2 style="font-size: 1.3rem; font-weight: 700; margin-bottom: 20px; color: #0f172a;">🥦 Giỏ Hàng Nông Sản Hôm Nay</h2>
+
+        <!-- Danh Sách Sản Phẩm -->
+        <div style="display: flex; flex-direction: column; gap: 14px; margin-bottom: 24px;">
+          
+          <div style="display: flex; align-items: center; justify-content: space-between; padding-bottom: 14px; border-bottom: 1px solid #eef2f6; gap: 14px;">
+            <img src="https://images.unsplash.com/photo-1592924357228-91a4daadcfea?auto=format&fit=crop&w=150&q=80" alt="Cà chua bi" style="width: 65px; height: 50px; object-fit: cover; border-radius: 8px;">
+            <div style="flex-grow: 1;">
+              <h4 style="font-size: 0.95rem; font-weight: 700;">Cà Chua Bi Socola Đà Lạt</h4>
+              <span style="font-size: 0.8rem; color: #16a34a; font-weight: 600;">Hộp 500g • VietGAP</span>
+            </div>
+            <div style="text-align: right;">
+              <div style="font-weight: 700; color: #ea580c;">32.000 đ</div>
+              <span style="font-size: 0.8rem; color: #94a3b8;">SL: 1</span>
+            </div>
+          </div>
+
+          <div style="display: flex; align-items: center; justify-content: space-between; padding-bottom: 14px; border-bottom: 1px solid #eef2f6; gap: 14px;">
+            <img src="https://images.unsplash.com/photo-1622206151226-18ca2c9ab4a1?auto=format&fit=crop&w=150&q=80" alt="Xà lách" style="width: 65px; height: 50px; object-fit: cover; border-radius: 8px;">
+            <div style="flex-grow: 1;">
+              <h4 style="font-size: 0.95rem; font-weight: 700;">Xà Lách Mỡ Thủy Canh</h4>
+              <span style="font-size: 0.8rem; color: #16a34a; font-weight: 600;">Cây 300g • Thủy canh sạch</span>
+            </div>
+            <div style="text-align: right;">
+              <div style="font-weight: 700; color: #ea580c;">25.000 đ</div>
+              <span style="font-size: 0.8rem; color: #94a3b8;">SL: 2</span>
+            </div>
+          </div>
+
+          <div style="display: flex; align-items: center; justify-content: space-between; padding-bottom: 14px; border-bottom: 1px solid #eef2f6; gap: 14px;">
+            <img src="https://images.unsplash.com/photo-1611080626919-7cf5a9dbab5b?auto=format&fit=crop&w=150&q=80" alt="Cam sành" style="width: 65px; height: 50px; object-fit: cover; border-radius: 8px;">
+            <div style="flex-grow: 1;">
+              <h4 style="font-size: 0.95rem; font-weight: 700;">Cam Sành Vĩnh Long Mọng Nước</h4>
+              <span style="font-size: 0.8rem; color: #16a34a; font-weight: 600;">Túi lưới 2kg</span>
+            </div>
+            <div style="text-align: right;">
+              <div style="font-weight: 700; color: #ea580c;">76.000 đ</div>
+              <span style="font-size: 0.8rem; color: #94a3b8;">SL: 1</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Form Địa Chỉ & Giờ Giao -->
+        <h3 style="font-size: 1.1rem; font-weight: 700; margin-bottom: 14px; color: #0f172a;">Thông Tin Nhận Thực Phẩm</h3>
+        <form style="display: flex; flex-direction: column; gap: 14px;" onsubmit="event.preventDefault(); alert('Đặt đơn hàng thành công! Shipper Mini Market sẽ giao tận nơi sau 30 phút.');">
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px;">
+            <input type="text" placeholder="Họ và tên người nhận" required style="padding: 12px; border: 1px solid #cbd5e1; border-radius: 8px;">
+            <input type="tel" placeholder="Số điện thoại nhận hàng" required style="padding: 12px; border: 1px solid #cbd5e1; border-radius: 8px;">
+          </div>
+          <input type="text" placeholder="Địa chỉ giao hàng (Số nhà, ngõ/ngách, tên đường)" required style="padding: 12px; border: 1px solid #cbd5e1; border-radius: 8px;">
+
+          <div>
+            <label style="display: block; font-size: 0.88rem; font-weight: 600; margin-bottom: 6px; color: #475569;">Khung giờ nhận hàng mong muốn:</label>
+            <select required style="width: 100%; padding: 12px; border: 1px solid #cbd5e1; border-radius: 8px; background: #fff;">
+              <option value="now">⚡ Giao siêu tốc trong 30 phút</option>
+              <option value="morning">Buổi sáng (09:00 - 11:30)</option>
+              <option value="afternoon">Buổi chiều trước bữa tối (16:00 - 18:00)</option>
+            </select>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="margin-top: 8px; padding: 14px; font-size: 1rem; width: 100%;">
+            Xác Nhận Đặt Hàng Ngay (158.000 đ)
+          </button>
+        </form>
+      </div>
+
+      <!-- Cột Tóm Tắt & Cam Kết -->
+      <div style="display: flex; flex-direction: column; gap: 20px;">
+        
+        <!-- Hóa Đơn Tóm Tắt -->
+        <div style="background: #ffffff; padding: 24px; border-radius: 16px; border: 1px solid #eef2f6; box-shadow: 0 4px 20px rgba(0,0,0,0.05);">
+          <h3 style="font-size: 1.1rem; font-weight: 700; margin-bottom: 16px;">Tóm Tắt Hóa Đơn</h3>
+          <div style="display: flex; justify-content: space-between; font-size: 0.9rem; margin-bottom: 10px; color: #64748b;">
+            <span>Tiền hàng nông sản:</span>
+            <span style="font-weight: 600; color: #0f172a;">158.000 đ</span>
+          </div>
+          <div style="display: flex; justify-content: space-between; font-size: 0.9rem; margin-bottom: 14px; color: #64748b;">
+            <span>Phí giao hàng 30p:</span>
+            <span style="font-weight: 600; color: #16a34a;">MIỄN PHÍ (Đơn > 150k)</span>
+          </div>
+          <div style="border-top: 1px solid #eef2f6; padding-top: 14px; display: flex; justify-content: space-between; font-size: 1.15rem; font-weight: 800; color: #0f172a;">
+            <span>Tổng thanh toán:</span>
+            <span style="color: #ea580c;">158.000 đ</span>
+          </div>
+        </div>
+
+        <!-- Cam Kết VietGAP -->
+        <div style="background: #f0fdf4; padding: 22px; border-radius: 16px; border: 1px solid #bbf7d0;">
+          <h4 style="color: #15803d; font-size: 0.95rem; font-weight: 700; margin-bottom: 10px;">🌟 Cam Kết Vàng Mini Market</h4>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 8px; font-size: 0.85rem; color: #166534;">
+            <li>✓ 100% Nông sản chuẩn sạch VietGAP.</li>
+            <li>✓ Thu hoạch mới lúc 05:00 sáng mỗi ngày.</li>
+            <li>✓ 1 đổi 1 ngay tại cửa nếu rau củ bị dập nát.</li>
+          </ul>
+        </div>
+
+      </div>
+
+    </div>
+  </main>
+
+  <!-- 4. Chân trang -->
+  <footer>
+    <div class="container footer-content">
+      <p>&copy; 2026 Mini Market. Bản quyền thuộc về MindX Web Basic Sample Project.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

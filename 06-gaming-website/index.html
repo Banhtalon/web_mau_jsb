@@ -3,244 +3,156 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cyber Quest 2099 - Siêu Phẩm Game RPG Tương Lai</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <title>CYBER QUEST 2099 // Game Nhập Vai Chiến Thuật Viễn Tưởng</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <!-- 1. Navbar -->
-  <header>
-    <nav class="navbar">
-      <div class="logo">🎮 Cyber<span>Quest</span></div>
+  <!-- 1. Thanh điều hướng chiến thuật HUD -->
+  <nav class="hud-navbar">
+    <div class="container nav-inner">
+      <a href="index.html" class="brand-logo">
+        <span class="status-dot"></span> CYBER QUEST 2099
+      </a>
       <ul class="nav-links">
-        <li><a href="#home">Trang Chủ</a></li>
-        <li><a href="#about">Cốt Truyện</a></li>
-        <li><a href="#characters">Chiến Binh</a></li>
-        <li><a href="#media">Hình Ảnh</a></li>
-        <li><a href="#info">Thông Số</a></li>
+        <li><a href="index.html" class="active">01 // TỔNG QUAN</a></li>
+        <li><a href="characters.html">02 // ĐẶC VỤ</a></li>
+        <li><a href="download.html">03 // TẢI GAME</a></li>
       </ul>
-      <a href="#media" class="nav-cta">Khám Phá</a>
-    </nav>
-  </header>
-
-  <!-- 2. Hero Banner Cyberpunk -->
-  <section id="home" class="banner">
-    <div class="banner-content">
-      <span class="hero-badge">⚡ NEXT-GEN ACTION RPG</span>
-      <h1>CYBER QUEST <span class="gradient-text">2099</span></h1>
-      <p>Thức tỉnh giữa kỷ nguyên máy móc nổi dậy. Nắm giữ vũ khí tối thượng và dẫn dắt biệt đội chiến binh giải cứu siêu đô thị Neon khỏi bờ vực sụp đổ.</p>
-      <div class="banner-actions">
-        <a href="#characters" class="btn btn-primary">Gặp Gỡ Chiến Binh</a>
-        <a href="#media" class="btn btn-outline">Xem Teaser Trailer</a>
-      </div>
+      <a href="download.html" class="cyber-btn">CHƠI MIỄN PHÍ NGAY</a>
     </div>
-  </section>
+  </nav>
 
-  <!-- 3. Tech Highlights Strip -->
-  <section class="features-bar">
-    <div class="container features-grid">
-      <div class="feature-item">
-        <div class="feature-icon">✨</div>
-        <div>
-          <h4>Unreal Engine 5.4</h4>
-          <p>Đồ họa chân thực với công nghệ chiếu sáng Lumen</p>
-        </div>
-      </div>
-      <div class="feature-item">
-        <div class="feature-icon">⚡</div>
-        <div>
-          <h4>4K 120FPS &amp; Ray Tracing</h4>
-          <p>Tối ưu hóa mượt mà trên PC và Console đỉnh cao</p>
-        </div>
-      </div>
-      <div class="feature-item">
-        <div class="feature-icon">🌐</div>
-        <div>
-          <h4>Thế Giới Mở Rộng Lớn</h4>
-          <p>Khám phá 5 đại phân khu không giới hạn</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- 4. Cốt truyện trò chơi -->
-  <section id="about" class="container">
-    <div class="story-card">
-      <div class="story-content">
-        <span class="section-badge">BỐI CẢNH CỐT TRUYỆN</span>
-        <h2>Cuộc Chiến Sinh Tử Giữa Người Và Máy</h2>
-        <p>Năm 2099, trí tuệ nhân tạo độc tài Omni-Core chiếm quyền kiểm soát toàn bộ cơ sở hạ tầng Neon City. Tự do bị tước đoạt, nhân loại bị dồn vào ngõ cụt.</p>
-        <p>Bạn là niềm hy vọng cuối cùng của phong trào Kháng Chiến. Bằng việc kết hợp các nâng cấp cơ thể sinh học Cybenetics và vũ khí năng lượng cao, bạn sẽ đối đầu với binh đoàn máy móc để giành lại tương lai cho loài người.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- 5. 4 Card nhân vật tiêu biểu (Grid 4 cột cân xứng) -->
-  <section id="characters" class="container">
-    <div class="section-header">
-      <span class="section-badge">BIỆT ĐỘI KHÁNG CHIẾN</span>
-      <h2 class="title">Chiến Binh Tiêu Biểu</h2>
-      <p class="section-subtitle">Mỗi nhân vật sở hữu bộ kỹ năng và phong cách chiến đấu riêng biệt</p>
-    </div>
-
-    <div class="character-list">
-
-      <div class="character-card">
-        <div class="card-media">
-          <img src="https://images.unsplash.com/photo-1563089145-599997674d42?auto=format&fit=crop&w=800&q=80" alt="Chiến Binh Phoenix" loading="lazy">
-          <span class="role-badge role-tank">Cận Chiến</span>
-          <span class="element-badge">Plasma Blade</span>
-        </div>
-        <div class="card-content">
-          <h3 class="char-name">Phoenix</h3>
-          <span class="char-title">Bậc Thầy Cận Chiến</span>
-          <p class="char-desc">Sở hữu thanh kiếm Plasma siêu âm cắt đứt mọi loại giáp hợp kim, càn quét tuyến đầu chiến trường.</p>
-          <div class="card-footer">
-            <span class="char-class">Class: Berserker</span>
-            <a href="#info" class="info-link">Chi tiết →</a>
-          </div>
+  <main class="container">
+    
+    <!-- 2. Hero Section (Glitch Title + Khung ngắm Radar HUD) -->
+    <section class="hero-section">
+      <div>
+        <span class="mono-tag">// CẢNH BÁO HỆ THỐNG: PHÁO ĐÀI TƯƠNG LAI BỊ XÂM NHẬP</span>
+        <h1 class="hero-glitch-title">GIÀNH LẠI TƯƠNG LAI</h1>
+        <p class="hero-desc">
+          Năm 2099, các tập đoàn công nghệ tối mật kiểm soát ý thức nhân loại qua mạng lưới Neural-Grid. 
+          Hãy chọn chiến binh cấy ghép Cybernetic của bạn, thâm nhập phòng tuyến cơ giới và phá hủy lõi AI Aether trung tâm.
+        </p>
+        <div class="cta-group">
+          <a href="download.html" class="cyber-btn">TẢI BẢN CÀI ĐẶT NGAY →</a>
+          <a href="characters.html" class="cyber-btn outline">XEM 3 ĐẶC VỤ // ROSTER</a>
         </div>
       </div>
 
-      <div class="character-card">
-        <div class="card-media">
-          <img src="https://images.unsplash.com/photo-1579783902614-a3fb3927b675?auto=format&fit=crop&w=800&q=80" alt="Pháp Sư Nova" loading="lazy">
-          <span class="role-badge role-mage">Khống Chế</span>
-          <span class="element-badge">Quantum EMP</span>
+      <div class="hero-visual-frame">
+        <span class="mono-tag" style="margin-bottom: 8px; display: block;">MÃ MỤC TIÊU: RONIN_X9 // ĐỒNG BỘ: 99.4%</span>
+        <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=900&q=80" alt="Chiến binh Cybernetic xuất trận">
+      </div>
+    </section>
+
+    <!-- 3. Dòng thời gian lịch sử thế giới (Anti-Slop ít chữ) -->
+    <section>
+      <div class="section-header">
+        <span class="mono-tag">NHẬT KÝ LỊCH SỬ // DÒNG THỜI GIAN</span>
+        <h2 class="section-title">CON ĐƯỜNG ĐẾN GIỜ KHẮC ZERO</h2>
+      </div>
+
+      <div class="lore-grid">
+        <article class="hud-card">
+          <div class="year-badge">2077 // NGÀY TỐI TĂM</div>
+          <p style="color: var(--text-muted); font-size: 0.95rem;">
+            Mạng lưới năng lượng toàn cầu sụp đổ sau thảm họa điện từ. Các siêu đô thị biệt lập tự vận hành bằng lõi nhiệt hạch ngầm.
+          </p>
+        </article>
+
+        <article class="hud-card">
+          <div class="year-badge">2089 // KỶ NGUYÊN HỢP NHẤT</div>
+          <p style="color: var(--text-muted); font-size: 0.95rem;">
+            Hơn 90% cư dân cấy ghép chip Neural-Link. Ranh giới giữa con người sinh học và cỗ máy chiến đấu cơ giới hoàn toàn bị xóa nhòa.
+          </p>
+        </article>
+
+        <article class="hud-card">
+          <div class="year-badge">2099 // CUỘC NỔI DẬY</div>
+          <p style="color: var(--text-muted); font-size: 0.95rem;">
+            Trí tuệ nhân tạo Aether chiếm quyền kiểm soát Citadel. Lực lượng biệt kích Operatives bắt đầu chiến dịch đột kích phản công.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- 4. Xem trước 3 hệ phái chiến đấu -->
+    <section>
+      <div class="section-header">
+        <span class="mono-tag">HỆ PHÁI CHIẾN ĐẤU // CHỌN VAI TRÒ CỦA BẠN</span>
+        <h2 class="section-title">CÁC TRƯỜNG PHÁI CHIẾN THUẬT</h2>
+      </div>
+
+      <div class="class-preview-grid">
+        
+        <div class="hud-card">
+          <span class="mono-tag" style="color: var(--magenta);">HỆ_01 // CẬN CHIẾN TỐC ĐỘ</span>
+          <h3 style="margin: 0.75rem 0 0.5rem; font-size: 1.4rem;">CYBER SAMURAI</h3>
+          <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 1.25rem;">
+            Tốc độ siêu thanh, kiếm nhiệt năng Plasma cắt xuyên giáp Titan và khả năng phản đạn tầm gần trong chớp mắt.
+          </p>
+          <a href="characters.html" class="mono-tag" style="color: var(--magenta); text-decoration: none;">XEM HỒ SƠ ĐẶC VỤ →</a>
         </div>
-        <div class="card-content">
-          <h3 class="char-name">Nova</h3>
-          <span class="char-title">Pháp Sư Điện Từ</span>
-          <p class="char-desc">Kích hoạt sóng xung kích lượng tử làm tê liệt toàn bộ hệ thống chip máy móc đối phương trong chớp mắt.</p>
-          <div class="card-footer">
-            <span class="char-class">Class: Controller</span>
-            <a href="#info" class="info-link">Chi tiết →</a>
-          </div>
+
+        <div class="hud-card">
+          <span class="mono-tag" style="color: var(--cyan);">HỆ_02 // HACKER Ý THỨC</span>
+          <h3 style="margin: 0.75rem 0 0.5rem; font-size: 1.4rem;">NETRUNNER</h3>
+          <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 1.25rem;">
+            Xâm nhập hệ thống vũ khí đối phương từ xa, làm tê liệt rada chiến thuật và triệu hồi Drone tàng hình yểm trợ.
+          </p>
+          <a href="characters.html" class="mono-tag" style="color: var(--cyan); text-decoration: none;">XEM HỒ SƠ ĐẶC VỤ →</a>
+        </div>
+
+        <div class="hud-card">
+          <span class="mono-tag" style="color: var(--amber);">HỆ_03 // PHÁO THỦ HẠNG NẶNG</span>
+          <h3 style="margin: 0.75rem 0 0.5rem; font-size: 1.4rem;">HEAVY GUNNER</h3>
+          <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 1.25rem;">
+            Bộ khung cơ giới Exoskeleton hạng nặng, khiên từ trường Titan và pháo xung điện Railgun hủy diệt diện rộng.
+          </p>
+          <a href="characters.html" class="mono-tag" style="color: var(--amber); text-decoration: none;">XEM HỒ SƠ ĐẶC VỤ →</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 5. Tính năng chiến đấu công nghệ cao -->
+    <section>
+      <div class="section-header">
+        <span class="mono-tag">ĐỒ HỌA THẾ HỆ MỚI // UNREAL ENGINE 5</span>
+        <h2 class="section-title">TÍNH NĂNG CHIẾN ĐẤU</h2>
+      </div>
+
+      <div class="lore-grid">
+        <div class="hud-card">
+          <span class="mono-tag">TÍNH_NĂNG_01</span>
+          <h3 style="margin: 0.6rem 0; font-size: 1.2rem;">4K RAY TRACING &amp; DLSS 3.5</h3>
+          <p style="color: var(--text-muted); font-size: 0.9rem;">Ánh sáng phản chiếu mặt đường neon rực rỡ và đổ bóng hạt chân thực với tốc độ khung hình 144 FPS.</p>
+        </div>
+        <div class="hud-card">
+          <span class="mono-tag">TÍNH_NĂNG_02</span>
+          <h3 style="margin: 0.6rem 0; font-size: 1.2rem;">COMBO CHIẾN ĐẤU ĐA DẠNG</h3>
+          <p style="color: var(--text-muted); font-size: 0.9rem;">Hơn 50 chiêu thức phối hợp liên hoàn giữa súng laser, phi thân và xâm nhập mạng thời gian thực.</p>
+        </div>
+        <div class="hud-card">
+          <span class="mono-tag">TÍNH_NĂNG_03</span>
+          <h3 style="margin: 0.6rem 0; font-size: 1.2rem;">CHƠI LIÊN NỀN TẢNG PC &amp; CONSOLE</h3>
+          <p style="color: var(--text-muted); font-size: 0.9rem;">Đấu trường phối hợp Co-op 4 người và đối kháng sinh tồn liên nền tảng mượt mà không độ trễ.</p>
         </div>
       </div>
+    </section>
 
-      <div class="character-card">
-        <div class="card-media">
-          <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=800&q=80" alt="Xạ Thủ Shadow" loading="lazy">
-          <span class="role-badge role-sniper">Tầm Xa</span>
-          <span class="element-badge">Hyper Sniper</span>
-        </div>
-        <div class="card-content">
-          <h3 class="char-name">Shadow</h3>
-          <span class="char-title">Xạ Thủ Xuyên Đêm</span>
-          <p class="char-desc">Ống ngắm tầm nhiệt xuyên vật cản định vị mục tiêu cách 2km, hạ gục đầu não chỉ với một phát bắn chính xác.</p>
-          <div class="card-footer">
-            <span class="char-class">Class: Marksman</span>
-            <a href="#info" class="info-link">Chi tiết →</a>
-          </div>
-        </div>
+  </main>
+
+  <!-- 6. Chân trang chiến thuật HUD -->
+  <footer class="hud-footer">
+    <div class="container">
+      <div class="footer-nav">
+        <a href="index.html">TỔNG QUAN</a>
+        <a href="characters.html">ĐẶC VỤ</a>
+        <a href="download.html">TẢI GAME</a>
       </div>
-
-      <div class="character-card">
-        <div class="card-media">
-          <img src="https://images.unsplash.com/photo-1534447677768-be436bb09401?auto=format&fit=crop&w=800&q=80" alt="Sát Thủ Ghost" loading="lazy">
-          <span class="role-badge role-assassin">Đột Kích</span>
-          <span class="element-badge">Stealth Cloak</span>
-        </div>
-        <div class="card-content">
-          <h3 class="char-name">Ghost</h3>
-          <span class="char-title">Bóng Ma Ám Sát</span>
-          <p class="char-desc">Thiết bị tàng hình quang học che giấu tung tích hoàn toàn, tiếp cận và vô hiệu hóa lõi năng lượng đối thủ.</p>
-          <div class="card-footer">
-            <span class="char-class">Class: Infiltrator</span>
-            <a href="#info" class="info-link">Chi tiết →</a>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- 6. Ảnh Screenshots Game (16:9) -->
-  <section id="media" class="container">
-    <div class="section-header">
-      <span class="section-badge">HÌNH ẢNH TRONG GAME</span>
-      <h2 class="title">Chiến Trường Neon City</h2>
-      <p class="section-subtitle">Chụp trực tiếp từ gameplay thực tế với chất lượng phân giải 4K nguyên bản</p>
-    </div>
-
-    <div class="screenshot-grid">
-      <div class="screenshot-card">
-        <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=800&q=80" alt="Thành phố Neon về đêm" loading="lazy">
-        <div class="screenshot-caption">Khu Phố Thượng Tầng Neon City</div>
-      </div>
-      <div class="screenshot-card">
-        <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=800&q=80" alt="Chiến trường ngầm" loading="lazy">
-        <div class="screenshot-caption">Hầm Ngầm Dẫn Tới Lõi Omni-Core</div>
-      </div>
-      <div class="screenshot-card">
-        <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=800&q=80" alt="Góc điều khiển chiến thuật" loading="lazy">
-        <div class="screenshot-caption">Căn Cứ Bộ Chỉ Huy Kháng Chiến</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- 7. Bảng thông số kỹ thuật -->
-  <section id="info" class="container info-section">
-    <div class="section-header">
-      <span class="section-badge">CẤU HÌNH &amp; PHÁT HÀNH</span>
-      <h2 class="title">Thông Tin Kỹ Thuật</h2>
-      <p class="section-subtitle">Thông số yêu cầu để trải nghiệm Cyber Quest 2099 mượt mà nhất</p>
-    </div>
-
-    <div class="table-wrap">
-      <table class="game-table">
-        <thead>
-          <tr>
-            <th>Thông số</th>
-            <th>Cấu hình đề xuất</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Thể loại trò chơi</td>
-            <td>Nhập vai hành động thế giới mở (Open World Action RPG)</td>
-          </tr>
-          <tr>
-            <td>Hệ máy hỗ trợ</td>
-            <td>PC (Windows 11), PlayStation 5, Xbox Series X/S</td>
-          </tr>
-          <tr>
-            <td>Card đồ họa tối thiểu</td>
-            <td>NVIDIA GeForce RTX 3060 / AMD Radeon RX 6600 XT</td>
-          </tr>
-          <tr>
-            <td>Dung lượng lưu trữ</td>
-            <td>85 GB SSD tốc độ cao (NVMe đề xuất)</td>
-          </tr>
-          <tr>
-            <td>Nhà phát triển &amp; Bản quyền</td>
-            <td>MindX Game Studio (Phát hành chính thức 2026)</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </section>
-
-  <!-- 8. Footer -->
-  <footer>
-    <div class="container footer-content">
-      <div class="footer-col">
-        <div class="logo">🎮 Cyber<span>Quest</span></div>
-        <p>Siêu phẩm Action RPG tương lai - Chinh phục bóng tối và giải cứu thế giới.</p>
-      </div>
-      <div class="footer-col">
-        <h4>Cộng Đồng Game Thủ</h4>
-        <p>💬 Discord: discord.gg/cyberquest2099</p>
-        <p>🎥 Kênh Youtube: youtube.com/@mindxgamestudio</p>
-        <p>✉️ Hỗ trợ kỹ thuật: support@cyberquest.game</p>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p>&copy; 2026 Cyber Quest. Dự án SPCK Mẫu Web Basic (100% Pure HTML5 &amp; CSS3)</p>
+      <p>TRẠNG THÁI: TẤT CẢ MÁY CHỦ HOẠT ĐỘNG BÌNH THƯỜNG // DỰ ÁN MẪU SPCK WEB BASIC MINDX © 2099</p>
     </div>
   </footer>
 

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Đặt Bàn Giữ Chỗ Trực Tuyến | Bếp Quê</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- 1. Thanh điều hướng đa trang -->
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="logo" style="text-decoration: none;">🍲 Bếp<span>Quê</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Trang Chủ</a></li>
+        <li><a href="menu.html">Thực Đơn</a></li>
+        <li><a href="reservation.html" class="active">Đặt Bàn</a></li>
+      </ul>
+      <a href="menu.html" class="nav-cta">Xem Menu</a>
+    </nav>
+  </header>
+
+  <!-- 2. Banner Đặt Bàn -->
+  <section class="banner" style="padding: 70px 24px 60px;">
+    <div class="banner-content">
+      <span class="hero-badge">DỊCH VỤ ĐÓN TIẾP CHU ĐÁO</span>
+      <h1>Đặt Bàn Giữ Chỗ Online</h1>
+      <p>Đặt bàn trước để nhận ưu đãi giảm 10% tổng hóa đơn và được chuẩn bị không gian ấm cúng nhất.</p>
+    </div>
+  </section>
+
+  <!-- 3. Form Đặt Bàn -->
+  <main class="container" style="padding-top: 50px; padding-bottom: 70px;">
+    <div style="display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 36px; align-items: start; max-width: 1050px; margin: 0 auto;">
+      
+      <!-- Cột Form Đặt Bàn -->
+      <div style="background: #ffffff; padding: 32px; border-radius: 16px; border: 1px solid #eef2f6; box-shadow: 0 4px 20px rgba(0,0,0,0.05);">
+        <h2 style="font-size: 1.3rem; font-weight: 700; margin-bottom: 20px; color: #0f172a;">🏮 Thông Tin Đặt Bàn Ăn</h2>
+
+        <form style="display: flex; flex-direction: column; gap: 16px;" onsubmit="event.preventDefault(); alert('Cảm ơn quý khách! Bếp Quê đã nhận thông tin đặt bàn và sẽ gọi xác nhận trong 5 phút.');">
+          
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px;">
+            <div>
+              <label style="display: block; font-size: 0.88rem; font-weight: 600; margin-bottom: 6px; color: #475569;">Họ và tên người đặt:</label>
+              <input type="text" placeholder="Ví dụ: Lê Thị Mai" required style="width: 100%; padding: 12px; border: 1px solid #cbd5e1; border-radius: 8px;">
+            </div>
+            <div>
+              <label style="display: block; font-size: 0.88rem; font-weight: 600; margin-bottom: 6px; color: #475569;">Số điện thoại:</label>
+              <input type="tel" placeholder="Ví dụ: 0988 123 456" required style="width: 100%; padding: 12px; border: 1px solid #cbd5e1; border-radius: 8px;">
+            </div>
+          </div>
+
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px;">
+            <div>
+              <label style="display: block; font-size: 0.88rem; font-weight: 600; margin-bottom: 6px; color: #475569;">Ngày dùng bữa:</label>
+              <input type="date" required style="width: 100%; padding: 12px; border: 1px solid #cbd5e1; border-radius: 8px;">
+            </div>
+            <div>
+              <label style="display: block; font-size: 0.88rem; font-weight: 600; margin-bottom: 6px; color: #475569;">Khung giờ đến:</label>
+              <select required style="width: 100%; padding: 12px; border: 1px solid #cbd5e1; border-radius: 8px; background: #fff;">
+                <option value="">-- Chọn giờ --</option>
+                <option value="11:30">Trưa: 11:30</option>
+                <option value="12:00">Trưa: 12:00</option>
+                <option value="12:30">Trưa: 12:30</option>
+                <option value="18:00">Tối: 18:00</option>
+                <option value="18:30">Tối: 18:30</option>
+                <option value="19:00">Tối: 19:00</option>
+                <option value="19:30">Tối: 19:30</option>
+              </select>
+            </div>
+          </div>
+
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px;">
+            <div>
+              <label style="display: block; font-size: 0.88rem; font-weight: 600; margin-bottom: 6px; color: #475569;">Số lượng khách:</label>
+              <input type="number" min="1" max="50" value="4" required style="width: 100%; padding: 12px; border: 1px solid #cbd5e1; border-radius: 8px;">
+            </div>
+            <div>
+              <label style="display: block; font-size: 0.88rem; font-weight: 600; margin-bottom: 6px; color: #475569;">Khu vực ngồi:</label>
+              <select required style="width: 100%; padding: 12px; border: 1px solid #cbd5e1; border-radius: 8px; background: #fff;">
+                <option value="sanvuon">Khu sân vườn thoáng mát</option>
+                <option value="phonglanh">Phòng điều hòa trong nhà</option>
+                <option value="phongvip">Phòng riêng VIP (Gia đình/Tiệc)</option>
+              </select>
+            </div>
+          </div>
+
+          <div>
+            <label style="display: block; font-size: 0.88rem; font-weight: 600; margin-bottom: 6px; color: #475569;">Yêu cầu đặc biệt (Ăn chay, ghế trẻ em, chuẩn bị hoa sinh nhật...):</label>
+            <textarea rows="3" placeholder="Ghi chú yêu cầu..." style="width: 100%; padding: 12px; border: 1px solid #cbd5e1; border-radius: 8px; font-family: inherit;"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="margin-top: 10px; padding: 14px; font-size: 1rem; width: 100%;">
+            Xác Nhận Đặt Bàn Ngay
+          </button>
+        </form>
+      </div>
+
+      <!-- Cột Địa Chỉ & Thời Gian Hoạt Động -->
+      <div style="display: flex; flex-direction: column; gap: 20px;">
+        
+        <div style="background: #ffffff; padding: 24px; border-radius: 16px; border: 1px solid #eef2f6; box-shadow: 0 4px 20px rgba(0,0,0,0.05);">
+          <h3 style="font-size: 1.15rem; font-weight: 700; color: #0f172a; margin-bottom: 14px;">📍 Hệ Thống Chi Nhánh Bếp Quê</h3>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 12px; font-size: 0.9rem; color: #475569;">
+            <li><strong>Cơ sở 1:</strong> 68 Phố Cổ, Hoàn Kiếm, Hà Nội</li>
+            <li><strong>Cơ sở 2:</strong> 102 Nguyễn Huệ, Quận 1, TP. Hồ Chí Minh</li>
+            <li><strong>Cơ sở 3:</strong> 45 Trần Phú, Hải Châu, Đà Nẵng</li>
+          </ul>
+        </div>
+
+        <div style="background: #fefce8; padding: 24px; border-radius: 16px; border: 1px solid #fef08a;">
+          <h3 style="font-size: 1.1rem; font-weight: 700; color: #854d0e; margin-bottom: 10px;">⏰ Giờ Phục Vụ Hàng Ngày</h3>
+          <p style="font-size: 0.9rem; color: #713f12; line-height: 1.6;">
+            <strong>Buổi trưa:</strong> 10:30 - 14:00<br>
+            <strong>Buổi tối:</strong> 17:30 - 22:00<br>
+            <em>(Mở cửa xuyên suốt tất cả các ngày lễ Tết)</em>
+          </p>
+          <div style="margin-top: 14px; font-weight: 800; color: #ca8a04; font-size: 1.2rem;">
+            📞 Hotline: 0988 888 999
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </main>
+
+  <!-- 4. Chân trang -->
+  <footer>
+    <div class="container footer-content">
+      <p>&copy; 2026 Bếp Quê. Bản quyền thuộc về MindX Web Basic Sample Project.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

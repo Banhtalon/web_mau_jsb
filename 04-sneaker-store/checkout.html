@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thanh Toán &amp; Xác Nhận Đơn | SneakerZone</title>
+  
+  <!-- Google Fonts: Archivo & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- 1. Dải Marquee Ribbon chạy chữ tiếng Việt -->
+  <div class="marquee-ribbon">
+    <div class="marquee-track">
+      <div class="marquee-item"><span class="marquee-dot"></span> 100% CHÍNH HÃNG KIỂM ĐỊNH</div>
+      <div class="marquee-item"><span class="marquee-dot"></span> BỘ SƯU TẬP MỚI 2026</div>
+      <div class="marquee-item"><span class="marquee-dot"></span> MIỄN PHÍ VẬN CHUYỂN TỪ 2.000.000Đ</div>
+      <div class="marquee-item"><span class="marquee-dot"></span> ĐỔI TRẢ SIZE TRONG 7 NGÀY</div>
+      <div class="marquee-item"><span class="marquee-dot"></span> VĂN HÓA SNEAKER VIỆT NAM</div>
+      
+      <!-- Lặp lại hiệu ứng vô tận -->
+      <div class="marquee-item"><span class="marquee-dot"></span> 100% CHÍNH HÃNG KIỂM ĐỊNH</div>
+      <div class="marquee-item"><span class="marquee-dot"></span> BỘ SƯU TẬP MỚI 2026</div>
+      <div class="marquee-item"><span class="marquee-dot"></span> MIỄN PHÍ VẬN CHUYỂN TỪ 2.000.000Đ</div>
+      <div class="marquee-item"><span class="marquee-dot"></span> ĐỔI TRẢ SIZE TRONG 7 NGÀY</div>
+      <div class="marquee-item"><span class="marquee-dot"></span> VĂN HÓA SNEAKER VIỆT NAM</div>
+    </div>
+  </div>
+
+  <!-- 2. Header cố định Daylight -->
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="logo">👟 SNEAKER<span>ZONE</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Trang Chủ</a></li>
+        <li><a href="shop.html">Cửa Hàng</a></li>
+        <li><a href="checkout.html" class="active">Thanh Toán</a></li>
+      </ul>
+      <a href="shop.html" class="nav-cta">← Tiếp Tục Chọn</a>
+    </nav>
+  </header>
+
+  <!-- 3. Khu vực Đặt Hàng & Thanh Toán -->
+  <main class="container">
+    
+    <div class="section-head">
+      <div>
+        <h1 class="section-head-title">Xác Nhận Đặt Hàng // 2026</h1>
+      </div>
+      <span class="section-head-meta">KIỂM TRA HÀNG TRƯỚC KHI THANH TOÁN</span>
+    </div>
+
+    <div class="checkout-layout">
+      
+      <!-- Cột Trái: Form thông tin & chọn size -->
+      <div class="checkout-box">
+        <h2>👟 1. Chọn Kích Cỡ Giày Chuẩn Chân</h2>
+        
+        <form onsubmit="event.preventDefault(); alert('Đặt giày thành công! Đội ngũ SneakerZone sẽ gửi tin nhắn mã vận đơn và gọi xác nhận size trong 15 phút.');">
+          
+          <!-- Radio buttons chọn size tương tác bằng Pure CSS -->
+          <div class="size-selector-pills">
+            <label class="size-pill-option">
+              <input type="radio" name="shoesize" value="40" checked>
+              <span class="size-pill-card">EU 40 (25.0 cm)</span>
+            </label>
+            <label class="size-pill-option">
+              <input type="radio" name="shoesize" value="41">
+              <span class="size-pill-card">EU 41 (26.0 cm)</span>
+            </label>
+            <label class="size-pill-option">
+              <input type="radio" name="shoesize" value="42">
+              <span class="size-pill-card">EU 42 (26.5 cm)</span>
+            </label>
+            <label class="size-pill-option">
+              <input type="radio" name="shoesize" value="43">
+              <span class="size-pill-card">EU 43 (27.5 cm)</span>
+            </label>
+            <label class="size-pill-option">
+              <input type="radio" name="shoesize" value="44">
+              <span class="size-pill-card">EU 44 (28.0 cm)</span>
+            </label>
+          </div>
+
+          <h2 style="margin-top: 30px;">📦 2. Địa Chỉ Nhận Hàng</h2>
+
+          <div class="form-group-grid">
+            <div class="form-field">
+              <label for="cust-name">Họ và tên của bạn:</label>
+              <input type="text" id="cust-name" placeholder="Ví dụ: Nguyễn Thế Phong" required>
+            </div>
+            <div class="form-field">
+              <label for="cust-phone">Số điện thoại di động:</label>
+              <input type="tel" id="cust-phone" placeholder="Ví dụ: 0901 234 567" required>
+            </div>
+          </div>
+
+          <div class="form-field">
+            <label for="cust-address">Địa chỉ nhận hàng chi tiết:</label>
+            <input type="text" id="cust-address" placeholder="Số nhà, tên đường, phường/xã, quận/huyện, tỉnh/thành phố" required>
+          </div>
+
+          <div class="form-field">
+            <label for="cust-note">Ghi chú giao hàng (nếu có):</label>
+            <input type="text" id="cust-note" placeholder="Ví dụ: Giao giờ hành chính, gọi trước khi đến">
+          </div>
+
+          <div style="margin: 20px 0; padding: 16px; background: #fafafa; border-radius: 8px; border: 1px solid var(--border);">
+            <label style="font-family: 'Archivo'; font-size: 12px; font-weight: 700; text-transform: uppercase; display: block; margin-bottom: 10px;">Phương Thức Thanh Toán</label>
+            <div style="display: flex; flex-direction: column; gap: 10px; font-size: 13px;">
+              <label style="display: flex; align-items: center; gap: 8px; cursor: pointer;">
+                <input type="radio" name="paymethod" checked>
+                <strong>Thanh toán khi nhận hàng (COD)</strong> — Kiểm tra giày chuẩn mới trả tiền
+              </label>
+              <label style="display: flex; align-items: center; gap: 8px; cursor: pointer;">
+                <input type="radio" name="paymethod">
+                <strong>Chuyển khoản VietQR</strong> — Quét mã QR tiện lợi, giảm thêm 30.000 đ
+              </label>
+            </div>
+          </div>
+
+          <button type="submit" class="btn-hype" style="width: 100%; justify-content: center; padding: 15px; font-size: 15px; cursor: pointer;">
+            XÁC NHẬN ĐẶT HÀNG (2.350.000 đ) →
+          </button>
+
+        </form>
+
+      </div>
+
+      <!-- Cột Phải: Tóm tắt đơn hàng -->
+      <aside class="order-summary-card">
+        <h3 style="font-size: 18px; text-transform: uppercase; margin-bottom: 20px;">Tóm Tắt Đơn Hàng</h3>
+
+        <div class="order-item-row">
+          <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=200&q=80" alt="Nike Air Max 90" class="order-item-img">
+          <div class="order-item-info">
+            <span class="brand-label" style="margin-bottom: 2px;">NIKE SPORTSWEAR</span>
+            <h4>Nike Air Max 90 Red Flame</h4>
+            <p>Size chọn: <strong>EU 40</strong> • SL: 1 đôi</p>
+            <span style="font-family: 'Archivo'; font-weight: 900; color: #09090b; font-size: 15px; margin-top: 4px; display: inline-block;">2.450.000 đ</span>
+          </div>
+        </div>
+
+        <div class="order-cost-breakdown">
+          <div class="cost-row">
+            <span>Tạm tính tiền giày:</span>
+            <span>2.450.000 đ</span>
+          </div>
+          <div class="cost-row">
+            <span>Phí giao hàng toàn quốc:</span>
+            <span style="color: #16a34a; font-weight: 700;">MIỄN PHÍ</span>
+          </div>
+          <div class="cost-row">
+            <span>Voucher thành viên mới:</span>
+            <span style="color: #ff3b30; font-weight: 700;">-100.000 đ</span>
+          </div>
+          <div class="cost-row cost-total">
+            <span>Tổng thanh toán:</span>
+            <span style="color: #ff3b30;">2.350.000 đ</span>
+          </div>
+        </div>
+
+        <div style="margin-top: 24px; padding: 14px; background: #ffffff; border-radius: 8px; border: 1px solid var(--border); font-size: 12px; color: var(--text-muted); line-height: 1.6;">
+          🔒 <strong>Cam kết từ SneakerZone:</strong> Đóng gói hộp đôi carton chống móp 100%, bảo hành chính hãng và hỗ trợ đổi size miễn phí trong 7 ngày.
+        </div>
+
+      </aside>
+
+    </div>
+
+  </main>
+
+  <!-- 4. Chân trang -->
+  <footer>
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <div class="logo">👟 SNEAKER<span>ZONE</span></div>
+        <p>Không gian văn hóa giày thể thao &amp; streetwear dành riêng cho giới trẻ Việt Nam. Cam kết 100% chính hãng.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Cửa Hàng</h4>
+        <p>📍 456 Lê Văn Sỹ, Phường 14, Quận 3, TP.HCM</p>
+        <p>⏰ Mở cửa: 9h00 - 22h00 (Hàng ngày)</p>
+        <p>📞 Hotline: 0909 999 888</p>
+      </div>
+      <div class="footer-col">
+        <h4>Chính Sách</h4>
+        <p>• Hướng dẫn đo kích cỡ giày</p>
+        <p>• Chính sách bảo hành keo chỉ trọn đời</p>
+        <p>• Đổi trả hàng trong 7 ngày</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 SneakerZone - MindX Web Basic Sample Project (100% Pure HTML5 &amp; CSS3)</p>
+    </div>
+  </footer>
+
+</body>
+</html>

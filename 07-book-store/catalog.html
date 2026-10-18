@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tủ Sách Theo Chủ Đề | Tri Thức Bookstore</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- 1. Thanh điều hướng đa trang -->
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="logo" style="text-decoration: none;">📚 Tri Thức<span>Book</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Trang Chủ</a></li>
+        <li><a href="catalog.html" class="active">Tủ Sách</a></li>
+        <li><a href="detail.html">Đọc Thử</a></li>
+      </ul>
+      <a href="detail.html" class="nav-cta">Đọc Thử Sách</a>
+    </nav>
+  </header>
+
+  <!-- 2. Banner Tủ Sách -->
+  <section class="banner" style="padding: 70px 24px 60px;">
+    <div class="banner-content">
+      <span class="hero-badge">KHÔNG GIAN TRI THỨC TINH HOA</span>
+      <h1>Tủ Sách Chọn Lọc Theo Chủ Đề</h1>
+      <p>Hơn 1000 tựa sách kinh điển được tuyển chọn kỹ lưỡng, bồi đắp tư duy và làm giàu tâm hồn.</p>
+    </div>
+  </section>
+
+  <!-- 3. Lưới Tủ Sách -->
+  <main class="container" style="padding-top: 50px; padding-bottom: 70px;">
+    <div class="section-header">
+      <span class="section-badge">TÁC PHẨM TIÊU BIỂU</span>
+      <h2 class="title">Danh Mục Sách Đọc Nhiều Nhất</h2>
+      <p class="section-subtitle">Đọc thử trích đoạn hay nhất trước khi quyết định mua sách</p>
+    </div>
+
+    <div class="book-grid">
+
+      <!-- Đắc Nhân Tâm -->
+      <div class="book-card">
+        <div class="card-media">
+          <img src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?auto=format&fit=crop&w=800&q=80" alt="Đắc Nhân Tâm" loading="lazy">
+          <span class="badge-tag">Kinh Điển Mọi Thời Đại</span>
+          <span class="badge-rating">⭐ 4.9</span>
+        </div>
+        <div class="card-content">
+          <span class="genre-tag">Kỹ Năng Giao Tiếp</span>
+          <h3 class="book-title">Đắc Nhân Tâm</h3>
+          <p class="book-author">Tác giả: Dale Carnegie</p>
+          <p class="book-desc">Nghệ thuật thu phục lòng người và xây dựng các mối quan hệ bền vững, thành công trong cuộc sống.</p>
+          <div class="card-footer">
+            <div class="price-group">
+              <span class="price-label">Giá bìa</span>
+              <span class="price">86.000 <small>VNĐ</small></span>
+            </div>
+            <a href="detail.html?book=dacnhantam" class="view-btn">Đọc thử →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Nhà Giả Kim -->
+      <div class="book-card">
+        <div class="card-media">
+          <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=800&q=80" alt="Nhà Giả Kim" loading="lazy">
+          <span class="badge-tag">Bán Chạy Nhất</span>
+          <span class="badge-rating">⭐ 4.9</span>
+        </div>
+        <div class="card-content">
+          <span class="genre-tag">Văn Học Thế Giới</span>
+          <h3 class="book-title">Nhà Giả Kim</h3>
+          <p class="book-author">Tác giả: Paulo Coelho</p>
+          <p class="book-desc">Hành trình theo đuổi ước mơ và lắng nghe tiếng gọi từ trái tim của chàng chăn cừu Santiago.</p>
+          <div class="card-footer">
+            <div class="price-group">
+              <span class="price-label">Giá bìa</span>
+              <span class="price">79.000 <small>VNĐ</small></span>
+            </div>
+            <a href="detail.html?book=nhagiakim" class="view-btn">Đọc thử →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tuổi Trẻ Đáng Giá Bao Nhiêu -->
+      <div class="book-card">
+        <div class="card-media">
+          <img src="https://images.unsplash.com/photo-1495446815901-a7297e633e8d?auto=format&fit=crop&w=800&q=80" alt="Tuổi Trẻ Đáng Giá Bao Nhiêu" loading="lazy">
+          <span class="badge-tag">Cảm Hứng Sống</span>
+          <span class="badge-rating">⭐ 4.8</span>
+        </div>
+        <div class="card-content">
+          <span class="genre-tag">Phát Triển Bản Thân</span>
+          <h3 class="book-title">Tuổi Trẻ Đáng Giá Bao Nhiêu</h3>
+          <p class="book-author">Tác giả: Rosie Nguyễn</p>
+          <p class="book-desc">Lời khuyên chân thành và truyền cảm hứng mạnh mẽ để người trẻ tìm thấy đam mê và sống trọn vẹn.</p>
+          <div class="card-footer">
+            <div class="price-group">
+              <span class="price-label">Giá bìa</span>
+              <span class="price">90.000 <small>VNĐ</small></span>
+            </div>
+            <a href="detail.html?book=tuoitre" class="view-btn">Đọc thử →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cây Cam Ngọt Của Tôi -->
+      <div class="book-card">
+        <div class="card-media">
+          <img src="https://images.unsplash.com/photo-1543002588-bfa74002ed7e?auto=format&fit=crop&w=800&q=80" alt="Cây Cam Ngọt Của Tôi" loading="lazy">
+          <span class="badge-tag">Cảm Động Nhất</span>
+          <span class="badge-rating">⭐ 5.0</span>
+        </div>
+        <div class="card-content">
+          <span class="genre-tag">Tiểu Thuyết Tình Cảm</span>
+          <h3 class="book-title">Cây Cam Ngọt Của Tôi</h3>
+          <p class="book-author">Tác giả: José Mauro de Vasconcelos</p>
+          <p class="book-desc">Câu chuyện lay động hàng triệu trái tim về tâm hồn nhạy cảm của cậu bé Zezé nghèo khổ ở Rio de Janeiro.</p>
+          <div class="card-footer">
+            <div class="price-group">
+              <span class="price-label">Giá bìa</span>
+              <span class="price">108.000 <small>VNĐ</small></span>
+            </div>
+            <a href="detail.html?book=caycam" class="view-btn">Đọc thử →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Nguyên Lý 80/20 -->
+      <div class="book-card">
+        <div class="card-media">
+          <img src="https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&w=800&q=80" alt="Nguyên Lý 80/20" loading="lazy">
+          <span class="badge-tag">Tối Ưu Hiệu Suất</span>
+          <span class="badge-rating">⭐ 4.8</span>
+        </div>
+        <div class="card-content">
+          <span class="genre-tag">Kinh Doanh &amp; Quản Trị</span>
+          <h3 class="book-title">Nguyên Lý 80/20</h3>
+          <p class="book-author">Tác giả: Richard Koch</p>
+          <p class="book-desc">Bí quyết đạt được 80% kết quả vượt bậc chỉ từ 20% nỗ lực tập trung và đúng trọng tâm.</p>
+          <div class="card-footer">
+            <div class="price-group">
+              <span class="price-label">Giá bìa</span>
+              <span class="price">115.000 <small>VNĐ</small></span>
+            </div>
+            <a href="detail.html?book=8020" class="view-btn">Đọc thử →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Súng, Vi Trùng Và Thép -->
+      <div class="book-card">
+        <div class="card-media">
+          <img src="https://images.unsplash.com/photo-1457369804613-52c61a468e7d?auto=format&fit=crop&w=800&q=80" alt="Súng, Vi Trùng Và Thép" loading="lazy">
+          <span class="badge-tag">Giải Pulitzer</span>
+          <span class="badge-rating">⭐ 4.9</span>
+        </div>
+        <div class="card-content">
+          <span class="genre-tag">Lịch Sử &amp; Nhân Loại</span>
+          <h3 class="book-title">Súng, Vi Trùng Và Thép</h3>
+          <p class="book-author">Tác giả: Jared Diamond</p>
+          <p class="book-desc">Khám phá nguồn gốc định hình số phận của các xã hội loài người qua lăng kính địa lý và tiến hóa.</p>
+          <div class="card-footer">
+            <div class="price-group">
+              <span class="price-label">Giá bìa</span>
+              <span class="price">189.000 <small>VNĐ</small></span>
+            </div>
+            <a href="detail.html?book=sungvitrung" class="view-btn">Đọc thử →</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- 4. Chân trang -->
+  <footer>
+    <div class="container footer-content">
+      <p>&copy; 2026 Tri Thức Bookstore. Bản quyền thuộc về MindX Web Basic Sample Project.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
