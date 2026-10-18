@@ -143,6 +143,19 @@ const SPCK_PROJECTS = [
       { name: "Nông sản", file: "products.html" },
       { name: "Giao hàng", file: "checkout.html" }
     ]
+  },
+  {
+    id: "11",
+    folder: "11-game-store",
+    category: "ecommerce",
+    categoryLabel: "Cửa Hàng Game",
+    title: "Nexus Games | Cửa Hàng Game Số",
+    desc: "Cửa hàng game kỹ thuật số, poster AI box art, bộ lọc thể loại & giỏ hàng.",
+    thumbnail: "11-game-store/images/cold-orbit.png",
+    subPages: [
+      { name: "Trang chủ", file: "index.html" },
+      { name: "Thư viện game", file: "products.html" }
+    ]
   }
 ];
 

@@ -1,0 +1,218 @@
+/* ==========================================================================
+   NEXUS GAMES - CỬA HÀNG GAME KỸ THUẬT SỐ (SPCK WEB BASIC #11)
+   Sử dụng HTML5, CSS3 tinh gọn kết hợp Bootstrap 5
+   ========================================================================== */
+
+/* 1. Biến Màu Sắc & Phông Chữ */
+:root {
+  --bg-dark: #0e1118;         /* Nền tổng thể xanh đen */
+  --bg-surface: #161a24;      /* Nền thẻ, thanh navbar, footer */
+  --bg-card: #1a202c;         /* Nền thẻ game */
+  --border-color: #2d3748;    /* Đường viền nhẹ */
+  --accent-red: #ff4655;      /* Đỏ Cyberpunk nổi bật cho nút Mua */
+  --accent-purple: #7000ff;   /* Tím Neon cho nút Thêm vào giỏ */
+  --text-muted: #94a3b8;      /* Màu chữ mô tả */
+}
+
+/* 2. Thiết lập cơ bản */
+body {
+  background-color: var(--bg-dark);
+  color: #ffffff;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+/* 3. Thanh Navigation */
+.navbar-custom {
+  background-color: var(--bg-surface);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.navbar-brand {
+  font-size: 1.4rem;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+}
+
+.brand-dot {
+  color: var(--accent-red);
+}
+
+/* 4. Hero Banner */
+.hero-banner {
+  background: linear-gradient(180deg, rgba(14, 17, 24, 0.4) 0%, rgba(14, 17, 24, 0.95) 100%),
+              url('images/cold-orbit.png') no-repeat center center / cover;
+  padding: 5rem 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.hero-box {
+  background: rgba(22, 26, 36, 0.85);
+  backdrop-filter: blur(8px);
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  padding: 2.5rem;
+}
+
+/* 5. Thẻ Game Card (Chuẩn UX, Rõ ràng) */
+.game-card {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.game-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--accent-purple);
+  box-shadow: 0 12px 24px rgba(112, 0, 255, 0.2);
+}
+
+.game-poster-wrap {
+  position: relative;
+  aspect-ratio: 3 / 4;
+  overflow: hidden;
+  background-color: #111;
+}
+
+.game-poster-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.game-card:hover .game-poster-wrap img {
+  transform: scale(1.04);
+}
+
+.badge-discount {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #10b981;
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.8rem;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.game-info {
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.game-category {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  font-weight: 600;
+  margin-bottom: 0.35rem;
+}
+
+.game-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 0.75rem;
+  line-height: 1.35;
+  min-height: 2.7rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.price-box {
+  margin-top: auto;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.old-price {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  text-decoration: line-through;
+}
+
+.new-price {
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: var(--accent-red);
+}
+
+/* Nút Bấm Tương Tác */
+.btn-buy {
+  background-color: var(--accent-red);
+  color: #fff;
+  border: none;
+  font-weight: 700;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+  width: 100%;
+}
+
+.btn-buy:hover {
+  background-color: #e03543;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+.btn-cart {
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid var(--accent-purple);
+  font-weight: 600;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+  width: 100%;
+}
+
+.btn-cart:hover {
+  background-color: var(--accent-purple);
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+/* 6. Sidebar Bộ Lọc (Trang Products) */
+.filter-card {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 1.5rem;
+}
+
+.filter-title {
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--border-color);
+  color: var(--accent-red);
+}
+
+/* 7. Footer */
+.footer-custom {
+  background-color: var(--bg-surface);
+  border-top: 1px solid var(--border-color);
+  margin-top: 4rem;
+  padding: 3rem 0 1.5rem;
+}
