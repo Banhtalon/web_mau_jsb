@@ -3,265 +3,478 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MindX Coding Club - CLB Lập Trình &amp; Sáng Tạo Học Đường</title>
+  <title>MindX Dev Dojo - CLB Lập Trình &amp; Đấu Trường Code Tương Tác</title>
+  <meta name="description" content="Nền tảng học tập, thử thách thuật toán và chia sẻ đồ án thực chiến của thành viên MindX Coding Club.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <!-- 1. Thanh điều hướng -->
+  <!-- 1. THANH ĐIỀU HƯỚNG & THANH TRẠNG THÁI GAMIFICATION -->
   <header>
     <nav class="navbar">
-      <a href="index.html" class="logo" style="text-decoration: none;">💻 MindX<span>Club</span></a>
+      <a href="index.html" class="logo-group">
+        <span class="logo-badge">DOJO 2026</span>
+        <span class="logo-text">MindX<span>Dojo</span></span>
+      </a>
+
       <ul class="nav-links">
-        <li><a href="index.html" class="active">Trang Chủ</a></li>
-        <li><a href="projects.html">Dự Án</a></li>
-        <li><a href="register.html">Ứng Tuyển</a></li>
+        <li><a href="index.html" class="active">⚡ Trang Chủ</a></li>
+        <li><a href="#skillTree">🗺️ Cây Kỹ Năng</a></li>
+        <li><a href="#bounties">🎯 Bounties</a></li>
+        <li><a href="projects.html">🚀 Kho Đồ Án</a></li>
+        <li><a href="register.html">⚔️ Gia Nhập CLB</a></li>
       </ul>
-      <a href="register.html" class="nav-cta">Đăng Ký Ngay</a>
+
+      <!-- Thanh trạng thái Game của người dùng -->
+      <div class="user-status-bar">
+        <div class="stat-pill stat-streak" id="userStreakDisplay" title="Chuỗi ngày đăng nhập và code liên tục">
+          🔥 12 Ngày
+        </div>
+        <div class="stat-pill stat-xp" id="userXpDisplay" title="Điểm kinh nghiệm tích lũy">
+          ⚡ 3,420 XP
+        </div>
+        <a href="register.html" class="user-profile-badge" title="Hồ sơ thành viên">
+          <div class="avatar-mini">👾</div>
+          <span class="user-rank" id="userRankDisplay">LV.14 Apprentice</span>
+        </a>
+      </div>
     </nav>
   </header>
 
-  <!-- 2. Hero Banner Truyền Cảm Hứng -->
-  <section id="home" class="banner">
-    <div class="banner-content">
-      <span class="hero-badge">🚀 CỘNG ĐỒNG HỌC SINH MÊ LẬP TRÌNH 2026</span>
-      <h1>Cùng Nhau Học Code <br><span class="gradient-text">Kiến Tạo Tương Lai</span></h1>
-      <p>Nơi ươm mầm đam mê công nghệ, chia sẻ kỹ năng lập trình web và cùng nhau xây dựng các dự án công nghệ mang dấu ấn riêng của bạn.</p>
-      <div class="banner-actions">
-        <a href="#register" class="btn btn-primary">Gia Nhập CLB Ngay</a>
-        <a href="#activities" class="btn btn-outline">Xem Hoạt Động</a>
+  <!-- 2. HERO BANNER - ĐỊNH VỊ DEV DOJO ĐỘT PHÁ -->
+  <section class="hero-dojo container">
+    <div class="hero-tag">
+      <span class="pulse-dot"></span>
+      CỘNG ĐỒNG LẬP TRÌNH TEEN HỌC THỰC CHIẾN
+    </div>
+    <h1 class="hero-title">
+      Học Code Qua Thực Hành <br>
+      <span class="gradient-tech">Chinh Phục Thử Thách &amp; Xây Sản Phẩm Thật</span>
+    </h1>
+    <p class="hero-desc">
+      Không chỉ là câu lạc bộ lý thuyết suông — Đây là không gian thực hành code mỗi ngày, 
+      giải thuật toán trong browser, cùng nhau làm game, săn bounty dự án và tích lũy portfolio công nghệ đỉnh cao.
+    </p>
+
+    <div class="hero-metrics">
+      <div class="metric-item">
+        <span class="metric-num">180+</span>
+        <span class="metric-text">Học viên<br>đang cày cấp</span>
+      </div>
+      <div class="metric-item">
+        <span class="metric-num">45+</span>
+        <span class="metric-text">Sản phẩm web/game<br>đang chạy live</span>
+      </div>
+      <div class="metric-item">
+        <span class="metric-num">3,120+</span>
+        <span class="metric-text">Test cases<br>đã vượt qua</span>
+      </div>
+      <div class="metric-item">
+        <span class="metric-num">100%</span>
+        <span class="metric-text">Học qua dự án<br>&amp; Peer Review</span>
       </div>
     </div>
   </section>
 
-  <!-- 3. Cam kết & Giá trị CLB -->
-  <section class="features-bar">
-    <div class="container features-grid">
-      <div class="feature-item">
-        <div class="feature-icon">💡</div>
-        <div>
-          <h4>Học Qua Dự Án Thực Tế</h4>
-          <p>Xây dựng website cá nhân và ứng dụng thực tiễn</p>
-        </div>
-      </div>
-      <div class="feature-item">
-        <div class="feature-icon">🤝</div>
-        <div>
-          <h4>Mentor Đồng Hành 1:1</h4>
-          <p>Được anh chị khóa trên hỗ trợ gỡ rối code tận tình</p>
-        </div>
-      </div>
-      <div class="feature-item">
-        <div class="feature-icon">🏆</div>
-        <div>
-          <h4>Thử Sức Cuộc Thi &amp; Hackathon</h4>
-          <p>Cơ hội cọ xát và rinh các suất học bổng danh giá</p>
-        </div>
-      </div>
-    </div>
-  </section>
+  <!-- 3. THE MASTER BENTO GRID SECTION (TRỌNG TÂM TRANG) -->
+  <main class="container bento-section">
+    <div class="bento-grid">
 
-  <!-- 4. Giới thiệu CLB -->
-  <section id="about" class="container">
-    <div class="about-card">
-      <div class="about-text">
-        <span class="section-badge">VỀ MINDX CODING CLUB</span>
-        <h2>Môi Trường Sáng Tạo &amp; Tự Do Cho Mọi Người Mới Bắt Đầu</h2>
-        <p>MindX Coding Club là sân chơi học thuật phi lợi nhuận dành cho các bạn học sinh có niềm say mê với máy tính và công nghệ thông tin.</p>
-        <p>Không phân biệt bạn đã biết lập trình hay chưa, chỉ cần có sự tò mò và khao khát học hỏi, bạn sẽ luôn tìm thấy những người bạn đồng hành tuyệt vời tại đây.</p>
+      <!-- BENTO BOX 1: DAILY DEV TERMINAL (7 CỘT) -->
+      <div class="bento-card col-span-7 highlight-cyan">
+        <div class="card-top">
+          <div class="card-title-group">
+            <div class="card-icon">⚡</div>
+            <div>
+              <h2 class="card-title">Daily Dev Terminal</h2>
+              <span style="font-size: 0.78rem; color: var(--text-muted);">Thử thách gõ code nhanh mỗi ngày (3-5 phút)</span>
+            </div>
+          </div>
+          <span class="card-badge badge-cyan">LIVE REPL</span>
+        </div>
+
+        <div class="terminal-box">
+          <div class="terminal-bar">
+            <div class="terminal-dots">
+              <div class="terminal-dot dot-red"></div>
+              <div class="terminal-dot dot-yellow"></div>
+              <div class="terminal-dot dot-green"></div>
+            </div>
+            <div class="terminal-path" id="terminalPath">~/daily-quest/day-142.js</div>
+            <select class="quest-selector" id="questSelector" title="Chọn thử thách">
+              <option value="day142">Day 142: Đảo từ trong chuỗi</option>
+              <option value="day143">Day 143: Lọc số nguyên tố</option>
+              <option value="day144">Day 144: Định dạng VNĐ</option>
+            </select>
+          </div>
+
+          <div class="quest-desc-box" id="questDesc">
+            <strong>Nhiệm vụ #142:</strong> Hoàn thiện hàm <code>reverseWords(str)</code> đảo ngược từng từ trong câu mà vẫn giữ nguyên thứ tự các từ.
+          </div>
+
+          <div class="editor-wrapper">
+            <textarea class="code-textarea" id="codeEditor" spellcheck="false"></textarea>
+          </div>
+
+          <div class="terminal-controls">
+            <div style="display: flex; align-items: center; gap: 10px;">
+              <span class="hotkey-hint">Phím tắt: [Ctrl + Enter]</span>
+              <button class="btn-hint" id="hintBtn" type="button">💡 Gợi Ý</button>
+            </div>
+            <button class="btn-run-code" id="runCodeBtn" type="button">CHẠY KIỂM THỬ ⚡</button>
+          </div>
+        </div>
+
+        <div class="terminal-output" id="terminalOutput">
+          <div class="output-status" id="terminalStatus">
+            <span>●</span> <span>Chưa chạy kiểm thử</span>
+          </div>
+          <div class="output-xp-gain" id="terminalXpReward"></div>
+        </div>
       </div>
-      <div class="about-stats">
-        <div class="stat-box">
-          <span class="stat-number">150+</span>
-          <span class="stat-label">Thành viên năng động</span>
-        </div>
-        <div class="stat-box">
-          <span class="stat-number">40+</span>
-          <span class="stat-label">Dự án web đã hoàn thành</span>
-        </div>
-        <div class="stat-box">
-          <span class="stat-number">100%</span>
-          <span class="stat-label">Miễn phí sinh hoạt</span>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- 5. 4 Hoạt động nổi bật (Grid 4 cột 16:10) -->
-  <section id="activities" class="container">
-    <div class="section-header">
-      <span class="section-badge">HOẠT ĐỘNG THƯỜNG NIÊN</span>
-      <h2 class="title">Các Sự Kiện Sôi Động Nhất</h2>
-      <p class="section-subtitle">Học hết sức, chơi hết mình cùng chuỗi hoạt động định kỳ bổ ích</p>
-    </div>
-
-    <div class="activity-grid">
-
-      <div class="activity-card">
-        <div class="card-media">
-          <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=800&q=80" alt="Workshop lập trình" loading="lazy">
-          <span class="badge-tag">Mỗi Thứ Bảy</span>
-          <span class="badge-status">Hàng Tuần</span>
+      <!-- BENTO BOX 2: DYNAMIC SKILL TREE (5 CỘT) -->
+      <div class="bento-card col-span-5 highlight-green" id="skillTree">
+        <div class="card-top">
+          <div class="card-title-group">
+            <div class="card-icon">🗺️</div>
+            <div>
+              <h2 class="card-title">Cây Kỹ Năng (Skill Tree)</h2>
+              <span style="font-size: 0.78rem; color: var(--text-muted);">Lộ trình phát triển mở khóa năng lực</span>
+            </div>
+          </div>
+          <span class="card-badge badge-green">4 NHÁNH</span>
         </div>
-        <div class="card-content">
-          <h3 class="card-title">Workshop Code Hàng Tuần</h3>
-          <p class="card-desc">Cùng nhau thực hành HTML5, CSS3, Flexbox/Grid và tháo gỡ các vướng mắc trong bài tập.</p>
-          <div class="card-footer">
-            <span class="tag-label">Kỹ năng kỹ thuật</span>
-            <a href="#register" class="join-btn">Tham gia</a>
+
+        <div class="skill-radar-container">
+          <!-- Track 1: Web Frontend & Backend -->
+          <div class="skill-track">
+            <div class="skill-track-header">
+              <div class="skill-track-name">🌐 Web Fullstack Architecture</div>
+              <div class="skill-track-pct">65% Đạt</div>
+            </div>
+            <div class="skill-progress-bar">
+              <div class="progress-fill fill-web" style="width: 65%;"></div>
+            </div>
+            <div class="skill-nodes-row">
+              <span class="node-chip unlocked">✔ HTML5 Semantics</span>
+              <span class="node-chip unlocked">✔ CSS Flex/Grid</span>
+              <span class="node-chip current">⚡ JS Async/DOM</span>
+              <span class="node-chip">🔒 Node API</span>
+            </div>
+          </div>
+
+          <!-- Track 2: Game Dev -->
+          <div class="skill-track">
+            <div class="skill-track-header">
+              <div class="skill-track-name">🎮 2D Canvas &amp; Game Mechanics</div>
+              <div class="skill-track-pct">40% Đạt</div>
+            </div>
+            <div class="skill-progress-bar">
+              <div class="progress-fill fill-game" style="width: 40%;"></div>
+            </div>
+            <div class="skill-nodes-row">
+              <span class="node-chip unlocked">✔ Game Loop 60fps</span>
+              <span class="node-chip current">⚡ Collision Physics</span>
+              <span class="node-chip">🔒 Sprite Animation</span>
+            </div>
+          </div>
+
+          <!-- Track 3: Python & AI -->
+          <div class="skill-track">
+            <div class="skill-track-header">
+              <div class="skill-track-name">🐍 Python &amp; Trí Tuệ Nhân Tạo</div>
+              <div class="skill-track-pct">30% Đạt</div>
+            </div>
+            <div class="skill-progress-bar">
+              <div class="progress-fill fill-ai" style="width: 30%;"></div>
+            </div>
+            <div class="skill-nodes-row">
+              <span class="node-chip unlocked">✔ Data Structures</span>
+              <span class="node-chip current">⚡ Automation Script</span>
+              <span class="node-chip">🔒 Prompt Engineering</span>
+            </div>
+          </div>
+
+          <!-- Track 4: IoT & Hardware -->
+          <div class="skill-track">
+            <div class="skill-track-header">
+              <div class="skill-track-name">🤖 IoT &amp; Sáng Chế Robot</div>
+              <div class="skill-track-pct">15% Đạt</div>
+            </div>
+            <div class="skill-progress-bar">
+              <div class="progress-fill fill-iot" style="width: 15%;"></div>
+            </div>
+            <div class="skill-nodes-row">
+              <span class="node-chip unlocked">✔ Arduino Sensors</span>
+              <span class="node-chip">🔒 Smart Home Relay</span>
+            </div>
           </div>
         </div>
       </div>
 
-      <div class="activity-card">
-        <div class="card-media">
-          <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80" alt="Hackathon" loading="lazy">
-          <span class="badge-tag">Thử Thách 24h</span>
-          <span class="badge-status">Hàng Quý</span>
+      <!-- BENTO BOX 3: QUEST & BOUNTY BOARD (4 CỘT) -->
+      <div class="bento-card col-span-4 highlight-red" id="bounties">
+        <div class="card-top">
+          <div class="card-title-group">
+            <div class="card-icon">🎯</div>
+            <div>
+              <h2 class="card-title">Bảng Săn Thưởng</h2>
+              <span style="font-size: 0.78rem; color: var(--text-muted);">Nhiệm vụ tuần &amp; Hackathon</span>
+            </div>
+          </div>
+          <span class="card-badge badge-red">BOUNTIES</span>
         </div>
-        <div class="card-content">
-          <h3 class="card-title">Cuộc Thi Hackathon Trẻ</h3>
-          <p class="card-desc">Lập đội 3-4 bạn cùng sáng tạo và trình bày sản phẩm giải quyết vấn đề thực tế trong trường học.</p>
-          <div class="card-footer">
-            <span class="tag-label">Làm việc nhóm</span>
-            <a href="#register" class="join-btn">Tham gia</a>
+
+        <div class="bounty-list">
+          <div class="bounty-item">
+            <div class="bounty-meta">
+              <span class="bounty-type type-daily">[DAILY QUEST]</span>
+              <span class="bounty-reward">⚡ +50 XP</span>
+            </div>
+            <div class="bounty-title">Giải đúng 1 bài Daily Bite và đạt tối thiểu 3/3 test</div>
+            <div class="bounty-footer">
+              <span class="bounty-time">Hết hạn trong 8 giờ</span>
+              <button class="btn-accept-quest" type="button">Nhận Quest</button>
+            </div>
+          </div>
+
+          <div class="bounty-item">
+            <div class="bounty-meta">
+              <span class="bounty-type type-weekly">[WEEKLY BOUNTY]</span>
+              <span class="bounty-reward">⚡ +300 XP + Áo MindX</span>
+            </div>
+            <div class="bounty-title">Tối ưu hiệu năng hiển thị và sửa lỗi tràn viền mobile cho trang CLB</div>
+            <div class="bounty-footer">
+              <span class="bounty-time">Còn 3 ngày</span>
+              <button class="btn-accept-quest" type="button">Nhận Quest</button>
+            </div>
+          </div>
+
+          <div class="bounty-item">
+            <div class="bounty-meta">
+              <span class="bounty-type type-raid">[BOSS RAID SPRINT]</span>
+              <span class="bounty-reward">🏆 +1,000 XP + Cúp</span>
+            </div>
+            <div class="bounty-title">Hackathon 48H: Xây dựng mini web game giáo dục bằng Canvas</div>
+            <div class="bounty-footer">
+              <span class="bounty-time">Bắt đầu Thứ 7</span>
+              <button class="btn-accept-quest" type="button">Lập Đội</button>
+            </div>
           </div>
         </div>
       </div>
 
-      <div class="activity-card">
-        <div class="card-media">
-          <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=800&q=80" alt="Tech Talk" loading="lazy">
-          <span class="badge-tag">Giao Lưu Chuyên Gia</span>
-          <span class="badge-status">Hàng Tháng</span>
+      <!-- BENTO BOX 4: FEATURED PROJECT LIVE SANDBOX & CODE INSPECTOR (8 CỘT) -->
+      <div class="bento-card col-span-8 highlight-cyan">
+        <div class="card-top">
+          <div class="card-title-group">
+            <div class="card-icon">🚀</div>
+            <div>
+              <h2 class="card-title">Đồ Án Tiêu Biểu Trong Tuần</h2>
+              <span style="font-size: 0.78rem; color: var(--text-muted);">Trải nghiệm trực tiếp &amp; soi mã nguồn</span>
+            </div>
+          </div>
+          <span class="card-badge badge-gold">SHOWCASE OF THE WEEK</span>
         </div>
-        <div class="card-content">
-          <h3 class="card-title">Tech Talk &amp; Định Hướng Nghề</h3>
-          <p class="card-desc">Lắng nghe chia sẻ chân thực từ các cựu học sinh hiện là kỹ sư phần mềm tại các tập đoàn lớn.</p>
-          <div class="card-footer">
-            <span class="tag-label">Định hướng sự nghiệp</span>
-            <a href="#register" class="join-btn">Tham gia</a>
+
+        <div class="showcase-tab-header">
+          <button class="tab-btn active" id="tabLiveBtn" type="button">
+            🎮 Chơi Thử Nghiệm (Live Game)
+          </button>
+          <button class="tab-btn" id="tabCodeBtn" type="button">
+            🔍 Soi Mã Nguồn (Code Inspector)
+          </button>
+        </div>
+
+        <div class="showcase-content-view">
+          <!-- Tab 1: Live Canvas Game -->
+          <div id="liveShowcaseView">
+            <canvas id="gameCanvas"></canvas>
+            <div class="game-overlay">
+              <span style="color: var(--cyan-neon);">Tàu Thám Hiểm</span>
+              <span id="gameScoreDisplay" style="color: var(--matrix-green); font-weight: bold;">Score: 0</span>
+            </div>
+            <div class="game-hint">Di chuyển chuột hoặc phím [A]/[D] / [←]/[→] để né thiên thạch</div>
+          </div>
+
+          <!-- Tab 2: Code Inspector -->
+          <div id="codeInspectorView" class="inspector-view">
+<pre><code>// Retro Cyber Dodger - Minh Quân (Lớp 10)
+// Lập trình bằng HTML5 Canvas 60FPS thuần
+
+class StarShip {
+  constructor(canvas) {
+    this.x = canvas.width / 2;
+    this.y = canvas.height - 35;
+    this.speed = 6;
+  }
+  update(keys) {
+    if (keys.ArrowLeft) this.x -= this.speed;
+    if (keys.ArrowRight) this.x += this.speed;
+  }
+  draw(ctx) {
+    ctx.fillStyle = '#00F0FF';
+    ctx.beginPath();
+    ctx.moveTo(this.x, this.y - 20);
+    ctx.lineTo(this.x - 20, this.y + 20);
+    ctx.lineTo(this.x + 20, this.y + 20);
+    ctx.fill();
+  }
+}</code></pre>
+          </div>
+        </div>
+
+        <div class="showcase-info-bar">
+          <div class="author-info">
+            <div class="author-avatar" style="background: #1e293b; display: flex; align-items: center; justify-content: center; font-size: 18px;">👨‍💻</div>
+            <div>
+              <div class="author-name">Retro Cyber Dodger 2D</div>
+              <div class="author-role">Tác giả: Minh Quân • Lớp 10 Tin • 100% Pure Canvas JS</div>
+            </div>
+          </div>
+          <div class="showcase-actions">
+            <button class="btn-upvote" id="btnUpvote" type="button">
+              ⭐ Tặng Sao (<span id="upvoteCount">142</span>)
+            </button>
+            <a href="projects.html" class="btn-fork" style="text-decoration: none;">Xem Toàn Bộ Dự Án ➔</a>
           </div>
         </div>
       </div>
 
-      <div class="activity-card">
-        <div class="card-media">
-          <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=800&q=80" alt="Dự án vì cộng đồng" loading="lazy">
-          <span class="badge-tag">Vì Cộng Đồng</span>
-          <span class="badge-status">Dài Hạn</span>
+      <!-- BENTO BOX 5: STUDY LOUNGE & POMODORO (6 CỘT) -->
+      <div class="bento-card col-span-6 highlight-green">
+        <div class="card-top">
+          <div class="card-title-group">
+            <div class="card-icon">☕</div>
+            <div>
+              <h2 class="card-title">Virtual Study Lounge</h2>
+              <span style="font-size: 0.78rem; color: var(--text-muted);">Phòng tự học tập trung &amp; đếm giờ Pomodoro</span>
+            </div>
+          </div>
+          <span class="card-badge badge-green">38 ĐANG ONLINE</span>
         </div>
-        <div class="card-content">
-          <h3 class="card-title">Code For Good Project</h3>
-          <p class="card-desc">Xây dựng website quyên góp sách, hỗ trợ thư viện trường và các dự án thiện nguyện số hóa.</p>
-          <div class="card-footer">
-            <span class="tag-label">Trách nhiệm xã hội</span>
-            <a href="#register" class="join-btn">Tham gia</a>
+
+        <div class="lounge-container">
+          <div class="pomodoro-box">
+            <span style="font-size: 0.8rem; color: var(--text-secondary); text-transform: uppercase;">Bộ Đếm Focus 25 Phút</span>
+            <div class="timer-display" id="pomodoroDisplay">25:00</div>
+            <div class="timer-controls">
+              <button class="btn-timer" id="pomodoroToggle" type="button">Bắt Đầu 25m ▶</button>
+              <button class="btn-timer-reset" id="pomodoroReset" type="button">Đặt lại</button>
+            </div>
+          </div>
+
+          <div class="buddies-list">
+            <div style="font-size: 0.82rem; font-weight: 700; color: var(--text-secondary); margin-bottom: 4px;">Bạn cùng phòng học:</div>
+            
+            <div class="buddy-item">
+              <div class="buddy-left">
+                <span class="buddy-status-dot"></span>
+                <strong>Tuấn Kiệt</strong>
+              </div>
+              <span class="buddy-task">Đang sửa lỗi CSS Grid</span>
+            </div>
+
+            <div class="buddy-item">
+              <div class="buddy-left">
+                <span class="buddy-status-dot"></span>
+                <strong>Linh Đan</strong>
+              </div>
+              <span class="buddy-task">Đang tối ưu API Fetch</span>
+            </div>
+
+            <div class="buddy-item">
+              <div class="buddy-left">
+                <span class="buddy-status-dot"></span>
+                <strong>Gia Bảo</strong>
+              </div>
+              <span class="buddy-task">Đang vẽ Sprite Game</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- BENTO BOX 6: HALL OF FAME / LEADERBOARD (6 CỘT) -->
+      <div class="bento-card col-span-6 highlight-gold">
+        <div class="card-top">
+          <div class="card-title-group">
+            <div class="card-icon">👑</div>
+            <div>
+              <h2 class="card-title">Bảng Phong Thần Tuần</h2>
+              <span style="font-size: 0.78rem; color: var(--text-muted);">Top học viên cày XP và đóng góp code nhiều nhất</span>
+            </div>
+          </div>
+          <span class="card-badge badge-gold">WEEK 42</span>
+        </div>
+
+        <div class="leaderboard-list">
+          <div class="leader-row">
+            <div class="leader-pos pos-1">#1</div>
+            <div class="leader-info">
+              <div class="leader-avatar" style="background: #312e81; display:flex; align-items:center; justify-content:center;">👑</div>
+              <div>
+                <div class="leader-name-tag">Lê Hoàng Yến</div>
+                <div class="leader-badge-title">Code Valkyrie • Streak 🔥 28 Ngày</div>
+              </div>
+            </div>
+            <div class="leader-score">4,820 XP</div>
+          </div>
+
+          <div class="leader-row">
+            <div class="leader-pos pos-2">#2</div>
+            <div class="leader-info">
+              <div class="leader-avatar" style="background: #1e293b; display:flex; align-items:center; justify-content:center;">🥈</div>
+              <div>
+                <div class="leader-name-tag">Trần Quốc Đăng Khoa</div>
+                <div class="leader-badge-title">Bug Slayer • Streak 🔥 21 Ngày</div>
+              </div>
+            </div>
+            <div class="leader-score">4,210 XP</div>
+          </div>
+
+          <div class="leader-row">
+            <div class="leader-pos pos-3">#3</div>
+            <div class="leader-info">
+              <div class="leader-avatar" style="background: #1e293b; display:flex; align-items:center; justify-content:center;">🥉</div>
+              <div>
+                <div class="leader-name-tag">Nguyễn Minh Khang</div>
+                <div class="leader-badge-title">Algorithm Master • Streak 🔥 16 Ngày</div>
+              </div>
+            </div>
+            <div class="leader-score">3,950 XP</div>
           </div>
         </div>
       </div>
 
     </div>
-  </section>
+  </main>
 
-  <!-- 6. Ban chủ nhiệm (Grid 3 cột 16:10) -->
-  <section id="members" class="container">
-    <div class="section-header">
-      <span class="section-badge">ĐỘI NGŨ DẪN DẮT</span>
-      <h2 class="title">Ban Chủ Nhiệm CLB</h2>
-      <p class="section-subtitle">Những người bạn nhiệt huyết luôn sẵn lòng hỗ trợ các bạn thành viên mới</p>
-    </div>
-
-    <div class="leader-grid">
-      <div class="leader-card">
-        <div class="card-media">
-          <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=800&q=80" alt="Nguyễn Minh Anh" loading="lazy">
-        </div>
-        <div class="card-content">
-          <h3 class="leader-name">Nguyễn Minh Anh</h3>
-          <span class="leader-role">Chủ Nhiệm CLB • Lớp 11 Tin</span>
-          <p class="leader-desc">Đam mê phát triển Web Frontend và tổ chức các hoạt động kết nối cộng đồng.</p>
-        </div>
-      </div>
-
-      <div class="leader-card">
-        <div class="card-media">
-          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=80" alt="Trần Bảo Long" loading="lazy">
-        </div>
-        <div class="card-content">
-          <h3 class="leader-name">Trần Bảo Long</h3>
-          <span class="leader-role">Phó Chủ Nhiệm Kỹ Thuật • Lớp 11 Toán</span>
-          <p class="leader-desc">Phụ trách nội dung bài giảng workshop và hướng dẫn giải thuật cho các bạn mới.</p>
-        </div>
-      </div>
-
-      <div class="leader-card">
-        <div class="card-media">
-          <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=800&q=80" alt="Lê Hoàng Yến" loading="lazy">
-        </div>
-        <div class="card-content">
-          <h3 class="leader-name">Lê Hoàng Yến</h3>
-          <span class="leader-role">Trưởng Ban Truyền Thông • Lớp 10 Anh</span>
-          <p class="leader-desc">Quản lý Fanpage, thiết kế hình ảnh sự kiện và tiếp đón thành viên đăng ký mới.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- 7. Form đăng ký gia nhập -->
-  <section id="register" class="container form-section">
-    <div class="section-header">
-      <span class="section-badge">GIA NHẬP NGAY</span>
-      <h2 class="title">Đơn Đăng Ký Gia Nhập CLB</h2>
-      <p class="section-subtitle">Chỉ mất 1 phút để điền thông tin, ban chủ nhiệm sẽ liên hệ mời bạn vào nhóm Zalo/Discord CLB</p>
-    </div>
-
-    <form id="club-form" class="club-form" action="#" method="get">
-      <div class="form-group">
-        <label for="fullname">Họ và tên của bạn:</label>
-        <input type="text" id="fullname" placeholder="Ví dụ: Hoàng Tuấn Kiệt" required>
-      </div>
-
-      <div class="form-group">
-        <label for="email">Địa chỉ Email:</label>
-        <input type="email" id="email" placeholder="Ví dụ: tuankiet@gmail.com" required>
-      </div>
-
-      <div class="form-group">
-        <label for="classroom">Lớp / Trường đang theo học:</label>
-        <input type="text" id="classroom" placeholder="Ví dụ: Lớp 10A2 - THPT Chuyên" required>
-      </div>
-
-      <div class="form-group">
-        <label for="reason">Mục tiêu hoặc mong muốn khi tham gia:</label>
-        <textarea id="reason" rows="4" placeholder="Ví dụ: Em muốn học làm website và kết thêm nhiều bạn cùng đam mê..." required></textarea>
-      </div>
-
-      <button type="submit" class="submit-btn">Gửi Đơn Đăng Ký Ngay</button>
-    </form>
-  </section>
-
-  <!-- 8. Footer -->
+  <!-- 4. FOOTER -->
   <footer>
-    <div class="container footer-content">
-      <div class="footer-col">
-        <div class="logo">💻 MindX<span>Club</span></div>
-        <p>CLB Lập trình học đường - Cùng nhau học tập, gắn kết và tạo nên những điều phi thường.</p>
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <div class="logo-group">
+          <span class="logo-badge">DOJO</span>
+          <span class="logo-text">MindX<span>Dojo</span></span>
+        </div>
+        <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 6px;">
+          Nền tảng sinh hoạt &amp; rèn luyện lập trình thực chiến cho học viên MindX.
+        </p>
       </div>
-      <div class="footer-col">
-        <h4>Liên Hệ Ban Chủ Nhiệm</h4>
-        <p>📍 Phòng Sinh Hoạt: Phòng Lab 3, Tòa Nhà Công Nghệ</p>
-        <p>✉️ Email: contact@mindxcodingclub.edu.vn</p>
-        <p>💬 Kênh Discord: discord.gg/mindxcodingclub</p>
+
+      <div class="footer-links">
+        <a href="index.html">Trang Chủ</a>
+        <a href="projects.html">Kho Đồ Án</a>
+        <a href="register.html">Đăng Ký Thành Viên</a>
+        <a href="https://mindx.edu.vn" target="_blank" rel="noopener">Trang Chủ MindX</a>
       </div>
-    </div>
-    <div class="footer-bottom">
-      <p>&copy; 2026 MindX Coding Club. Dự án SPCK Mẫu Web Basic (100% Pure HTML5 &amp; CSS3)</p>
     </div>
   </footer>
 
+  <script src="script.js"></script>
 </body>
 </html>

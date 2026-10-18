@@ -3,157 +3,265 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Triển Lãm Đồ Án Học Viên | MindX Coding Club</title>
+  <title>Triển Lãm Đồ Án &amp; Open Lab | MindX Dev Dojo</title>
+  <meta name="description" content="Kho đồ án website, game 2D và ứng dụng tương tác của học viên MindX Coding Club.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <!-- 1. Thanh điều hướng đa trang -->
+  <!-- 1. THANH ĐIỀU HƯỚNG & THANH TRẠNG THÁI -->
   <header>
     <nav class="navbar">
-      <a href="index.html" class="logo" style="text-decoration: none;">💻 MindX<span>Club</span></a>
+      <a href="index.html" class="logo-group">
+        <span class="logo-badge">DOJO 2026</span>
+        <span class="logo-text">MindX<span>Dojo</span></span>
+      </a>
+
       <ul class="nav-links">
-        <li><a href="index.html">Trang Chủ</a></li>
-        <li><a href="projects.html" class="active">Dự Án</a></li>
-        <li><a href="register.html">Ứng Tuyển</a></li>
+        <li><a href="index.html">⚡ Trang Chủ</a></li>
+        <li><a href="index.html#skillTree">🗺️ Cây Kỹ Năng</a></li>
+        <li><a href="index.html#bounties">🎯 Bounties</a></li>
+        <li><a href="projects.html" class="active">🚀 Kho Đồ Án</a></li>
+        <li><a href="register.html">⚔️ Gia Nhập CLB</a></li>
       </ul>
-      <a href="register.html" class="nav-cta">Gia Nhập CLB</a>
+
+      <div class="user-status-bar">
+        <div class="stat-pill stat-streak" id="userStreakDisplay">🔥 12 Ngày</div>
+        <div class="stat-pill stat-xp" id="userXpDisplay">⚡ 3,420 XP</div>
+        <a href="register.html" class="user-profile-badge">
+          <div class="avatar-mini">👾</div>
+          <span class="user-rank" id="userRankDisplay">LV.14 Apprentice</span>
+        </a>
+      </div>
     </nav>
   </header>
 
-  <!-- 2. Banner Showcase Đồ Án -->
-  <section class="banner" style="padding: 70px 24px 60px;">
-    <div class="banner-content">
-      <span class="hero-badge">STUDENT SHOWCASE 2026</span>
-      <h1>Triển Lãm Sản Phẩm Sáng Tạo</h1>
-      <p>Tổng hợp các dự án website và ứng dụng do chính các thành viên CLB lên ý tưởng và lập trình.</p>
+  <!-- 2. HERO BANNER -->
+  <section class="hero-dojo container" style="padding-bottom: 20px;">
+    <div class="hero-tag">
+      <span class="pulse-dot"></span>
+      OPEN-SOURCE LAB &amp; LIVE DEMOS
+    </div>
+    <h1 class="hero-title">
+      Triển Lãm Đồ Án <span class="gradient-tech">Học Viên Thực Chiến</span>
+    </h1>
+    <p class="hero-desc">
+      Mỗi dự án tại MindX Dojo không chỉ là ảnh chụp màn hình tĩnh mà là ứng dụng chạy trực tiếp, 
+      cho phép bạn xem mã nguồn, học hỏi kỹ thuật lập trình và fork về workspace cá nhân.
+    </p>
+
+    <!-- 3. BỘ LỌC CHUYÊN ĐỀ DỰ ÁN -->
+    <div class="filter-bar">
+      <button class="filter-btn active" data-filter="all" type="button">Tất Cả Đồ Án (6)</button>
+      <button class="filter-btn" data-filter="web" type="button">🌐 Web Applications</button>
+      <button class="filter-btn" data-filter="game" type="button">🎮 2D Canvas Games</button>
+      <button class="filter-btn" data-filter="utility" type="button">⚡ Tiện Ích &amp; API</button>
     </div>
   </section>
 
-  <!-- 3. Lưới Đồ Án Tiêu Biểu -->
-  <main class="container" style="padding-top: 50px; padding-bottom: 70px;">
-    <div class="section-header">
-      <span class="section-badge">SẢN PHẨM NỔI BẬT</span>
-      <h2 class="title">Đồ Án Xuất Sắc Của Thành Viên</h2>
-      <p class="section-subtitle">Minh chứng cho tinh thần học qua dự án và nỗ lực không ngừng nghỉ</p>
-    </div>
+  <!-- 4. LƯỚI ĐỒ ÁN SHOWCASE -->
+  <main class="container">
+    <div class="projects-grid">
 
-    <div class="activity-grid">
-
-      <!-- Dự án 1 -->
-      <div class="activity-card">
-        <div class="card-media">
-          <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=800&q=80" alt="Cổng Học Tập Số" loading="lazy">
-          <span class="badge-tag">Hạng Nhất Hackathon</span>
-          <span class="badge-status">Web App</span>
+      <!-- Project 1: StudyHub -->
+      <article class="project-card" data-cat="web">
+        <div class="project-thumb">
+          <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=800&q=80" alt="StudyHub" loading="lazy">
+          <span class="project-badge-tag">Hạng Nhất Hackathon</span>
         </div>
-        <div class="card-content">
-          <h3 class="card-title">StudyHub - Góc Tự Học Thông Minh</h3>
-          <p class="card-desc">Nền tảng chia sẻ tài liệu học tập, đồng hồ Pomodoro tập trung và ghi chú bài giảng bằng HTML5/CSS3 thuần.</p>
-          <div class="card-footer">
-            <span class="tag-label">Tác giả: Tuấn Kiệt (Lớp 11)</span>
-            <a href="register.html" class="join-btn">Khám phá</a>
+        <div class="project-body">
+          <h2 class="project-title">StudyHub - Nền Tảng Tự Học Thông Minh</h2>
+          <p class="project-desc">
+            Không gian học tập cá nhân hóa tích hợp đồng hồ Pomodoro, quản lý danh sách việc cần làm (Task Kanban) và ghi chú Markdown lưu trữ offline bằng LocalStorage.
+          </p>
+          <div class="tech-tags">
+            <span class="tech-tag">HTML5</span>
+            <span class="tech-tag">CSS Grid</span>
+            <span class="tech-tag">LocalStorage</span>
+            <span class="tech-tag">Web Audio</span>
+          </div>
+          <div class="project-card-footer">
+            <span class="project-author-mini">Tác giả: Tuấn Kiệt (Lớp 11)</span>
+            <div class="project-btns">
+              <button class="btn-card-action btn-inspect-project" data-project="StudyHub" type="button">🔍 Soi Code</button>
+              <a href="index.html" class="btn-card-action" style="text-decoration:none;">🎮 Chạy Live</a>
+            </div>
           </div>
         </div>
-      </div>
+      </article>
 
-      <!-- Dự án 2 -->
-      <div class="activity-card">
-        <div class="card-media">
-          <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=800&q=80" alt="Game Retro" loading="lazy">
-          <span class="badge-tag">Game Sáng Tạo</span>
-          <span class="badge-status">Pixel Game</span>
+      <!-- Project 2: Space Defender -->
+      <article class="project-card" data-cat="game">
+        <div class="project-thumb">
+          <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=800&q=80" alt="Space Defender" loading="lazy">
+          <span class="project-badge-tag">Top 1 Game Tuần</span>
         </div>
-        <div class="card-content">
-          <h3 class="card-title">Retro Space Defender 2D</h3>
-          <p class="card-desc">Tựa game bắn tàu không gian phong cách retro 8-bit lập trình bằng JavaScript Canvas mượt mà, tính điểm trực tiếp.</p>
-          <div class="card-footer">
-            <span class="tag-label">Tác giả: Minh Quân (Lớp 10)</span>
-            <a href="register.html" class="join-btn">Khám phá</a>
+        <div class="project-body">
+          <h2 class="project-title">Retro Space Defender 2D</h2>
+          <p class="project-desc">
+            Tựa game bắn tàu không gian phong cách retro 8-bit trên HTML5 Canvas. Tối ưu vòng lặp 60FPS với thuật toán kiểm tra va chạm hình học và lưu điểm kỷ lục.
+          </p>
+          <div class="tech-tags">
+            <span class="tech-tag">HTML5 Canvas</span>
+            <span class="tech-tag">Game Loop</span>
+            <span class="tech-tag">AABB Collision</span>
+          </div>
+          <div class="project-card-footer">
+            <span class="project-author-mini">Tác giả: Minh Quân (Lớp 10)</span>
+            <div class="project-btns">
+              <button class="btn-card-action btn-inspect-project" data-project="SpaceDefender" type="button">🔍 Soi Code</button>
+              <a href="index.html" class="btn-card-action" style="text-decoration:none;">🎮 Chơi Thử</a>
+            </div>
           </div>
         </div>
-      </div>
+      </article>
 
-      <!-- Dự án 3 -->
-      <div class="activity-card">
-        <div class="card-media">
-          <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=800&q=80" alt="Portfolio cá nhân" loading="lazy">
-          <span class="badge-tag">Thiết Kế Đẹp</span>
-          <span class="badge-status">Portfolio</span>
+      <!-- Project 3: WeatherNow -->
+      <article class="project-card" data-cat="utility">
+        <div class="project-thumb">
+          <img src="https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&fit=crop&w=800&q=80" alt="WeatherNow" loading="lazy">
+          <span class="project-badge-tag">API Showcase</span>
         </div>
-        <div class="card-content">
-          <h3 class="card-title">Creative Minimalist Portfolio</h3>
-          <p class="card-desc">Trang hồ sơ cá nhân phong cách Editorial sang trọng, bố cục Flexbox chuẩn tỉ lệ vàng và tối ưu hiển thị đa thiết bị.</p>
-          <div class="card-footer">
-            <span class="tag-label">Tác giả: Linh Đan (Lớp 12)</span>
-            <a href="register.html" class="join-btn">Khám phá</a>
+        <div class="project-body">
+          <h2 class="project-title">WeatherNow - Tra Cứu Khí Hậu 63 Tỉnh Thành</h2>
+          <p class="project-desc">
+            Ứng dụng tra cứu thời tiết thời gian thực qua REST API công cộng, giao diện đổi màu động theo nhiệt độ và độ ẩm, hỗ trợ định vị vị trí tự động.
+          </p>
+          <div class="tech-tags">
+            <span class="tech-tag">Fetch API</span>
+            <span class="tech-tag">Async/Await</span>
+            <span class="tech-tag">Glassmorphism</span>
+          </div>
+          <div class="project-card-footer">
+            <span class="project-author-mini">Tác giả: Gia Bảo (Lớp 11)</span>
+            <div class="project-btns">
+              <button class="btn-card-action btn-inspect-project" data-project="WeatherNow" type="button">🔍 Soi Code</button>
+              <a href="index.html" class="btn-card-action" style="text-decoration:none;">🎮 Mở App</a>
+            </div>
           </div>
         </div>
-      </div>
+      </article>
 
-      <!-- Dự án 4 -->
-      <div class="activity-card">
-        <div class="card-media">
-          <img src="https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&fit=crop&w=800&q=80" alt="Web Dự Báo Thời Tiết" loading="lazy">
-          <span class="badge-tag">API Integration</span>
-          <span class="badge-status">Tiện Ích</span>
+      <!-- Project 4: DevFolio -->
+      <article class="project-card" data-cat="web">
+        <div class="project-thumb">
+          <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=800&q=80" alt="DevFolio" loading="lazy">
+          <span class="project-badge-tag">Design Award</span>
         </div>
-        <div class="card-content">
-          <h3 class="card-title">WeatherNow - Tra Cứu Thời Tiết</h3>
-          <p class="card-desc">Ứng dụng xem dự báo thời tiết 63 tỉnh thành Việt Nam với giao diện thẻ kính Glassmorphism và hiệu ứng mưa tuyết.</p>
-          <div class="card-footer">
-            <span class="tag-label">Tác giả: Gia Bảo (Lớp 11)</span>
-            <a href="register.html" class="join-btn">Khám phá</a>
+        <div class="project-body">
+          <h2 class="project-title">DevFolio - Hồ Sơ Kỹ Sư Tối Giản</h2>
+          <p class="project-desc">
+            Trang web portfolio chuẩn Responsive Web Design tỉ lệ vàng, có chế độ Dark/Light mode tự động chuyển theo hệ điều hành và hiệu ứng gõ phím cơ học.
+          </p>
+          <div class="tech-tags">
+            <span class="tech-tag">CSS Variables</span>
+            <span class="tech-tag">Responsive</span>
+            <span class="tech-tag">Micro-animations</span>
+          </div>
+          <div class="project-card-footer">
+            <span class="project-author-mini">Tác giả: Linh Đan (Lớp 12)</span>
+            <div class="project-btns">
+              <button class="btn-card-action btn-inspect-project" data-project="StudyHub" type="button">🔍 Soi Code</button>
+              <a href="index.html" class="btn-card-action" style="text-decoration:none;">🎮 Xem Demo</a>
+            </div>
           </div>
         </div>
-      </div>
+      </article>
 
-      <!-- Dự án 5 -->
-      <div class="activity-card">
-        <div class="card-media">
-          <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=800&q=80" alt="Quiz Lịch Sử" loading="lazy">
-          <span class="badge-tag">Giáo Dục</span>
-          <span class="badge-status">Interactive</span>
+      <!-- Project 5: Sử Việt Hào Hùng -->
+      <article class="project-card" data-cat="utility">
+        <div class="project-thumb">
+          <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=800&q=80" alt="Sử Việt Hào Hùng" loading="lazy">
+          <span class="project-badge-tag">Edu Tech</span>
         </div>
-        <div class="card-content">
-          <h3 class="card-title">Sử Việt Hào Hùng - Trắc Nghiệm</h3>
-          <p class="card-desc">Website trắc nghiệm tương tác các triều đại lịch sử Việt Nam, có tính giờ đếm ngược và bảng vinh danh điểm cao.</p>
-          <div class="card-footer">
-            <span class="tag-label">Tác giả: Hoàng Yến (Lớp 10)</span>
-            <a href="register.html" class="join-btn">Khám phá</a>
+        <div class="project-body">
+          <h2 class="project-title">Sử Việt Hào Hùng - Đấu Trường Lịch Sử</h2>
+          <p class="project-desc">
+            Ứng dụng trắc nghiệm kiến thức lịch sử Việt Nam với ngân hàng 200+ câu hỏi, hiệu ứng âm thanh cổ động và tính năng tính điểm thần tốc.
+          </p>
+          <div class="tech-tags">
+            <span class="tech-tag">JSON Data</span>
+            <span class="tech-tag">Audio Synthesis</span>
+            <span class="tech-tag">Timer Loop</span>
+          </div>
+          <div class="project-card-footer">
+            <span class="project-author-mini">Tác giả: Hoàng Yến (Lớp 10)</span>
+            <div class="project-btns">
+              <button class="btn-card-action btn-inspect-project" data-project="WeatherNow" type="button">🔍 Soi Code</button>
+              <a href="index.html" class="btn-card-action" style="text-decoration:none;">🎮 Thi Đấu</a>
+            </div>
           </div>
         </div>
-      </div>
+      </article>
 
-      <!-- Dự án 6 -->
-      <div class="activity-card">
-        <div class="card-media">
-          <img src="https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?auto=format&fit=crop&w=800&q=80" alt="Cẩm Nang Xanh" loading="lazy">
-          <span class="badge-tag">Môi Trường</span>
-          <span class="badge-status">Landing Page</span>
+      <!-- Project 6: Cyber Runner -->
+      <article class="project-card" data-cat="game">
+        <div class="project-thumb">
+          <img src="https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?auto=format&fit=crop&w=800&q=80" alt="Cyber Runner" loading="lazy">
+          <span class="project-badge-tag">Canvas Runner</span>
         </div>
-        <div class="card-content">
-          <h3 class="card-title">GreenEarth - Sống Xanh Mỗi Ngày</h3>
-          <p class="card-desc">Chiến dịch truyền thông bảo vệ môi trường, bản đồ các điểm thu gom pin cũ và cẩm nang phân loại rác tại nguồn.</p>
-          <div class="card-footer">
-            <span class="tag-label">Tác giả: Nhóm EcoCoders</span>
-            <a href="register.html" class="join-btn">Khám phá</a>
+        <div class="project-body">
+          <h2 class="project-title">Cyber Runner 2D - Vượt Chướng Ngại Vật</h2>
+          <p class="project-desc">
+            Game chạy vô tận (Endless Runner) với đồ họa neon vector, tăng tốc độ theo thời gian và bảng xếp hạng thành tích người chơi lưu trên trình duyệt.
+          </p>
+          <div class="tech-tags">
+            <span class="tech-tag">Canvas 2D</span>
+            <span class="tech-tag">Parallax Scroll</span>
+            <span class="tech-tag">Highscore Tracker</span>
+          </div>
+          <div class="project-card-footer">
+            <span class="project-author-mini">Tác giả: Nhóm CodeNinjas</span>
+            <div class="project-btns">
+              <button class="btn-card-action btn-inspect-project" data-project="SpaceDefender" type="button">🔍 Soi Code</button>
+              <a href="index.html" class="btn-card-action" style="text-decoration:none;">🎮 Chơi Ngay</a>
+            </div>
           </div>
         </div>
-      </div>
+      </article>
 
     </div>
   </main>
 
-  <!-- 4. Chân trang -->
+  <!-- MODAL SOI MÃ NGUỒN (CODE INSPECTOR MODAL) -->
+  <div class="modal-overlay" id="codeModal">
+    <div class="modal-window">
+      <div class="modal-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span style="color: var(--cyan-neon); font-size: 16px;">💻</span>
+          <span id="modalTitle" style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; color: #fff;">Mã Nguồn Dự Án</span>
+        </div>
+        <button class="modal-close" id="modalCloseBtn" type="button">✕</button>
+      </div>
+      <pre class="modal-body"><code id="modalCodeContent"></code></pre>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
   <footer>
-    <div class="container footer-content">
-      <p>&copy; 2026 MindX Coding Club. Bản quyền thuộc về MindX Web Basic Sample Project.</p>
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <div class="logo-group">
+          <span class="logo-badge">DOJO</span>
+          <span class="logo-text">MindX<span>Dojo</span></span>
+        </div>
+        <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 6px;">
+          Nền tảng sinh hoạt &amp; rèn luyện lập trình thực chiến cho học viên MindX.
+        </p>
+      </div>
+
+      <div class="footer-links">
+        <a href="index.html">Trang Chủ</a>
+        <a href="projects.html">Kho Đồ Án</a>
+        <a href="register.html">Đăng Ký Thành Viên</a>
+        <a href="https://mindx.edu.vn" target="_blank" rel="noopener">Trang Chủ MindX</a>
+      </div>
     </div>
   </footer>
 
+  <script src="script.js"></script>
 </body>
 </html>
